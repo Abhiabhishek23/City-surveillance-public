@@ -25,6 +25,7 @@ typing-inspection==0.4.1
 typing_extensions==4.15.0
 urllib3==2.5.0
 uvicorn==0.35.0
+python-multipart
 
 # GIS and training (for encroachment dataset tooling and optional local training)
 shapely>=2.0.0
