@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notifications – Mock (Refined)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%230ea5e9'/%3E%3Cstop offset='100%25' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' ry='12' fill='url(%23g)'/%3E%3Cpath d='M8 32c6-10 16-16 24-16s18 6 24 16c-6 10-16 16-24 16S14 42 8 32z' fill='rgba(255,255,255,0.9)'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%230b0f14'/%3E%3Ccircle cx='32' cy='30' r='2' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    .page-bg{background: radial-gradient(1200px 500px at 50% -20%, rgba(34,211,238,.12), transparent), radial-gradient(800px 400px at 85% 10%, rgba(139,92,246,.12), transparent), #0D1117;}
+    .seg{box-shadow: inset 0 0 0 1px rgba(255,255,255,.08)}
+  </style>
+</head>
+<body class="page-bg text-slate-100 min-h-screen">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-10 bg-black/40 backdrop-blur border-b border-white/10">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
+      <div class="flex-1">
+        <div class="text-xl font-bold leading-tight">Notifications</div>
+        <div class="text-xs text-slate-400">City Intelligence</div>
+      </div>
+      <div class="hidden sm:flex items-center gap-2">
+        <div class="hidden md:flex items-center gap-2 px-3 py-2 rounded-xl bg-white/5 border border-white/10">
+          <span class="text-slate-400">🔎</span>
+          <input id="searchBox" class="bg-transparent outline-none text-sm placeholder:text-slate-400 w-40" placeholder="Search" />
+        </div>
+  <a href="/client_ui/mocks/index.html" class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-sm">Mocks</a>
+  <a href="/client_ui" class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-sm">Live</a>
+  <a href="/admin" class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-sm" data-role="admin">Admin</a>
+  <button class="w-10 h-10 grid place-items-center rounded-xl bg-white/5 border border-white/10" title="Alerts">🔔</button>
+  <a href="/client_ui/mocks/onboarding.html" class="w-10 h-10 grid place-items-center rounded-xl bg-white/5 border border-white/10" title="Account">👤</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-6">
+    <!-- Filters -->
+    <div class="flex gap-2 overflow-x-auto pb-1" id="chips">
+      <button data-filter="all" class="px-3 py-1.5 rounded-full bg-white text-black text-sm whitespace-nowrap">All</button>
+      <button data-filter="construction" class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm whitespace-nowrap">Construction</button>
+      <button data-filter="crowd" class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm whitespace-nowrap">Crowd</button>
+      <button data-filter="traffic" class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm whitespace-nowrap">Traffic</button>
+      <button data-filter="fire" class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm whitespace-nowrap">Fire</button>
+    </div>
+
+    <!-- Segmented control -->
+    <div class="mt-4 inline-flex seg rounded-xl p-1 bg-white/5" id="seg">
+      <button data-range="today" class="px-4 py-1.5 rounded-lg bg-white text-black text-sm">Today</button>
+      <button data-range="all" class="px-4 py-1.5 rounded-lg text-slate-300 text-sm">All</button>
+    </div>
+
+    <!-- List -->
+  <section id="list" class="mt-5 space-y-3">
+      <!-- Item 1 -->
+  <a data-type="construction" data-ts="2" href="/client_ui/mocks/event-detail.html" class="p-4 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3 hover:bg-white/10">
+        <div class="w-12 h-12 rounded-xl bg-rose-500/20 border border-rose-400/30 grid place-items-center text-lg">🚧</div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between gap-3">
+            <div class="truncate font-semibold">Illegal construction near Green Park</div>
+            <div class="text-xs text-slate-400 flex items-center gap-2 shrink-0">
+              <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+              <span>2m</span>
+            </div>
+          </div>
+          <div class="mt-1 text-sm text-slate-300">CAM-03 • High severity</div>
+          <div class="mt-2 flex items-center gap-2">
+            <span class="px-2 py-0.5 text-xs rounded bg-rose-400/20 text-rose-300 border border-rose-400/30">Construction</span>
+            <span class="px-2 py-0.5 text-xs rounded bg-white/10 border border-white/10">Permits</span>
+          </div>
+        </div>
+  </a>
+
+      <!-- Item 2 -->
+  <a data-type="crowd" data-ts="8" href="/client_ui/mocks/event-detail.html" class="p-4 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3 hover:bg-white/10">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-400/30 grid place-items-center text-lg">👥</div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between gap-3">
+            <div class="truncate font-semibold">Overcrowding at Central Square</div>
+            <div class="text-xs text-slate-400 flex items-center gap-2 shrink-0">
+              <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+              <span>8m</span>
+            </div>
+          </div>
+          <div class="mt-1 text-sm text-slate-300">CAM-12 • Medium severity</div>
+          <div class="mt-2 flex items-center gap-2">
+            <span class="px-2 py-0.5 text-xs rounded bg-amber-400/20 text-amber-300 border border-amber-400/30">Crowd</span>
+            <span class="px-2 py-0.5 text-xs rounded bg-white/10 border border-white/10">Public safety</span>
+          </div>
+        </div>
+  </a>
+
+      <!-- Item 3 -->
+  <a data-type="traffic" data-ts="14" href="/client_ui/mocks/event-detail.html" class="p-4 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3 hover:bg-white/10">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/20 border border-cyan-400/30 grid place-items-center text-lg">🚗</div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between gap-3">
+            <div class="truncate font-semibold">Traffic slowdown reported</div>
+            <div class="text-xs text-slate-400 flex items-center gap-2 shrink-0">
+              <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+              <span>14m</span>
+            </div>
+          </div>
+          <div class="mt-1 text-sm text-slate-300">CAM-05 • Info</div>
+          <div class="mt-2 flex items-center gap-2">
+            <span class="px-2 py-0.5 text-xs rounded bg-cyan-400/20 text-cyan-300 border border-cyan-400/30">Traffic</span>
+            <span class="px-2 py-0.5 text-xs rounded bg-white/10 border border-white/10">Advisory</span>
+          </div>
+        </div>
+  </a>
+    </section>
+  </main>
+
+  <!-- Bottom Nav -->
+  <nav class="fixed bottom-0 inset-x-0 border-t border-white/10 bg-black/40 backdrop-blur">
+    <div class="max-w-3xl mx-auto px-4 py-3 grid grid-cols-4 text-center text-sm text-slate-300">
+      <a class="text-white">Notifications</a>
+      <a class="opacity-70" href="/client_ui/mocks/client-feed.html">Feed</a>
+      <a class="opacity-70" href="/client_ui/mocks/camera-map.html">Map</a>
+      <a class="opacity-70" href="/client_ui/mocks/onboarding.html">Account</a>
+    </div>
+  </nav>
+  <script>
+    const chips = document.getElementById('chips');
+    const seg = document.getElementById('seg');
+  const items = Array.from(document.querySelectorAll('#list a[data-type]'));
+  const search = document.getElementById('searchBox');
+    function setActive(parent, target){
+      parent.querySelectorAll('button').forEach(b=>{
+        b.classList.remove('bg-white','text-black');
+        b.classList.add('bg-white/10');
+        b.classList.toggle('text-slate-300', true);
+        b.classList.toggle('border', true);
+        b.classList.toggle('border-white/10', true);
+      });
+      target.classList.add('bg-white','text-black');
+      target.classList.remove('bg-white/10');
+    }
+    chips.addEventListener('click', (e)=>{
+      if(e.target.tagName!=='BUTTON') return;
+      const f = e.target.dataset.filter;
+      setActive(chips, e.target);
+      items.forEach(a=>{
+        a.style.display = (f==='all' || a.dataset.type===f)? '' : 'none';
+      });
+    });
+    seg.addEventListener('click', (e)=>{
+      if(e.target.tagName!=='BUTTON') return;
+      setActive(seg, e.target);
+      const range = e.target.dataset.range;
+      items.forEach(a=>{
+        const ts = parseInt(a.dataset.ts || '0', 10);
+        // simple mock: show all for 'all', for 'today' hide if > 60 min
+        a.style.opacity = (range==='all' || ts <= 60)? '1' : '0.4';
+      });
+    });
+    if(search){
+      function applySearch(){
+        const q = (search.value||'').toLowerCase();
+        items.forEach(a=>{
+          const txt = a.innerText.toLowerCase();
+          a.style.display = txt.includes(q) ? '' : 'none';
+        });
+      }
+      search.addEventListener('input', applySearch);
+    }
+    (function(){
+      const role = localStorage.getItem('uiMockRole') || 'client';
+      document.querySelectorAll('[data-role="admin"]').forEach(el=>{
+        el.style.display = (role==='admin')? '' : 'none';
+      });
+    })();
+  </script>
+</body>
+</html>

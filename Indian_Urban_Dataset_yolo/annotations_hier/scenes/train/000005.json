@@ -1,0 +1,18 @@
+{
+  "image": "000005.png",
+  "scenes": [
+    {
+      "scene": "arti",
+      "score": 0.33251953125
+    },
+    {
+      "scene": "market",
+      "score": 0.2320556640625
+    },
+    {
+      "scene": "night bazaar",
+      "score": 0.0894775390625
+    }
+  ],
+  "detections": []
+}

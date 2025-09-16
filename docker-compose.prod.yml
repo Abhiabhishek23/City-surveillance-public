@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - CROWD_THRESHOLD=3
+      - FCM_KEY=${FCM_KEY:-}
+    volumes:
+      - ./backend/backend_uploads:/app/backend_uploads
+
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_BACKEND_URL=http://backend:8000
+    depends_on:
+      - backend
+
+# Note: The edge client (urban_monitor) is normally deployed to edge devices; include it separately as needed.

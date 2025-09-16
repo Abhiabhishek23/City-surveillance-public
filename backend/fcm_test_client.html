@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FCM Test Client</title>
+</head>
+<body>
+  <h1>FCM Test Client</h1>
+  <p id="status">Loading…</p>
+  <pre id="log" style="white-space:pre-wrap;border:1px solid #ccc;padding:8px;max-height:40vh;overflow:auto"></pre>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCdJOVkxrThmkOxgSvTUsa3z5Hu7lEDCx8",
+      authDomain: "ujjain-50cb1.firebaseapp.com",
+      projectId: "ujjain-50cb1",
+      storageBucket: "ujjain-50cb1.firebasestorage.app",
+      messagingSenderId: "317612615610",
+      appId: "1:317612615610:web:356c42a095855976b31f83",
+      measurementId: "G-XXLLZ9F0QM"
+    };
+
+  const app = firebase.initializeApp(firebaseConfig);
+  const messaging = firebase.messaging();
+  const auth = firebase.auth();
+
+    const log = (m) => {
+      document.getElementById('log').textContent += `\n${m}`;
+      console.log(m);
+    };
+
+    let latestIdToken = null;
+
+    // --- Google Sign-In (optional) ---
+    async function googleAuthInit() {
+      const wrap = document.createElement('div');
+      wrap.innerHTML = `
+        <h3>Optional: Sign in with Google</h3>
+        <button id="google-signin">Sign in with Google</button>
+        <button id="google-signout" style="margin-left:8px">Sign out</button>
+        <button id="copy-idtoken" style="margin-left:8px">Copy ID token</button>
+      `;
+      document.body.insertBefore(wrap, document.body.firstChild.nextSibling);
+      const provider = new firebase.auth.GoogleAuthProvider();
+      document.getElementById('google-signin').onclick = async () => {
+        try {
+          const cred = await auth.signInWithPopup(provider);
+          const user = cred.user;
+          latestIdToken = await user.getIdToken();
+          log('Signed in with Google. ID token acquired.');
+        } catch (e) { log('Google sign-in error: ' + e); }
+      };
+      document.getElementById('google-signout').onclick = async () => {
+        await auth.signOut(); latestIdToken = null; log('Signed out.');
+      };
+      document.getElementById('copy-idtoken').onclick = async () => {
+        try {
+          const u = auth.currentUser;
+          if (!u) { log('No user signed in'); return; }
+          const tok = await u.getIdToken(true);
+          await navigator.clipboard.writeText(tok);
+          log('ID token copied to clipboard. Paste into dashboard admin input.');
+        } catch (e) { log('Copy token error: ' + e); }
+      };
+    }
+
+    // --- Phone Auth helpers (optional) ---
+    async function phoneAuthInit() {
+      try {
+        // Create UI
+        const wrap = document.createElement('div');
+        wrap.innerHTML = `
+          <h3>Optional: Sign in with Phone (test numbers supported)</h3>
+          <div id="recaptcha-container"></div>
+          <input id="phone-input" placeholder="+91XXXXXXXXXX" style="width:220px" />
+          <button id="send-otp">Send OTP</button>
+          <input id="code-input" placeholder="6-digit code" style="width:160px;margin-left:8px" />
+          <button id="verify-otp">Verify</button>
+          <button id="sign-out" style="margin-left:8px">Sign out</button>
+        `;
+        document.body.insertBefore(wrap, document.body.firstChild.nextSibling);
+
+        const verifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', { size: 'invisible' });
+        let confirmation = null;
+        document.getElementById('send-otp').onclick = async () => {
+          const phone = (document.getElementById('phone-input').value || '').trim();
+          if (!phone) { log('Enter phone like +911234567890'); return; }
+          try {
+            confirmation = await auth.signInWithPhoneNumber(phone, verifier);
+            log('OTP sent. If using test phone, enter the testing code you set in the Console.');
+          } catch (e) { log('send OTP error: ' + e); }
+        };
+        document.getElementById('verify-otp').onclick = async () => {
+          const code = (document.getElementById('code-input').value || '').trim();
+          if (!confirmation || !code) { log('Request OTP first and enter code'); return; }
+          try {
+            const cred = await confirmation.confirm(code);
+            const user = cred.user;
+            latestIdToken = await user.getIdToken();
+            log('Signed in. ID token acquired.');
+          } catch (e) { log('verify error: ' + e); }
+        };
+        document.getElementById('sign-out').onclick = async () => {
+          await auth.signOut(); latestIdToken = null; log('Signed out.');
+        };
+      } catch (e) { log('Phone auth init error: ' + e); }
+    }
+
+    async function init() {
+      document.getElementById('status').textContent = 'Requesting notification permission…';
+      try {
+        const reg = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+        log('Service worker registered.');
+        await Notification.requestPermission();
+    // Fetch VAPID public key from backend
+    const keyResp = await fetch('/fcm_vapid_public_key');
+    const keyJson = await keyResp.json().catch(() => ({}));
+    const vapidKey = keyJson && keyJson.vapidKey || undefined;
+    log('VAPID key ' + (vapidKey ? 'loaded' : 'missing') + '.');
+        const token = await messaging.getToken({ vapidKey, serviceWorkerRegistration: reg });
+        if (!token) {
+          document.getElementById('status').textContent = 'Failed to get token (permission denied?)';
+          return;
+        }
+        log('Got FCM token: ' + token.substring(0,16) + '…');
+        // If phone-auth is used, include id_token; else fall back to user_id=1
+        document.getElementById('status').textContent = 'Token acquired; registering on backend…';
+        const form = new FormData();
+        form.append('token', token);
+        if (latestIdToken) { form.append('id_token', latestIdToken); } else { form.append('user_id', '1'); }
+        const resp = await fetch('/register_fcm_token', { method: 'POST', body: form });
+        const txt = await resp.text();
+        log('register_fcm_token -> ' + resp.status + ' ' + txt);
+        document.getElementById('status').textContent = 'Ready. Trigger an alert to test push.';
+      } catch (e) {
+        document.getElementById('status').textContent = 'Error: ' + e;
+        log('Error: ' + e + '\n' + (e && e.stack ? e.stack : ''));
+      }
+      // Initialize optional phone auth UI after page loads
+  googleAuthInit();
+  phoneAuthInit();
+    }
+
+    messaging.onMessage((payload) => {
+      log('Foreground message: ' + JSON.stringify(payload));
+    });
+
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "image": "000050.png",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.517578125
+    },
+    {
+      "scene": "Diwali festival",
+      "score": 0.2156982421875
+    },
+    {
+      "scene": "worship ceremony",
+      "score": 0.10186767578125
+    }
+  ],
+  "detections": []
+}

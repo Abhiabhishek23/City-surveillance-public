@@ -1,0 +1,1214 @@
+{
+  "ac78ce3f739c8a55a82b89a8496b277259a4f389a0d75f6d21377baddada6951": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Hawkers_fruits/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Hawkers_fruits/000008.jpg"
+  ],
+  "b6350acfd0bcfb2ad1f7294052fb7ca5153e3fcda59ff9024c77fd70a2907c32": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Hawkers_fruits/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Hawkers_fruits/000005.jpg"
+  ],
+  "7eb10e827fc8c0796e7540836a1b619912d16f59939c6857c7ce35d45ecdb6e3": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Shops_food/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Shops_general/000020.jpg"
+  ],
+  "ff99d7bed27cba48094e15c28c49753b87411678f91732a99f0bb9726042bc7f": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_barber/000004.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_barber/000014.jpg"
+  ],
+  "5cffe5b63ce1753b662068ba6a57aea092f2648eeaeb6827dd1bd41768ccd6bf": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000027.jpg"
+  ],
+  "d2a7fef109c5fa23a2c3b48d9b1ae2416bd0b560cdec02e7df090487aaabd275": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000033.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_scrap/000002.jpg"
+  ],
+  "cdf40f796b170adb3b30edb9cb98868e266cd1e6a61ecc77eef1619c23c1e4c0": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000034.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000030.jpg"
+  ],
+  "457ed49feec9caf8e34918c588bf0a76fe4a550311116867ef1be6d41ecd58d3": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000028.jpg"
+  ],
+  "5d95e898d64f61272020f3e64d28a61dbe18cbb81c8b3d9876547891d362ba44": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000045.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000036.jpg"
+  ],
+  "2a9eb288d97d50699c3228562c27acb7aaedd23c5bae8e0a4c0948c91cbcfe4a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000048.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000046.jpg"
+  ],
+  "1023a21b23f6a33e1e8bf2f15a60aca5c59d3d509de566899478da5daf65daf4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000006.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000007.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Workers_ragpicker/000021.png"
+  ],
+  "81b8342e0212793c030a28e44a8b0f742138ea57e4c712515f3f1aa9c54fcc68": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000029.jpg"
+  ],
+  "c56bd55228aa9fcac5b9fa0e4b73c083634405f90a7bcd9e859a4ba45d71e1f4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_domestic_goats/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_grazing/000042.jpg"
+  ],
+  "b00f03a369760e2a46ba93ebcf9b9ba489937195e980d55ecd697cd964887e09": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_domestic_goats/000019.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_grazing/000024.jpg"
+  ],
+  "e599848c94a0055f1e021c44f16e2bc44c601ac451017c30d4d806d90ac08ca9": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_domestic_goats/000021.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_grazing/000028.jpg"
+  ],
+  "7ea440214859996e3f97f9ffb8ec263bbe6bbad53347f9f720ccf614f3b9d0e9": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_domestic_goats/000036.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_grazing/000044.jpg"
+  ],
+  "97eac971ab6ec19c8f795611e0c6f2ce007a7fb7c1d05f49caeea522f6bb0e1c": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_domestic_goats/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_grazing/000029.jpg"
+  ],
+  "2c19d7d958f9e46cf50ce820a9ed6011c9461216741dc9e3856f16f83420118a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_stray_cows/000042.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_stray_cows/000038.jpg"
+  ],
+  "7a1ac9f4a83e293a2ebd4edc8cf41bab1c1e991566ae7ef1393c3682f92d21da": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_stray_dogs/000027.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_stray_dogs/000047.jpg"
+  ],
+  "9dfd78e79710879a75aa5e59da5ce9ef53a907e302469b206e729974753862cc": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_stray_monkeys/000025.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_stray_monkeys/000005.png"
+  ],
+  "e896feabe835198a48424cc8fd32e3bc666669711034792f4125c15cfdd08658": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_dumping/000033.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_dumping/000009.jpg"
+  ],
+  "1f6852ca18b09edd04546ec0898996bd99b0ee54ab7dea33bdfe7432439f8da2": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_normal/000024.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_normal/000005.jpg"
+  ],
+  "89026335e2c252aca5b8d4297ceef419ef3542c878a3757c837118d290d9f766": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_polluted/000023.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_polluted/000012.jpg"
+  ],
+  "1e6cdeb78f9749c7a650695e98a350ed36baaae8c4206981e545f2798e81b58d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_polluted/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_polluted/000002.jpg"
+  ],
+  "3ff71c71b47941bb24fe87c0d9d680905a1c670f23823538c0c4176daec9ff29": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_sand_mining/000017.jpg"
+  ],
+  "18040332d24042a8ffed78f9d7ed5cf1989a7c83fbaf38c81c1080b0de186908": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000025.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_sand_mining/000020.jpg"
+  ],
+  "6cd9c464164667a127548e8d5a6be42e234fe8e42213f8921e1e39c91fc7310d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000030.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_sand_mining/000037.jpg"
+  ],
+  "b7d562e843714e5113aedc21a0be3c8d5fb01e01a4646ce1dfcf8607a4b7846c": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_sand_mining/000041.jpg"
+  ],
+  "072e8ce15fa453aed1cfbae3167b1ed3682cea164dad910e21051a7d61d1dcd4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_sand_mining/000007.jpg"
+  ],
+  "54a2f13aa2d83cc34441cb7dbfb083e06ba0801fc8d52cb145dc54f73b0ce73e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000017.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_sand_mining/000039.jpg"
+  ],
+  "cdd6bad7e0bc6eb6318ddf2162413835ec038cb68e0ae08282a277da567eabb4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000024.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000039.jpg"
+  ],
+  "8a2a7e15cf55cb893e0ef5c61fa835add925f5c28241cf5cd4caae875db83b6e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000023.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000002.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000002.jpg"
+  ],
+  "826799edd65955545b1098cb98864f5c437a31c97ab1a7dfe73fb871190041d1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000037.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000003.jpg"
+  ],
+  "729f9b5de90b1644990db5e9f1de5dcb0f3c4346092005d7b6bb37ff87f6a84c": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000026.jpg"
+  ],
+  "f078a2a3dc46ea3e8bbfc87404abd987500e2ebd01a3541423935a2d8a09d9ef": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000044.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000024.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Waste_in_water_idols/000014.jpg"
+  ],
+  "6b192c94740699cd97d4b8beeb8db4545b14bd9314bdd7724e8e3218ece2efb7": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000004.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000018.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Idols_floating/000004.jpg"
+  ],
+  "c8d34c505111684b87a9fc11c85caa49ae9daae081b9a0fe2c3a2eacf6ec47ee": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000015.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Idols_floating/000013.jpg"
+  ],
+  "94f4b105391948e897dedb56306bb23e34460735bc928c9d9570e8019354b281": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_plastics/000042.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_plastics/000014.jpg"
+  ],
+  "1caa2ca35c21627af2fdd6b56e533616336569e40e01ac88a6c3eca3c1235fbc": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_plastics/000013.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_plastics/000012.jpg"
+  ],
+  "2813304575cdacca6d6e14b9325a54003056f3343488041df18bbc83df486216": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Army_flood/000020.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Army_flood/000043.jpg"
+  ],
+  "7ec30ce6acadd9f0ee505d5ed2564fd47e9efee8c6f05e8fe694eace42327a99": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Army_protest/000025.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_lathi/000050.jpg"
+  ],
+  "c901da5dbc9dc587dd6123682053e87da552c39939cf95bdf8cb7cdef28470f1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_barricades/000032.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_barricades/000026.png"
+  ],
+  "2496dd94a1e5fe0ec4acbe8539f7610257abbf2ad3408a97a31ca12e060a6baf": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_barricades/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_barricades/000011.jpg"
+  ],
+  "aeb5c2b73b39b408f7be302524f3f57d08a81b86f2af8f5e9b23e6b201eb6477": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_lathi/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_lathi/000013.jpg"
+  ],
+  "f8847af1cd5782e9ae8d5e605351c353b4227be360ed38baabdcff523c810239": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_lathi/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_lathi/000016.jpg"
+  ],
+  "7821e6b34e460e837ea9012ea2460019abd527146c0a5f6c21dd78373745291d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_water_cannon/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_water_cannon/000006.jpg"
+  ],
+  "46db306c208fe37761c7a9b1c3f781909402905a606378979003760b85ed04cf": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Disorderly_drunkards/000040.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Disorderly_drunkards/000004.jpg"
+  ],
+  "3478951d2d541ca49b165ca8bb9959a5b3240631ec64216730265f6e01747ff8": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000033.jpg"
+  ],
+  "f8427f8fc23fead862812a3d04686f41d0e885b9bd4bda8f3a24d90ce42b5a71": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000033.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_patrolling/000039.jpg"
+  ],
+  "6930f918354d55bc6c85cb34b736e7c476e37d7f7fd0d538152b7d8df25219ad": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000034.jpg"
+  ],
+  "28ff391ce2419c451dd998572f3bf55d2e8e1e9bcaf66ba8a0ef0475e72917c4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000050.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000049.jpg"
+  ],
+  "7ab1f6389e19a9eb1a8f1ed828c765681f05d4cc2e95b09c77f800d3b93681ff": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000044.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000045.jpg"
+  ],
+  "553781092b047da415cc278ad0408a5f3f996a2bef3aa118d6a81670acff6193": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000041.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000043.jpg"
+  ],
+  "9cacebfc68b8f79d8ff2899232a5eb72f22e98ba3fb9e48f783fc7701ad89a7a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000007.jpg"
+  ],
+  "24b9685614b5792895c4b2f1974aa6478a746d427ed9df279ed01a140a77d44b": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000013.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000013.jpg"
+  ],
+  "490ca2cedf8a160bf9fa2bb353cc8e5752af9559eb7d9b0b4f30e7973d78b072": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000005.jpg"
+  ],
+  "91934bbe4e43410cf875b22fb36bbaabbab4252ddc563928cb88e2a7df0838d8": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000039.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000040.jpg"
+  ],
+  "33530822f556f766ca5ccd1dc835b4f9353d9f70a43cac726797195a6d68b029": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000001.jpg"
+  ],
+  "4e900169087b89138629ae22ffb58607ed2968ebb9d1755133ade13b2043772e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000014.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000014.jpg"
+  ],
+  "78c9f1983d48251bb02f508da0e589e17054edd5da76d7c61796b205d68af82b": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000002.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000002.jpg"
+  ],
+  "d22309bd83f483f7108622b462ebfb6300f2fa0a71bdddd77c01c6015338c23d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000017.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000017.jpg"
+  ],
+  "76b216aa1397c1b8ab4de8adb7f1e249115d42693fa8edfb5fee4757036e2520": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000003.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000003.jpg"
+  ],
+  "5e99ba7495e39c62f1cc7f0be6c5276ec5723a4f755bd0db8bb5184dd24f5de0": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_patrolling/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_traffic/000034.jpg"
+  ],
+  "c8a72182288dd45b405000aac1bc5dc8e7ee0ec994c15fdddb2e6798cd032402": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_riot_gear/000034.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_riot_gear/000020.jpg"
+  ],
+  "c2f07b95dc99d5def0bcb850335d6d7a4e57162eb4f432b110a81ec8366820e7": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_traffic/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_traffic/000013.jpg"
+  ],
+  "cb5ecefece77e0a59cd9c3a63bbd9e29261de6b8ac780c92369cc515e0a760ff": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_traffic/000001.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_traffic/000003.png"
+  ],
+  "866e1cec0e74640896fa6d1439a77aaa1dda91b487b75fc1fc3571e93063636c": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000027.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000022.jpg"
+  ],
+  "da46049dd82c2732c8903f02c715d0efcb09e99befe1fdc4ac30f4fc50496e20": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000019.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000016.png"
+  ],
+  "d9247438f9b55d5a9e988ad6ca7b5da9214283804560b665b4cc3ca7eb637317": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000025.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000019.png"
+  ],
+  "43c7536918316ef85fc308dc39876de234d4e78bbd20d46c7cfa484a7f3d543b": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000025.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000030.jpg"
+  ],
+  "0421b02d3456fe1fc26b71629dbec3d29c9c3f2a6e6a755ed8b7b7ba41eb0bb6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000030.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000021.jpg"
+  ],
+  "bc33eaaee60c5379f7a15355b94f167a6afae3c9523a4a067c5127fc6af100fb": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000018.jpg"
+  ],
+  "d5d82513874c2889020715404a237718740d896034d570fea576a6cc24ed60a4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000044.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000038.jpg"
+  ],
+  "ddc4ac16b9865582c2b30276e98c1383a468db2bf641f9da0ef4bbc8c712d696": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000040.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000034.jpg"
+  ],
+  "5236ef314a012f089b94b71e00b1033f35d2850c4d9caeddecec3f1486dc935b": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000041.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000035.jpg"
+  ],
+  "19777fedd8d40784d991ecaa890f0c3f414381e385d64060067509b680bc0544": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000048.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000048.jpg"
+  ],
+  "22b0a700a7d9cd5c933b050fc0eacafeea8d2bd7cbb278d682549741db468acb": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000004.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000005.jpg"
+  ],
+  "44508de59f76e67a009a061a5057b24e657fbd1c2a2d35ad3dd605949cfa3211": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_procession/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_religious/000010.jpg"
+  ],
+  "52afbaeedf4f5994771edcb983f11878f7429a2075091206928e857b5b273424": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_procession/000044.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_religious/000048.jpg"
+  ],
+  "c75c8bf4b1bb888fe1548ae9fffdc2e965bd7dea50b839219ab47b03ba2aca78": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_procession/000049.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_religious/000047.jpg"
+  ],
+  "0c2f4bd06367a3c560e4cc09c2de3c3657ca18de4d9e83b2ad0652f071282d00": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_procession/000004.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_religious/000004.jpg"
+  ],
+  "e1e15bb4cc1aab264bc9f38c4004774acf2ccffbfa6a57f85e3d1dddf73f2d88": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_procession/000003.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_religious/000003.jpg"
+  ],
+  "f963db21f05bcec6defcd15eb47605ade5ce2c0cee3ef38fef9f00210986f969": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_protest/000050.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_protest/000015.jpg"
+  ],
+  "47c3142bfe368de01b8c4d4e6d0318fbc80faae36c69552bcc4ccbbc111790de": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Informal_presence_hawkers/000035.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Informal_presence_hawkers/000039.jpg"
+  ],
+  "c7aa51bd34dfd538306dab91faff00a23892a307a4b98e38b405f251f0b45b65": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Informal_presence_workers_delivery/000050.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Two_wheelers_delivery/000003.jpg"
+  ],
+  "b03e2b2d6dd3af80e1b6fe0b2ec65fa7822f201d5c3d3c05393fd0d6585fe1eb": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Informal_presence_workers_sanitation/000013.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Sweepers_manual/000034.jpg"
+  ],
+  "98e1b06df7a8636880277e54b0c82e51f93c17a06815f6fce07cc2cfb6afd9b6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_eating/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_eating/000046.jpg"
+  ],
+  "68653c9ce6c49310846cc0b98d3625e7db2fbfd126cd94030720762e92ce88f2": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_eating/000008.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_eating/000012.jpg"
+  ],
+  "5fa7f83ddc00740d1d884b1c508114ad7af67f24ea4b7c3eacaa47aca98bded4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_eating/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_eating/000023.jpg"
+  ],
+  "11c95ac0b7b0e091514846f84814502fda04b038bca4bdc0a0f1e08cac629858": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_running/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_running/000036.jpg"
+  ],
+  "31ee14fbdf80cc73699b3fa5f9b0c26a079f4521db0b13bad4f75d4e68bacaae": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_squatting/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_squatting/000016.jpg"
+  ],
+  "3c58ab2b9173170b8120fa13f264d71f6fed12fa9e4c9261ff84330cf5a395f8": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000026.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000029.png"
+  ],
+  "f7785c1e0c48cad50a929ab83f4bfe919ce4eea335080cf5b517b951f6324ca4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000027.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000024.jpg"
+  ],
+  "e5811701873894d0852f040cf2daaaa7c0f77b13440837b1eb2038018e499f52": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000034.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000021.jpg"
+  ],
+  "ca833343f1bf4a4fc81238fafe2ae316d5ed0b65fe13f67d1d46226338db32b3": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000023.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000018.jpg"
+  ],
+  "229c134a505c0b9001e7c5739ea818fa739d541b994d2041095164dab1843854": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000014.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000009.jpg"
+  ],
+  "d38402833358fb7ba7beac79174762d81f6c235b47805a35b67aa899778fba49": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000002.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000003.jpg"
+  ],
+  "539299f1fdea70fc7737c20dd4294bdeb8b7784e4c62770403da58c76eb18bcb": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000003.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000004.jpg"
+  ],
+  "bb6b259aa662571eff618c37b77b7e571f15e06668a69c8a2602e2d38f78a5a0": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_bathing/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Ghats_bathing/000028.jpg"
+  ],
+  "43df7d2456fff52d6d6097c27869d771b24e9fd4c59e71265cee724b5cc4cdd8": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_fighting/000013.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_fighting/000038.jpg"
+  ],
+  "3f010ea4f532859f9dcba48200f0712cbcc7ffb4818f6d40ccecbbe8249712fe": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000008.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000003.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Idols_immersion/000006.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_immersion/000006.jpg"
+  ],
+  "4532df9d92b80bf1ac818afec7758b5abb1997cc5a923ff830b58e574494d3b0": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000037.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Ganesh_utsav/000041.jpg"
+  ],
+  "0f791a863884b6aa6c994e0f3749dba7fe252338f948e55f1763801a86d163a8": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000046.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Ganesh_utsav/000020.jpg"
+  ],
+  "73f4b9eaf392d5d0f4d781d7326018a0727c0ae4af014864fce42c4673f1803e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000049.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Ganesh_utsav/000021.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Idols_floating/000007.jpg"
+  ],
+  "6e117c5973a2305590bd65839d63c4f7b1d8b15fcc4779373fe6f8557ba03aa4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000012.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000025.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000022.jpg"
+  ],
+  "64f70c1b94e4e826f2bb7c5767ed7067262094918d679d951ed4d634e56de2f3": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000038.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000050.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Ganesh_utsav/000040.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Rituals_immersion/000039.png"
+  ],
+  "f003f536a86d0aa2d7bf3e0c95de1f64b16710780b80458bf2d1f6bb4b0873d2": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000010.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000004.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000017.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000004.jpg"
+  ],
+  "652daaacbc83520f1e37d7e97f6a3be0f8e19e978d157c041e69b35695d1755a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000039.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000026.jpg"
+  ],
+  "a2fcabea4cdebf79da329f4d45259268aa7a6c1b29c717ca1f0e8b5a122bdf9e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000001.jpg"
+  ],
+  "7244825d6803538e8e1526b21319d05b96317de5d2c84055e093932bc92f5cc6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000016.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000028.jpg"
+  ],
+  "6b9741665b75e5fa6eb5fefb1b17103105993ae37ece6319f65119f8d94f50f9": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_rituals/000021.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Ghats_bathing/000032.jpg"
+  ],
+  "83d79aa021c472276bafdf271120b5a7eb119589d2fe5aa7c696859786f3a355": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000040.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000025.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Idols_immersion/000030.jpg"
+  ],
+  "1f0c511055fb98ec65da0a72dc0b719118ebf238fbb8f4d9842d5666238434c9": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000041.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Ganesh_utsav/000026.jpg"
+  ],
+  "448b5854f1caf72aa262e4a142bf876e26538334ac2bd17ce58508ed0cb0fee7": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000043.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000037.jpg"
+  ],
+  "4fc048d002c31ae40a39fce3116b3e6dbff24fbff8c7724e8a960f836ac99f35": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000001.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000001.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_immersion/000001.png"
+  ],
+  "acb5550ac0cb97654e748e0405c878facdd77c695eb43e5fc8cbb89f1efc08ac": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000027.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Idols_immersion/000015.jpg"
+  ],
+  "b5732c658a532efe4cd2a62e6845903c9647eabad6843f4a7a8dae7ddff3db08": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000008.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000008.jpg"
+  ],
+  "89e4c1c23ea10fd812e407721ffa66f521111ce52b421b6fda520ad5ad38e19a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000045.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000041.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Urban_Festivals_Ganesh_utsav/000043.jpg"
+  ],
+  "f7f5f7a3b9a0658b6b788907b0403e03c1dfab86982b3f48989e629fad7182e5": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000005.jpg"
+  ],
+  "6d3c0194986fd52acea1bb205bd3e3df48d8711d5a2df87f658aaacc703bad3a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000016.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000015.jpg"
+  ],
+  "d5a5f180597ec340132d1229d8befa97f077e12b033aab103bcc4a6d7c7cece1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000003.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000003.jpg"
+  ],
+  "d827b204942d40e23af77835d7039b94510519b17be808093e4917d36faf4ca2": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000006.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000003.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Crowds_marriage_baraat/000003.jpg"
+  ],
+  "d24e7fa52595dbb4147887fc3e8a060551679c0aa2ee7fbd827f9aa9ebb0b72e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_political/000036.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_rallies/000012.jpg"
+  ],
+  "e46cf301e511985e15558da86b339830c34e1e0e6fadf7990d7318f9484d7225": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_political/000050.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_rallies/000034.jpg"
+  ],
+  "7aebbddf8be16f7039a4303d0c2c479233ef7f8c878d681a9c2de369b720d1e5": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_political/000028.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_rallies/000018.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_rallies/000008.jpg"
+  ],
+  "d941dc59c663e4c8632c1dea3fd87868ba6691713e8bd711eb6b09175ad7cc1f": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_havan/000033.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_havan/000047.jpg"
+  ],
+  "fcf590c11a5d8b833dfd1d42176db66d56c7a32d2ad230604a66a7f79fbff946": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Ganesh_utsav/000029.jpg"
+  ],
+  "d867cb785a5bd06a3ab7e3d3707f05edb6d2dbde104e763507dec55b8f0277cd": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000036.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Ganesh_utsav/000028.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Idols_immersion/000035.jpg"
+  ],
+  "5e8f2c7a12e65ec17ad45e0f261635098b3c28e4b706ade3f1cbb510d088845a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_snan/000041.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Ghats_bathing/000045.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Ghats_bathing/000014.jpg"
+  ],
+  "e7a35391389de0cc94cff8c8c01eb59ae615a475441a77c08e21811cd61ec051": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_snan/000004.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Ghats_bathing/000005.jpg"
+  ],
+  "f2b974fb35e3ca92b717bf34048bc87ca05651a4a97c5e315d27b7fa1f53a5c9": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_iron/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_iron/000001.jpg"
+  ],
+  "628e5556dd445b2b6f28253580e7ce6ee51817c630a567720ee1cc2aa3ab4060": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000012.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Law_Police_barricading/000011.jpg"
+  ],
+  "df271bbecd17ffe8ebdc1581dfcb5ba008b29c1df83a3e36d9e65368504f459d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Bridges_under_construction/000024.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Roads_under_construction/000038.jpg"
+  ],
+  "dbc236d02e2cd723c107bb748d2f7e4748c787eb08da5c66c9ec6c619fa7ea23": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Footpaths_broken/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Footpaths_encroached/000012.jpg"
+  ],
+  "72f945715f17a75004a458854b63a3f1fb80aba12b44204658b182d453a76a9a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Hoardings/000045.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_banners/000014.jpg"
+  ],
+  "3aa168caa3b4ed8a9935962d5794c73f8da2ea864787bc08de41225d84597295": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Hoardings/000046.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_banners/000015.jpg"
+  ],
+  "d8e5ea0f6ce7f9f07af3e3db3b8c60d030947e13215a21d42eb6c6fa5375d7a8": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Hoardings/000047.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_banners/000017.jpg"
+  ],
+  "5e2c503a1828ad4dc9233314b3ce39de78557bc7ec52a8d0d7fa4f22dc861441": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Hoardings/000042.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_banners/000012.jpg"
+  ],
+  "683be624a78dd656beed944af45dd873a49437acc85c28835b39813a7038bec0": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Hoardings/000048.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_banners/000018.png"
+  ],
+  "073c669045fc50afd478f6dfe5fdb52a63e2ebcf1aaf38ed62e0f782401dcb1e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Pandals_cultural/000023.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Durga_puja/000025.jpg"
+  ],
+  "a1ed1461312763eb9d5fbfa9fab0f1e4e2a7bafcc0834fb4222c2b0f62a114c5": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Pandals_cultural/000002.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Pandals_religious/000003.jpg"
+  ],
+  "c42238597e107066d60fe98c048f029f9a5fa90a5b0e72c7f3cace4b803eff27": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Pandals_political/000049.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Special_chariot/000050.jpg"
+  ],
+  "f20f465dbb51673acebbd5a7f420837e821ec4d844802041f9a3c7dc0538dafc": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Roads_broken/000048.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Roads_broken/000013.jpg"
+  ],
+  "c6ff168c10efbafd323fefe72d13084c96a35dfbb6ad664ea08cdce6e1819f90": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Roads_broken/000006.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Roads_broken/000016.png"
+  ],
+  "5403a0e726e39b7bbf9910c94f2a2b3710bda508611af06eee9407a8539e950f": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_rallies/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_rallies/000004.jpg"
+  ],
+  "9b2808f825eabd9bc49956bda7cc05415a58e42d8b84cd7cb8ff2bf97c585603": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Diwali/000049.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Festivals_Diwali/000013.jpg"
+  ],
+  "fe63ea02a9d7be5445be916bc151f8fc48e1c6568f4b73bca671a6d0df985168": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Recreation_kites/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Recreation_kites/000017.jpg"
+  ],
+  "cf79839b3e293fce9dea4094ff71ff0491aefd2c564d716d39383028362ae06c": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Street_art_graffiti/000011.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Street_art_graffiti/000017.png"
+  ],
+  "d9d57ccbb9104f9f55da66901b0f618075f851f9ec2bbbcd177ba93c77b31ce1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Street_art_graffiti/000017.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Street_art_murals/000010.jpg"
+  ],
+  "fe108bd577300a43fbd949351dfdb2fa005c0f00bf9f43c0f682aac7e0d6f784": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Animal_carts_camel/000034.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Animal_carts_camel/000047.jpg"
+  ],
+  "addeaeae969b0c28b58a1e7ed9d49f40cab127f52b8684f6baf6a6d78298d3d6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Auto_rickshaw_passenger/000024.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Auto_rickshaw_shared/000009.jpg"
+  ],
+  "02e9a524848ef4c0be24a9cdfacb086d77c03a6231c33ab7870f9f7456d76278": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Auto_rickshaw_passenger/000040.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Auto_rickshaw_shared/000011.png"
+  ],
+  "9aec2282e795e7d891f3b68fb8179a67a89c72d4bfcf44e697a99be176fc44cd": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Auto_rickshaw_passenger/000006.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Auto_rickshaw_shared/000036.jpg"
+  ],
+  "52943c48a14677a20715b81d93b96ea508da2ca7885549cbae4deba1f2c95d33": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Bicycles_delivery/000019.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Two_wheelers_delivery/000026.png"
+  ],
+  "5eb011566af90aaf12f1361f1b8e8a4b978eaec6fa5205f01a57c163a7ee9325": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Bicycles_delivery/000018.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Two_wheelers_delivery/000027.png"
+  ],
+  "a96ba94385c6be3e9e78ab6d55587329d5d4f9076dd081dab7d2b4f527fec1c4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Buses_city/000002.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Buses_tourist/000029.jpg"
+  ],
+  "fcbe0f4a63bdea987593abab0d6f6f9cdac2dad5b403e6570e788a8e1d1a5257": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Buses_school/000019.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_school/000029.png"
+  ],
+  "d01255cb4221c3b39388b6009ff84a5ba0d416cb351cfb4997972a554ddc52d8": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_ride_hailing/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_taxi/000024.jpg"
+  ],
+  "1e689586d172f34a1413fb1d87444081e33987d106531534b71b02b4d81d530f": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_ride_hailing/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_taxi/000049.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Vehicles_Cars_ride_hailing/000021.jpg"
+  ],
+  "28661c3777f1280b677307361ed8532c912d3cb7479e1e26616e6715fc5fb582": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_vip_police/000027.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_police/000030.jpg"
+  ],
+  "6b5517509c9b9711cf0e017a47e38f9efc562e107e2a9b1f7e94bdb35efd25fc": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_vip_police/000020.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_police/000027.jpg"
+  ],
+  "1d53ad2524fc021db258e71912208d1d4ad77e639f8d5d3212505b3c233530f3": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_vip_police/000048.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_police/000028.jpg"
+  ],
+  "94521215fbe2063818f12d7cb447b685e510911b5ed965355d74234a8aff2ef1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_vip_police/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_police/000004.jpg"
+  ],
+  "923d62d2b528545e63512e365ace99b97d2d12c8e3142207a4c220a7bc49604e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_vip_police/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_police/000002.jpg"
+  ],
+  "87ab08ec98bede9e5ab716701d2797579a3cf259b26326f5cbf8f06e98346a62": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Handcarts_food/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Handcarts_goods/000011.jpg"
+  ],
+  "f04bbd282e7eb78bbb681cffb0254565ef644d44f24006c218faab5f32f28b31": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Handcarts_goods/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Handcarts_scrap/000009.jpg"
+  ],
+  "4e15cc6a4bcba07d4a41fb9dfee14867447feb6d82707f713f58a5b355e2d442": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_construction_debris/000024.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Garbage_trucks_private/000033.jpg"
+  ],
+  "532f31b0e7fbea037a5ce860e7a1cf6b80e5b7dc6d6b7d65ac716c3d53b4ea1a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_goods/000028.jpeg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_goods/000013.jpeg"
+  ],
+  "e049eecd2204e05c2ffba1b08b7d8182a209745a35cbecaa956c0cb131bd56e8": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_ambulance/000004.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_ambulance/000016.jpg"
+  ],
+  "93bb71f82fcfef1f978bd9a2333472d7061fa41d66a0f502a2e79e5d65da3d98": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_courier/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_courier/000002.jpg"
+  ],
+  "e464e16e94ee8ba2ae43050c0a1a09cf6272dcdc26ed6dd13d8e2865eb0f90fc": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Garbage_trucks_municipal/000002.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Garbage_trucks_private/000047.jpg"
+  ],
+  "40172075162ccc076c1114a7870c71f35cad76226a5547b9c4ff2ef0313799f6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Sweepers_mechanized/000025.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Sweepers_mechanized/000031.png"
+  ],
+  "596f15a717539d9ec877e615f0b24174b2520aa96bcb79822f6ab1147513732a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_metal/000015.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_scrap/000033.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Waste_Waste_pickers_plastic/000013.jpg"
+  ],
+  "3d4d1df4b525c9794b22a921cbac3ca55f75d1b69e583cd27ec09fb72fd4258b": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_metal/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000011.jpg"
+  ],
+  "dac91d533fddbc1cc0087a01a22fa84ab217fb4cdaa403624c39b2310f793124": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000008.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_scrap/000004.jpg"
+  ],
+  "eb6a6e7571fde81ae6a2122947dacd8829b93e23e9d6c323b2f886e9ac056c91": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Hawkers_fruits/000024.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Hawkers_fruits/000043.jpg"
+  ],
+  "bee1e75be32e81a9230b92653e0f35840c50234d32077da23ecf55e819c704b5": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Shops_general/000014.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Shops_food/000009.jpg"
+  ],
+  "0cb08c8b8de6bbb7f15bac67206af3abf1af1abcf5b387f445298d4779721098": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Shops_food/000004.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Shops_general/000013.jpg"
+  ],
+  "aea043aead92eb81d383e44a93cfc06d22f12fe8b6dbab0565f053d106c1228e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_barber/000015.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Workers_barber/000003.jpg"
+  ],
+  "2411b14decc6ba87fa76451a33755abeaeed70c20dbc4757411b8f84c269b86a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Workers_ragpicker/000036.jpg"
+  ],
+  "69d219cfb78a6526f616587606cba5c645d63c01f172e5c5f4576324c595fc60": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000021.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Workers_ragpicker/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Waste_Waste_pickers_plastic/000020.jpg"
+  ],
+  "a2657d4e2a6a5ef27b417be80c12560a6c1c45a03a2001fbb1c1d4b427fc254e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000003.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Workers_ragpicker/000002.png"
+  ],
+  "b18a72f6c0741504c4a0b40286a87c8746b2efb0e6c2ddc40d9bb4f7d651f984": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Animals_stray_monkeys/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Animals_stray_monkeys/000001.jpg"
+  ],
+  "c43a518d5103e4dd3e86821ec3b10a89e8d1e3d2bf4dc7d263bb980ab797663f": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_dumping/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Land_dumping/000021.jpg"
+  ],
+  "1bb2fa8e7d770ea57a6487b12ebd51a7691fbb2ab97d3ff2b9cbabec37e0efb7": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Animals_domestic_goats/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Land_grazing/000030.jpg"
+  ],
+  "0c2eab0a1c3712f28f9c1d24b979338fcb137c782c71c9923f1b6073066b5590": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_polluted/000001.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_River_normal/000035.png"
+  ],
+  "ba795d9f7d6e30dfb20843447daeee6cb5f4b1ce50c7e65e7504816f77e58ef6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_normal/000025.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_River_polluted/000014.jpg"
+  ],
+  "42583f8f9096a79ecd562c8a8f9f15489ecbfb5caa9e6c0eebb1a0bc9701b18b": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_excavation/000019.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Sand_mining_excavation/000027.jpg"
+  ],
+  "7a02c89facbc8692f02c5394b0b6700dad412d1a4ce59d2a0fbf1047355732f9": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_excavation/000025.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Sand_mining_excavation/000029.jpg"
+  ],
+  "2d4accb95bf417ee140149a95ce2672a08eac985dbab12ae7e05ab9e1d091d5a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_sand_mining/000030.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Sand_mining_trucks/000027.jpg"
+  ],
+  "44c353ead9d95e2bef89886970baeb496a84fc763944e00e919519ce797607bb": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_sand_mining/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Sand_mining_trucks/000012.jpg"
+  ],
+  "4297d1938cc4d9cf86fb3ecec16177c619baa7f5e218c3cc07715524c8b58cca": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_plastics/000017.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Waste_in_water_plastics/000013.png"
+  ],
+  "b2c5d18d65274ec16097b5608f98098b806d8d7b18aad9b58399332ab36758e1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_River_polluted/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Environment_Waste_in_water_plastics/000002.jpg"
+  ],
+  "ca0ca270bf799982647cdfa94d9076c7fc8e2861c8ced0b297efbcd816975320": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_barricades/000031.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Crowd_control_barricades/000042.png"
+  ],
+  "3a6d31ae8cf1bc78de7c70630a5b0d5d99699ba2b3b4049fb7278131299eb361": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Crowd_control_barricades/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Barricades_iron/000002.jpg"
+  ],
+  "8731dafca3b9feee93b1201fcac9f3e33ecc316ede52e757a0f1297dc6479bcb": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Crowd_control_lathi/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Crowd_control_lathi/000002.jpg"
+  ],
+  "41d77afb0d9449bf745312ca59f7c89153ca0086bd54df2dd5d591633bc78174": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_fighting/000021.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Disorderly_brawls/000002.png"
+  ],
+  "3b54927d33ff065d42f6337f8f4a3db8e9c42849552ee6c4494640a58a4af9e4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Police_barricading/000035.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Barricades_police/000036.png"
+  ],
+  "33e4232eb94afe2549877857128c85bad3a4cad41d17bbcdf8ee2264f5052476": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000048.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Police_barricading/000049.png"
+  ],
+  "bda48466e1af1dace7fc4745194897383fe17bb12f1b63c39f779fa6c13fd02d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Police_barricading/000010.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Barricades_police/000010.jpg"
+  ],
+  "592532fdee70b1c4975b7043d287a931360964b5cce8f096c9117c736dbc836b": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_traffic/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Police_traffic/000018.jpg"
+  ],
+  "4342f335585880de63721ccbd4e258f6ff1fdc8e92b32563891c3b6482ea3942": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_traffic/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Law_Police_traffic/000016.jpg"
+  ],
+  "36a4af0352f0742c5736747f81216d49801d24fcb03c54fec8439850535f4b07": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000028.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Crowds_marriage_baraat/000021.jpg"
+  ],
+  "eb533f91442d8ded7e9d3b88833d5a49b7969788d4e9bb4ae0b64a406c404619": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_marriage/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Crowds_marriage_baraat/000014.jpg"
+  ],
+  "e4e6519c986c7e96e5063c25f8257a10f11a48ed8b9b1c616ed352beafb1f3ec": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_religious/000002.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Crowds_procession/000002.jpg"
+  ],
+  "922f2bc62690d93f7c1002e48dd760a79c4c227e99bec94800fc608979031ff1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Informal_presence_hawkers/000029.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Informal_presence_hawkers/000043.jpg"
+  ],
+  "6f16263e523c152515eee14b73240cd39b48de65a4902958b0cf8f46b29d4aa1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Hawkers_clothes/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Informal_presence_hawkers/000001.jpg"
+  ],
+  "6d97ea666a6b3845e4fe233810275ffdf566342eaeab2945864de24b0466c425": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_eating/000028.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Pedestrians_eating/000030.jpg"
+  ],
+  "0bf79d067695521ab401be6350e71a934c1f32d9ab58295217b1639ed6a9d0ed": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_eating/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Pedestrians_eating/000011.jpg"
+  ],
+  "08a8dec1e84356456166bc24c76cb8d071c86383d321d7a96ac318d056e163e6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Pedestrians_sitting/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Pedestrians_walking/000001.jpg"
+  ],
+  "46f0904e46b0a89ea9faaf75dac5e77751d8dba58687a4b17cab95af5c9f2276": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000030.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_arti/000030.png"
+  ],
+  "af03bb7dc4d4410d64596e74327a69d4744436fc052014250013ff3817b00234": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000001.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_arti/000001.png"
+  ],
+  "b015c99313b6b76af5b2b4bee1bacc0e6565f50011cf5b54d6e75ccf23c7d411": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_arti/000028.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_arti/000028.jpg"
+  ],
+  "0de0ee36c1877a7e3b9e69ae5f683f15b055304438e9f80ed8d3117e8a1cffd6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Ghats_bathing/000040.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_bathing/000022.jpg"
+  ],
+  "314530eb846e24e327b0d17e47b77bb55bdca21b74c11fbc5e8f7121cdd40b41": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_fighting/000025.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_fighting/000006.png"
+  ],
+  "4e905f662bd6be7b58e05252c049821cf5205b2cb3d221081ae29f7a97b282bb": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_immersion/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Festivals_Ganesh_utsav/000010.jpg"
+  ],
+  "3c9ead4961c384743fbd550333d46e23a4ca9113fe1286877051f4a50cdccb75": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_immersion/000035.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_immersion/000034.png"
+  ],
+  "f3840cab315c83b93b586d36e5ba96573b875f02ab32130354a5cfd4f518df69": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000026.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_immersion/000007.png"
+  ],
+  "0405bbb468d83b36c7cc4fe2a144edd7beb5c9326bf6232a1101bed56a6e9e0e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/People_Special_actions_immersion/000017.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_immersion/000043.jpg"
+  ],
+  "7b0b404cd38d83d8332d1bdea2523c5bcbdb57073ffedfcb590b8bea3be7c3d4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Waste_in_water_idols/000038.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Idols_floating/000009.jpg"
+  ],
+  "8ed954174de3a3ad428eb49fce30d170bc07c2bcfd702f091ba0d70c0599f303": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000038.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Idols_floating/000046.jpg"
+  ],
+  "6ae8cc5b30893c918f194a9ec3ccadd01dfece54a13060a1a54731f8b4b63d7f": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000040.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Idols_immersion/000046.jpg"
+  ],
+  "38b660cb1e9ab88b1dc601b281518bc4743f8be8c5be43a742b2f7d4012b9b1d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Idols_immersion/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_immersion/000007.jpg"
+  ],
+  "7e8d7a48553bbfb8558e78febade5d4a06e452520b5b7366aefc51cf69ed1597": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000008.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Processions_marriage/000008.jpg"
+  ],
+  "d6419f554523d6b6c824e57c7cfd404689687a8069b17c5eeb37ff86372c9464": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Processions_marriage/000009.jpg"
+  ],
+  "6f25bc8d68c617b28d411ee5bdc28495532f772743a3a9090d1e185c2d22a4b1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000011.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Processions_marriage/000010.jpg"
+  ],
+  "fa7f3ba9d425ccaf1737ef3be26a24577bbf13f9faa8e58296fd5bd3f53e9fad": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000003.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Processions_marriage/000003.png"
+  ],
+  "deb7c90e7f9aefee3e8a2136f7b7fd11d9a2278b5698728f3127cf2ff2841e37": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_rallies/000013.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Processions_political/000020.png"
+  ],
+  "8c7b502d61352409a251d86fa2fe13d8622b8805699c975721317327b852974f": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_procession/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Processions_religious/000007.jpg"
+  ],
+  "0b9bbc3f6fcf4c9d9f94e99960c41941d9465ecd263914722f03518a37d615cf": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_procession/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Processions_religious/000005.jpg"
+  ],
+  "095242db606e9e224eff881dbfcb95d058c400fc36e0e9e846c353eca9c20e26": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000005.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_arti/000007.jpg"
+  ],
+  "e54290b2c3ffcd31c8808be4d0081a9fbb6288c5e964f1bf488d1cf1fc31d1f6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_havan/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_havan/000017.jpg"
+  ],
+  "6d59be191abd9ec923b0e3c5e175e73cf3fbfb7cd2b1b51aeffb094a5152737b": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000019.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_immersion/000047.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Environment_Waste_in_water_idols/000029.jpg"
+  ],
+  "6e7487bfbc77de1094b8c23e32bc160f2e102537f0dc1a4de4829a604add6c41": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000021.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Barricades_police/000020.jpg"
+  ],
+  "f01af19ebe472788041dc2e97ccf6055cbf95266a781b899610b9bbfa5dda8cc": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000006.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Barricades_police/000006.jpg"
+  ],
+  "889fac535d65146cd4b43f6808f7f74889a8275bf1d060e18e05643770de31ec": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000004.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Barricades_police/000004.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Barricades_police/000001.png"
+  ],
+  "630f2770c35dd72d44d593551e494f3c38863d250ae9d7e2b5e9d262cbc1be20": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Roads_encroached/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Footpaths_encroached/000034.jpg"
+  ],
+  "428ad7110f5cf39404c7c2a3b2118829cfb76fe04a1af5e3b442d37ece0b8973": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_bathing/000048.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Ghats_bathing/000049.jpg"
+  ],
+  "58fbf452e5ce664149ff753735af1ecee54850fe64a9ef2da31ca9b9a33e6315": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Hoardings/000034.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Election_banners/000005.jpg"
+  ],
+  "6bc52013581d676822ad95053565c8f99c1f4da108e52e7b7be547e164649a37": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Hoardings/000035.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Election_banners/000006.jpg"
+  ],
+  "7f1a3e7ab93cb32ec8f829f58952f74f5bfb376f422087ee0c957eb91ca088ca": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_banners/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Hoardings/000040.jpg"
+  ],
+  "5c51eceb3e25c2bc158dcb53f7b0d6d53dd1bb0ec4eb955648ebbc5fd2931fb4": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Roadside_stalls/000019.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Roads_encroached/000043.jpg"
+  ],
+  "66b33c431c46911790efd2069a13a5c0d42bf54b20e0a19e948dc93ddd52448c": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_political/000049.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Election_rallies/000035.jpg"
+  ],
+  "e41319084f2d92f748aae1de3d00fd3c80672e52f470d41f5c79f1245f050118": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_protest/000017.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Election_rallies/000010.jpg"
+  ],
+  "846635be85224f515a1e8e59444d5d06106596fb9c0caf8c39f3f93dae11f483": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Pandals_cultural/000015.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Festivals_Durga_puja/000006.jpg"
+  ],
+  "82fbf4568d753c895f0e57f0a33cdd001bfd873e6cf856186165fc450a7b1412": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_floating/000033.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Festivals_Ganesh_utsav/000044.jpg"
+  ],
+  "e51ca11f0404265f02962ab7302cbd03ecf299677815fdef7f44af0307d33653": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Markets_night_bazaars/000042.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Markets_night_bazaars/000023.jpg"
+  ],
+  "72e0b3f78b465d92838fec29f17461b75405ef8b84c3638579e3ecc1953d06ac": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Markets_night_bazaars/000006.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Urban_Markets_night_bazaars/000038.png"
+  ],
+  "73c77b08f6ff4784df736f88ab2f92cbab80415234e61c20c75e2e538ccc9ca5": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Auto_rickshaw_passenger/000025.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Auto_rickshaw_shared/000004.jpg"
+  ],
+  "5cb64402b06b1a10ec75926dd103dd12eb0d4966dd020cd231791dbe602ed030": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Auto_rickshaw_shared/000016.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Auto_rickshaw_passenger/000023.jpg"
+  ],
+  "d6a25192ec92b63c838240f2e8a40c429c346fdfa701ff09406caaef68de4f22": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_school/000020.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Buses_school/000007.png"
+  ],
+  "a0d0606df52da47892b13a6b9876afd34c6eddb1afd542b47f9ee2d698bb8bf6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_ride_hailing/000019.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Cars_taxi/000022.jpg"
+  ],
+  "6a6afb862ba4d7482707b5771337ee19e5f8c11791e8b4a95554631672fa153f": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Cars_vip_police/000037.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Vans_police/000029.jpg"
+  ],
+  "392d4b52066e877401c7e9b7894c18c8d8b80a182abb1a2f8fc721e289721dde": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Handcarts_goods/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Handcarts_scrap/000011.jpg"
+  ],
+  "1b525edc060a225460c514812a92958a0cd99d31adf8ae0eafd6427c9f092483": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_overloaded/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Trucks_overloaded/000007.jpg"
+  ],
+  "8d67981d0f8ec9082efe9c8e767bdab9cc18aa2209b7ac2bc021ff7c6de661a3": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000003.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Trucks_sand_mining/000009.jpg"
+  ],
+  "299676ab051426816a4a13d10f8e1e248fc5ffb55f1d37389e78433955288029": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Trucks_sand_mining/000012.jpg"
+  ],
+  "2b0a576ba73dd7394eec61dc1cca62bc03971f97708972cfd9b4b1480e985e3d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Informal_presence_workers_delivery/000024.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Two_wheelers_delivery/000002.jpg"
+  ],
+  "251501fba428fa91a4960623014e47b78b3e363bb77397d2917fe6f43dbe1bd6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_vip_police/000025.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Vans_police/000042.png"
+  ],
+  "e69eff7f3731c87fb2f2d094c5f37dc8d964eae3ebd8354064885413f5c4e7fc": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Buses_school/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Vehicles_Vans_school/000013.jpg"
+  ],
+  "9aaa0a02c931bf22ba56a204fed718226a5effafe808ea66fc5004f965d7f9d9": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_construction_debris/000049.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Waste_Garbage_trucks_private/000019.jpg"
+  ],
+  "0d1d89637c78d76ae6eafb7b8b7f000f6923a325fe9280d6c0ae5fb0fa115d63": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Sweepers_mechanized/000026.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Waste_Sweepers_mechanized/000043.jpg"
+  ],
+  "53a2af1f5b23bdb518a32c2109049a5842b78bec8796161f85301fed2aeda150": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000049.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Waste_Waste_pickers_plastic/000049.png"
+  ],
+  "0b9723941959f687a96ece6ab2acb873ccc1ad516ab5e2a72050c18b6d5087bc": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000031.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Waste_Waste_pickers_plastic/000028.jpg"
+  ],
+  "187f4cda1bda6703ab7cb83bc92593b620676a2f5ca63c3e7afa931317f1aa1e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Waste_pickers_plastic/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Waste_Waste_pickers_scrap/000001.jpg"
+  ],
+  "fa7d3605c0838f3dcb08eb0b0d55d6adf169ead0081c7e8ac26f986b8530a147": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Shops_food/000016.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Commerce_Shops_general/000046.jpg"
+  ],
+  "2cedf9022ce5ddd7b7bdb21baa1fe75a77ab57dfcade87d55b9e3519f3b0ddba": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Land_grazing/000035.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Environment_Animals_domestic_goats/000031.jpg"
+  ],
+  "cb00b27daa6588cc5dced94a1abcd056ba1ede84c5b63dd0b294626ff308097c": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000035.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Environment_Waste_in_water_idols/000005.jpg"
+  ],
+  "06e84037b3ccf3ec973fa40359f5e44c651b450a43593142e778d86528917631": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Barricades_police/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Law_Police_barricading/000009.jpg"
+  ],
+  "39fc6f0bdd50192b7dcc7df35bfd12feb976e343ab381e10c75425679616a268": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_traffic/000017.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Law_Police_traffic/000024.jpg"
+  ],
+  "cf141249dfd66878b40e225232f42b7e29e19d6a697140c29440d0e445cf9cfe": [
+    "/Users/abhishekx/Indian_Urban_Dataset/test/People_Crowds_marriage_baraat/000017.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Processions_marriage/000013.jpg"
+  ],
+  "98dea10c7763ed06a7af921140c1141326cf5f45fdcf4d9d324427dcbcb16c72": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Commerce_Hawkers_fruits/000009.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/People_Informal_presence_hawkers/000008.jpg"
+  ],
+  "69a3c693de268ca8d518f116bccd8d041c0d215d714e6ed683708e5ed9956e73": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Informal_presence_workers_delivery/000027.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/People_Informal_presence_workers_delivery/000017.jpg"
+  ],
+  "aec161df6be38024433959c48161aae1e9cfc8f6f77304fcdb3a613efd3a0649": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_arti/000034.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/People_Special_actions_arti/000033.jpg"
+  ],
+  "a72db25fc485b550966e6e7b3a141db2769ffa46fa1dc4716fe559695ed8078a": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Religious_Rituals_arti/000037.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/People_Special_actions_arti/000035.jpg"
+  ],
+  "94d72d569c981157e341011a45c36c29d2d28c86471717459fe9b4730604cc18": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Disorderly_brawls/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/People_Special_actions_fighting/000026.jpg"
+  ],
+  "456de24dabe31439e66a58621390ec6d6ebc78455fda7f4381f0a5e49e92e3be": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000023.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/People_Special_actions_immersion/000021.jpg"
+  ],
+  "581a35183c9a89557950ca37cafdb648ea3ae7181bf60850208d413fc01f01cf": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Rituals_immersion/000035.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Idols_immersion/000042.jpg"
+  ],
+  "9dfac7894bd48c7618771e1a4e7dd90e6042fb1d929310742e6c1af4fb290e9d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_marriage_baraat/000050.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Processions_marriage/000047.png"
+  ],
+  "ddf5860571d812db7d47548f0fa0adcc9f55c4ac923826daa9b9ae71e4a59842": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Crowds_procession/000012.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Processions_religious/000008.png"
+  ],
+  "5c7cbbe9cd1cf7acba1591c1df875c49bf2efc0e452bc3ee4540c3e2e95f3fee": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_arti/000036.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Rituals_arti/000026.jpg"
+  ],
+  "87b2c3a34845112e07194d985faa5582905084989f359ca3ff49f57eeeb743da": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Idols_immersion/000029.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Rituals_immersion/000024.jpg"
+  ],
+  "4d29d51e85608a28ec39eefc7c93bd1ff53ed2d654e586536d541657f704f4f6": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/People_Special_actions_immersion/000025.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Religious_Rituals_immersion/000028.png"
+  ],
+  "35405312795d637a200fc5b639b95686f7197ebee939b6e153d0de0320c46227": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Law_Police_barricading/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Structures_Barricades_police/000021.jpg"
+  ],
+  "3ff1557d52ea22000df7e7ea01710588686f4810e7e0afed84948e72d4624d03": [
+    "/Users/abhishekx/Indian_Urban_Dataset/val/Structures_Roads_broken/000001.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Structures_Roads_broken/000004.jpg"
+  ],
+  "37f44faf958a26bc84aad55e06193e6d5cfb9a6b4e8df931b9f8dd61aa55f8bd": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Structures_Water_tanks/000002.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Structures_Water_tanks/000025.png"
+  ],
+  "55804db2113cfc01a2aa00df076717bcc0d7d753b5a9f5d722e138d14218c468": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Religious_Processions_political/000046.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Urban_Election_rallies/000033.png"
+  ],
+  "b480c27df1a7843a72560c8aeffe99879313a37671e74e0df0b3f41e4b048f77": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Urban_Election_rallies/000003.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Urban_Election_rallies/000006.jpg"
+  ],
+  "410f49669e30e6eed76cbce4be870439b91aa981b7ec1262dab04f8ced922c30": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Auto_rickshaw_shared/000032.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Vehicles_Auto_rickshaw_passenger/000045.jpg"
+  ],
+  "b89c5f3860cfddb10ced33b6159c764040e2dae31516d0da93ba6579627646e5": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Vans_police/000041.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Vehicles_Cars_vip_police/000035.jpg"
+  ],
+  "4a294eb7cfbb92d310210912df3b2d9c7f7af0551db848b427c08bd565be8a1d": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Trucks_overloaded/000022.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Vehicles_Trucks_overloaded/000008.jpg"
+  ],
+  "1c76258ee7da4b8a1794b9130815650cdff9469a42b4a968c167d6d83f520b42": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Environment_Sand_mining_trucks/000007.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Vehicles_Trucks_sand_mining/000005.jpg"
+  ],
+  "1fe0ffca3cd909ca538487e4f3ffedee04bc50dd804d05c875cacc927c034af1": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Vehicles_Cars_vip_police/000045.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Vehicles_Vans_police/000023.jpg"
+  ],
+  "4817cf714cd1cf5a732a626ea7051178c081cb8ce15c66ce85eac3bbdb8e7fb2": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Waste_Sweepers_mechanized/000008.png",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Waste_Sweepers_mechanized/000007.png"
+  ],
+  "8f7297cf03330919b11bb256fd1cf50b3a5544a1ba3148625cd26bc222a8d67e": [
+    "/Users/abhishekx/Indian_Urban_Dataset/train/Commerce_Workers_ragpicker/000029.jpg",
+    "/Users/abhishekx/Indian_Urban_Dataset/test/Waste_Waste_pickers_plastic/000025.jpg"
+  ]
+}

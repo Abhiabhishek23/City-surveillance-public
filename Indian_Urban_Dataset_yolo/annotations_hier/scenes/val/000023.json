@@ -1,0 +1,18 @@
+{
+  "image": "000023.png",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.51318359375
+    },
+    {
+      "scene": "aarti",
+      "score": 0.151611328125
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.1402587890625
+    }
+  ],
+  "detections": []
+}

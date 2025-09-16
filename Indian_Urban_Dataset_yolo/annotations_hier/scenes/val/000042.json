@@ -1,0 +1,47 @@
+{
+  "image": "000042.png",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.984375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        0,
+        70,
+        249,
+        284
+      ],
+      "yolo_label": "boat",
+      "yolo_conf": 0.6424015760421753,
+      "mapped_tax": "River/Activities/boating",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        851,
+        60,
+        960,
+        113
+      ],
+      "yolo_label": "boat",
+      "yolo_conf": 0.31399789452552795,
+      "mapped_tax": "River/Activities/boating",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        236,
+        77,
+        462,
+        155
+      ],
+      "yolo_label": "boat",
+      "yolo_conf": 0.2659841477870941,
+      "mapped_tax": "River/Activities/boating",
+      "mapping_score": 0.99
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "image": "000021.png",
+  "scenes": [
+    {
+      "scene": "protest",
+      "score": 0.646484375
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.216552734375
+    },
+    {
+      "scene": "religious procession",
+      "score": 0.05389404296875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        394,
+        234,
+        456,
+        311
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.9031896591186523,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        0,
+        145,
+        138,
+        248
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.6361231207847595,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        0,
+        68,
+        80,
+        149
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.414460152387619,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        259,
+        60,
+        323,
+        154
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.41425764560699463,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

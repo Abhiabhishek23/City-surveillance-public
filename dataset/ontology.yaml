@@ -1,0 +1,133 @@
+# Ontology mapping from rich attributes to 5 top classes# Hierarchical ontology for Encroachment dataset (top-level + subclasses)
+
+# Used by tools/ontology_mapper.py to generate top-class YOLO labels# This file defines attributes and mapping rules to flatten into 5 YOLO classes.
+
+
+
+class_ids:version: 1
+
+  Permanent_Legal: 0
+
+  Permanent_Illegal: 1top_level_classes:
+
+  Temporary_Legal: 2  - Permanent_Legal
+
+  Temporary_Illegal: 3  - Permanent_Illegal
+
+  Natural_Area: 4  - Temporary_Legal
+
+  - Temporary_Illegal
+
+# Rules are evaluated in order; first match wins  - Natural_Area
+
+mapping_rules:
+
+  # Permanent structures in protected zones without permit -> Permanent_Illegalattributes:
+
+  - when:  structure_type: [building, shop, wall, shrine, ghat_infra, stall, tent, pandal, stage, vendor_cart, parking, barricade, crowd_infra, other]
+
+      permanence: [permanent]  permanence: [permanent, temporary]
+
+      zone: [river_buffer, protected, ghat_steps]  permit_status: [approved, unapproved, unknown]
+
+      permit_status: [unapproved, unknown]  zone: [river_buffer, road_footpath, vending_zone, festival_zone, none]
+
+    target: Permanent_Illegal  area_type: [natural_area, built]
+
+
+
+  # Temporary structures on road/ghat/riverbed without permit -> Temporary_Illegal# Precedence: first matching rule applies
+
+  - when:mapping_rules:
+
+      permanence: [temporary]  - name: Natural area always maps to Natural_Area
+
+      zone: [road_footpath, river_buffer, ghat_steps]    when:
+
+      permit_status: [unapproved, unknown]      area_type: natural_area
+
+    target: Temporary_Illegal    target: Natural_Area
+
+
+
+  # Temporary structures inside festival or vending zones with permit -> Temporary_Legal  - name: Permanent objects in prohibited zones are illegal
+
+  - when:    when:
+
+      permanence: [temporary]      permanence: permanent
+
+      zone: [festival_zone, vending_zone]      zone: [river_buffer, road_footpath]
+
+      permit_status: [approved]    target: Permanent_Illegal
+
+    target: Temporary_Legal
+
+  - name: Temporary objects in prohibited zones are illegal (unless festival/vending and permitted)
+
+  # Permanent structures with permit outside protected zones -> Permanent_Legal    when:
+
+  - when:      permanence: temporary
+
+      permanence: [permanent]      zone: [river_buffer, road_footpath]
+
+      permit_status: [approved]    target: Temporary_Illegal
+
+    target: Permanent_Legal
+
+  - name: Temporary in festival/vending zones with permit are legal
+
+  # Natural area (explicit)    when:
+
+  - when:      permanence: temporary
+
+      area_type: [natural_area]      zone: [festival_zone, vending_zone]
+
+    target: Natural_Area      permit_status: approved
+
+    target: Temporary_Legal
+
+  # Fallbacks
+
+  - when: {}  - name: Temporary in festival/vending zones without permit → illegal
+
+    target: Temporary_Illegal    when:
+
+      permanence: temporary
+      zone: [festival_zone, vending_zone]
+      permit_status: [unapproved, unknown]
+    target: Temporary_Illegal
+
+  - name: Permanent with unapproved/unknown permit in protected land → illegal
+    when:
+      permanence: permanent
+      permit_status: [unapproved, unknown]
+      zone: [river_buffer]
+    target: Permanent_Illegal
+
+  - name: Permanent with valid permit and outside restricted zones → legal
+    when:
+      permanence: permanent
+      permit_status: approved
+      zone: [festival_zone, vending_zone, none]
+    target: Permanent_Legal
+
+  - name: Fallbacks by permanence (outside all zones, unknown permits)
+    when:
+      permanence: permanent
+    target: Permanent_Legal
+
+  - name: Fallback temporary
+    when:
+      permanence: temporary
+    target: Temporary_Illegal
+
+class_ids:
+  Permanent_Legal: 0
+  Permanent_Illegal: 1
+  Temporary_Legal: 2
+  Temporary_Illegal: 3
+  Natural_Area: 4
+
+notes:
+  - Use these attributes while annotating; the mapper will produce flat YOLO labels following the rules above.
+  - You can extend attributes; just ensure mapping_rules cover new cases or add explicit overrides.

@@ -1,0 +1,31 @@
+{
+  "image": "000035.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.1866455078125
+    },
+    {
+      "scene": "protest",
+      "score": 0.1837158203125
+    },
+    {
+      "scene": "garbage dump",
+      "score": 0.15234375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        584,
+        190,
+        830,
+        357
+      ],
+      "yolo_label": "train",
+      "yolo_conf": 0.33332520723342896,
+      "mapped_tax": "Transport/Vehicles/cart",
+      "mapping_score": 0.08770751953125
+    }
+  ]
+}

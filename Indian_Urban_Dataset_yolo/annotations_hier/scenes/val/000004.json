@@ -1,0 +1,14 @@
+{
+  "image": "000004.png",
+  "scenes": [
+    {
+      "scene": "night bazaar",
+      "score": 0.61181640625
+    },
+    {
+      "scene": "visarjan",
+      "score": 0.2249755859375
+    }
+  ],
+  "detections": []
+}

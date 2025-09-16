@@ -1,0 +1,43 @@
+{
+  "image": "000002.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.5625
+    },
+    {
+      "scene": "wedding procession",
+      "score": 0.2344970703125
+    },
+    {
+      "scene": "visarjan",
+      "score": 0.0863037109375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        6,
+        191,
+        387,
+        419
+      ],
+      "yolo_label": "bicycle",
+      "yolo_conf": 0.881780207157135,
+      "mapped_tax": "Transport/Vehicles/cycle",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        176,
+        2,
+        333,
+        52
+      ],
+      "yolo_label": "umbrella",
+      "yolo_conf": 0.36421117186546326,
+      "mapped_tax": "Structures/Pandals/religious",
+      "mapping_score": 0.254638671875
+    }
+  ]
+}

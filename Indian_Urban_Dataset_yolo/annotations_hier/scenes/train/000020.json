@@ -1,0 +1,55 @@
+{
+  "image": "000020.png",
+  "scenes": [
+    {
+      "scene": "market",
+      "score": 0.265869140625
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.163818359375
+    },
+    {
+      "scene": "arti",
+      "score": 0.15380859375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        10,
+        87,
+        300,
+        205
+      ],
+      "yolo_label": "bus",
+      "yolo_conf": 0.4798617959022522,
+      "mapped_tax": "Transport/Vehicles/bus",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        1,
+        88,
+        300,
+        205
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.29619112610816956,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        76,
+        76,
+        83,
+        112
+      ],
+      "yolo_label": "tie",
+      "yolo_conf": 0.34548434615135193,
+      "mapped_tax": "People/Pedestrians/standing",
+      "mapping_score": 0.068115234375
+    }
+  ]
+}

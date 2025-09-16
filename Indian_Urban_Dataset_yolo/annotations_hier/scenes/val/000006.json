@@ -1,0 +1,18 @@
+{
+  "image": "000006.png",
+  "scenes": [
+    {
+      "scene": "protest",
+      "score": 0.408935546875
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.2403564453125
+    },
+    {
+      "scene": "election rally",
+      "score": 0.08984375
+    }
+  ],
+  "detections": []
+}

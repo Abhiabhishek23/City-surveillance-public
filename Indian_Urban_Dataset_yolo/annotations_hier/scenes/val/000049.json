@@ -1,0 +1,31 @@
+{
+  "image": "000049.png",
+  "scenes": [
+    {
+      "scene": "idol immersion",
+      "score": 0.305419921875
+    },
+    {
+      "scene": "night bazaar",
+      "score": 0.300537109375
+    },
+    {
+      "scene": "Diwali festival",
+      "score": 0.1712646484375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        235,
+        2,
+        574,
+        219
+      ],
+      "yolo_label": "clock",
+      "yolo_conf": 0.6500880122184753,
+      "mapped_tax": "Urban/Festivals/Christmas",
+      "mapping_score": 0.2342529296875
+    }
+  ]
+}

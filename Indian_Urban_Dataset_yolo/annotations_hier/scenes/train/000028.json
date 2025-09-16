@@ -1,0 +1,43 @@
+{
+  "image": "000028.jpg",
+  "scenes": [
+    {
+      "scene": "election rally",
+      "score": 0.29296875
+    },
+    {
+      "scene": "protest",
+      "score": 0.279541015625
+    },
+    {
+      "scene": "religious procession",
+      "score": 0.2144775390625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        342,
+        160,
+        390,
+        229
+      ],
+      "yolo_label": "bicycle",
+      "yolo_conf": 0.3126804828643799,
+      "mapped_tax": "Transport/Vehicles/cycle",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        258,
+        150,
+        283,
+        171
+      ],
+      "yolo_label": "handbag",
+      "yolo_conf": 0.25078749656677246,
+      "mapped_tax": "Waste/Garbage_bins/normal",
+      "mapping_score": 0.11016845703125
+    }
+  ]
+}

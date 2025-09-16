@@ -1,0 +1,101 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  # Redis for cooldown management
+  redis:
+    image: redis:alpine
+    container_name: city_surveillance_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  # PostgreSQL database
+  postgres:
+    image: postgres:13-alpine
+    container_name: city_surveillance_db
+    environment:
+      POSTGRES_DB: surveillance
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
+  # FastAPI backend
+  backend:
+    build: ./backend
+    container_name: city_surveillance_backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://admin:password@postgres:5432/surveillance
+      REDIS_HOST: redis
+      UPLOAD_DIR: /app/uploads
+      FCM_KEY: ${FCM_KEY:-}
+    volumes:
+      - backend_uploads:/app/uploads
+      - ./backend:/app
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+
+  # Edge detector service
+  edge:
+    build: ./edge
+    container_name: city_surveillance_edge
+    environment:
+      CAMERA_ID: ${CAMERA_ID:-CAM_01}
+      VIDEO_SRC: ${VIDEO_SRC:-0}
+      BACKEND_ALERT_URL: http://backend:8000/alerts
+      REDIS_HOST: redis
+      PERSON_LIMIT: ${PERSON_LIMIT:-5}
+      PERSON_COOLDOWN: ${PERSON_COOLDOWN:-60}
+      CONSTRUCTION_COOLDOWN: ${CONSTRUCTION_COOLDOWN:-86400}
+      CONSTRUCTION_CONFIDENCE: ${CONSTRUCTION_CONFIDENCE:-0.7}
+      EDGE_UPLOAD_DIR: /app/uploads
+    volumes:
+      - edge_uploads:/app/uploads
+      - ./models:/app/models
+      - ./edge:/app
+    devices:
+      - /dev/video0:/dev/video0  # For webcam access
+    depends_on:
+      - backend
+      - redis
+    restart: unless-stopped
+
+  # Training service
+  trainer:
+    build: ./train
+    container_name: city_surveillance_trainer
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./train:/app
+    command: python maskrcnn_enhanced.py
+    restart: on-failure
+
+  # Dashboard (if you have one)
+  dashboard:
+    build: ./dashboard
+    container_name: city_surveillance_dashboard
+    ports:
+      - "3000:3000"
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+  postgres_data:
+  backend_uploads:
+  edge_uploads:

@@ -1,0 +1,87 @@
+{
+  "image": "000043.jpg",
+  "scenes": [
+    {
+      "scene": "market",
+      "score": 0.7255859375
+    },
+    {
+      "scene": "election rally",
+      "score": 0.113037109375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        0,
+        1769,
+        1090,
+        2217
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8037253022193909,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        822,
+        1597,
+        1577,
+        3019
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.9119189381599426,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        3448,
+        1932,
+        4030,
+        3021
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.7530205249786377,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        3173,
+        2651,
+        3521,
+        3022
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.3295052647590637,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        2059,
+        1726,
+        2126,
+        1853
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.2987769842147827,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        2155,
+        1698,
+        2214,
+        1853
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.2831944227218628,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "image": "000011.png",
+  "scenes": [
+    {
+      "scene": "garbage dump",
+      "score": 0.66845703125
+    },
+    {
+      "scene": "arti",
+      "score": 0.1827392578125
+    },
+    {
+      "scene": "protest",
+      "score": 0.05572509765625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        6,
+        2,
+        485,
+        593
+      ],
+      "yolo_label": "cup",
+      "yolo_conf": 0.3395445644855499,
+      "mapped_tax": "Waste/Garbage_bins/normal",
+      "mapping_score": 0.5263671875
+    }
+  ]
+}

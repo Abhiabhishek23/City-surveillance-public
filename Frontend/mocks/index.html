@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Mocks Index</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%230ea5e9'/%3E%3Cstop offset='100%25' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' ry='12' fill='url(%23g)'/%3E%3Cpath d='M8 32c6-10 16-16 24-16s18 6 24 16c-6 10-16 16-24 16S14 42 8 32z' fill='rgba(255,255,255,0.9)'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%230b0f14'/%3E%3Ccircle cx='32' cy='30' r='2' fill='%23fff'/%3E%3C/svg%3E">
+  </head>
+<body class="bg-[#0B0F14] text-slate-100 min-h-screen">
+  <header class="sticky top-0 z-10 backdrop-blur bg-black/30 border-b border-white/10">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-lg font-extrabold">UI Mock Screens</div>
+      <nav class="flex items-center gap-2 text-sm">
+        <a href="/client_ui" class="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">Live Client</a>
+        <a href="/admin" class="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">Admin Dashboard</a>
+        <select id="roleSelect" class="px-2 py-1 rounded-lg bg-white/5 border border-white/10">
+          <option value="client">Client</option>
+          <option value="admin">Admin</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+  <main class="max-w-4xl mx-auto px-6 py-6">
+    <p class="text-slate-300">Hard-coded pages based on the shared references. Served under <code class="text-slate-100">/client_ui/mocks/</code></p>
+    <div class="grid md:grid-cols-2 gap-6 mt-6">
+      <section class="p-4 rounded-xl bg-white/5 border border-white/10" data-role="client">
+        <header class="font-semibold mb-2">Client-facing</header>
+        <ul class="space-y-2 text-sm">
+          <li><a class="underline" href="/client_ui/mocks/hero.html">Hero Splash</a></li>
+          <li><a class="underline" href="/client_ui/mocks/onboarding.html">Onboarding / Sign-in</a></li>
+          <li><a class="underline" href="/client_ui/mocks/notifications.html">Notifications Center</a></li>
+          <li><a class="underline" href="/client_ui/mocks/client-feed.html">Client Feed</a></li>
+          <li><a class="underline" href="/client_ui/mocks/event-detail.html">Event Detail</a></li>
+          <li><a class="underline" href="/client_ui/mocks/camera-map.html">Camera Map</a></li>
+        </ul>
+      </section>
+      <section class="p-4 rounded-xl bg-white/5 border border-white/10" data-role="admin">
+        <header class="font-semibold mb-2">Admin / Ops</header>
+        <ul class="space-y-2 text-sm">
+          <li><a class="underline" href="/admin">Admin Dashboard (live app)</a></li>
+          <li><a class="underline" href="/client_ui/mocks/admin-live.html">Admin Live (mock)</a></li>
+          <li><a class="underline" href="/client_ui">Client Live UI</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <script>
+    (function(){
+      const sel = document.getElementById('roleSelect');
+      const saved = localStorage.getItem('uiMockRole') || 'admin';
+      sel.value = saved;
+      function apply(role){
+        document.querySelectorAll('[data-role]').forEach(el=>{
+          const r = el.getAttribute('data-role');
+          el.style.display = (role==='admin')? '' : (r==='client'? '' : 'none');
+        });
+      }
+      sel.addEventListener('change', ()=>{ localStorage.setItem('uiMockRole', sel.value); apply(sel.value); });
+      apply(saved);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# YOLO dataset config for local training (crowd)
+# Project path contains a space; keep path absolute and quoted in commands.
+path: "/Users/abhishekx/Desktop/City-surveillance 2/Data/crowd/dataset"
+train: images/train
+val: images/val
+nc: 1
+names: [crowd]

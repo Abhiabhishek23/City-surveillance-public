@@ -1,0 +1,115 @@
+{
+  "image": "000043.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.2069091796875
+    },
+    {
+      "scene": "religious procession",
+      "score": 0.2037353515625
+    },
+    {
+      "scene": "market",
+      "score": 0.19140625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        727,
+        429,
+        839,
+        524
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.6621947288513184,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        378,
+        458,
+        588,
+        622
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.5965489745140076,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        436,
+        477,
+        640,
+        697
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.4060051143169403,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        907,
+        430,
+        970,
+        478
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.3451082408428192,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        1002,
+        418,
+        1036,
+        451
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.26995301246643066,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        1658,
+        523,
+        1788,
+        785
+      ],
+      "yolo_label": "handbag",
+      "yolo_conf": 0.39326366782188416,
+      "mapped_tax": "People/Pedestrians/standing",
+      "mapping_score": 0.1571044921875
+    },
+    {
+      "xyxy": [
+        455,
+        735,
+        612,
+        942
+      ],
+      "yolo_label": "handbag",
+      "yolo_conf": 0.3806776702404022,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.1419677734375
+    },
+    {
+      "xyxy": [
+        1092,
+        570,
+        1207,
+        765
+      ],
+      "yolo_label": "backpack",
+      "yolo_conf": 0.3675905764102936,
+      "mapped_tax": "People/Pedestrians/standing",
+      "mapping_score": 0.1768798828125
+    }
+  ]
+}

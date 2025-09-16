@@ -1,0 +1,52 @@
+{
+  "created_at": "2025-09-15 14:15:15",
+  "src": "/Users/abhishekx/Desktop/City-surveillance 2/Indian_Urban_Dataset_yolo",
+  "out": "/Users/abhishekx/Desktop/City-surveillance 2/dist/Indian_Urban_Dataset_yolo_kaggle_full",
+  "totals": {
+    "train": {
+      "images": 111,
+      "labels": 111,
+      "missing_labels": 0,
+      "empty_labels_created": 0
+    },
+    "val": {
+      "images": 89,
+      "labels": 89,
+      "missing_labels": 0,
+      "empty_labels_created": 0
+    },
+    "test": {
+      "images": 0,
+      "labels": 0,
+      "missing_labels": 0,
+      "empty_labels_created": 0
+    }
+  },
+  "missing_labels_total": 0,
+  "empty_labels_created_total": 0,
+  "weights_included": [
+    "yolov12n.pt",
+    "yolov8n.pt"
+  ],
+  "nc": 18,
+  "names": [
+    "car",
+    "person",
+    "barricade",
+    "tent_pandal",
+    "garbage_pile",
+    "hawker",
+    "truck",
+    "bus",
+    "open_fire",
+    "bicycle",
+    "excavator",
+    "loudspeaker",
+    "motorbike",
+    "sand_pile",
+    "idol_statue",
+    "boat",
+    "banner_hoarding",
+    "tractor"
+  ]
+}

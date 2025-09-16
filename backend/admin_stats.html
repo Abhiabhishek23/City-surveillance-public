@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin Stats</title>
+    <style>body{font-family:Arial;background:#222;color:#eee;padding:20px}pre{background:#111;padding:10px;border-radius:6px}</style>
+  </head>
+  <body>
+    <h1>Client Detection Aggregates</h1>
+    <button id="refresh">Refresh</button>
+    <pre id="out">Loading...</pre>
+    <script>
+      async function load(){
+        document.getElementById('out').textContent = 'Loading...';
+        const r = await fetch('/stats/aggregate');
+        const j = await r.json();
+        document.getElementById('out').textContent = JSON.stringify(j, null, 2);
+      }
+      document.getElementById('refresh').onclick = load;
+      load();
+    </script>
+  </body>
+</html>

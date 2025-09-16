@@ -1,0 +1,31 @@
+{
+  "image": "000006.png",
+  "scenes": [
+    {
+      "scene": "arti",
+      "score": 0.27490234375
+    },
+    {
+      "scene": "protest",
+      "score": 0.16162109375
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.154296875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        201,
+        82,
+        715,
+        458
+      ],
+      "yolo_label": "traffic light",
+      "yolo_conf": 0.6724922060966492,
+      "mapped_tax": "Urban/Festivals/Diwali",
+      "mapping_score": 0.658203125
+    }
+  ]
+}

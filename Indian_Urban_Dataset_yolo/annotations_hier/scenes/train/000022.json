@@ -1,0 +1,31 @@
+{
+  "image": "000022.png",
+  "scenes": [
+    {
+      "scene": "Diwali festival",
+      "score": 0.6201171875
+    },
+    {
+      "scene": "Holi festival",
+      "score": 0.1094970703125
+    },
+    {
+      "scene": "visarjan",
+      "score": 0.08660888671875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        771,
+        155,
+        1200,
+        542
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.599482536315918,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    }
+  ]
+}

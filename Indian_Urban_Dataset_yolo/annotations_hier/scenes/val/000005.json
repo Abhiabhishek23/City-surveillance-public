@@ -1,0 +1,18 @@
+{
+  "image": "000005.png",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.48583984375
+    },
+    {
+      "scene": "religious procession",
+      "score": 0.165283203125
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.101806640625
+    }
+  ],
+  "detections": []
+}

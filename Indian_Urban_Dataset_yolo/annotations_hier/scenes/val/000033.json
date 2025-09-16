@@ -1,0 +1,31 @@
+{
+  "image": "000033.png",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.270263671875
+    },
+    {
+      "scene": "Diwali festival",
+      "score": 0.2239990234375
+    },
+    {
+      "scene": "market",
+      "score": 0.1317138671875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        38,
+        437,
+        211,
+        573
+      ],
+      "yolo_label": "bowl",
+      "yolo_conf": 0.33329901099205017,
+      "mapped_tax": "River/Activities/bathing",
+      "mapping_score": 0.312255859375
+    }
+  ]
+}

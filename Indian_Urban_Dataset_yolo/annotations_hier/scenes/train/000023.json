@@ -1,0 +1,63 @@
+{
+  "image": "000023.png",
+  "scenes": [
+    {
+      "scene": "garbage dump",
+      "score": 0.59765625
+    },
+    {
+      "scene": "arti",
+      "score": 0.2734375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        261,
+        16,
+        470,
+        273
+      ],
+      "yolo_label": "vase",
+      "yolo_conf": 0.6054064035415649,
+      "mapped_tax": "Waste/Garbage_bins/normal",
+      "mapping_score": 0.53125
+    },
+    {
+      "xyxy": [
+        29,
+        17,
+        237,
+        273
+      ],
+      "yolo_label": "vase",
+      "yolo_conf": 0.5790702700614929,
+      "mapped_tax": "Waste/Garbage_bins/normal",
+      "mapping_score": 0.351806640625
+    },
+    {
+      "xyxy": [
+        29,
+        16,
+        237,
+        273
+      ],
+      "yolo_label": "cup",
+      "yolo_conf": 0.5278011560440063,
+      "mapped_tax": "Waste/Garbage_bins/normal",
+      "mapping_score": 0.396484375
+    },
+    {
+      "xyxy": [
+        261,
+        16,
+        470,
+        273
+      ],
+      "yolo_label": "cup",
+      "yolo_conf": 0.46535229682922363,
+      "mapped_tax": "Waste/Garbage_bins/normal",
+      "mapping_score": 0.53125
+    }
+  ]
+}

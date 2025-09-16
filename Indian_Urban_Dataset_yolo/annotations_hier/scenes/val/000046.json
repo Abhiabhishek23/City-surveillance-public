@@ -1,0 +1,63 @@
+{
+  "image": "000046.png",
+  "scenes": [
+    {
+      "scene": "market",
+      "score": 0.83447265625
+    },
+    {
+      "scene": "visarjan",
+      "score": 0.1279296875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        39,
+        569,
+        178,
+        794
+      ],
+      "yolo_label": "suitcase",
+      "yolo_conf": 0.7728495597839355,
+      "mapped_tax": "River/Activities/bathing",
+      "mapping_score": 0.07550048828125
+    },
+    {
+      "xyxy": [
+        53,
+        309,
+        202,
+        579
+      ],
+      "yolo_label": "suitcase",
+      "yolo_conf": 0.5386555194854736,
+      "mapped_tax": "Waste/Garbage_bins/normal",
+      "mapping_score": 0.165283203125
+    },
+    {
+      "xyxy": [
+        451,
+        515,
+        612,
+        612
+      ],
+      "yolo_label": "suitcase",
+      "yolo_conf": 0.38041993975639343,
+      "mapped_tax": "River/Activities/bathing",
+      "mapping_score": 0.07122802734375
+    },
+    {
+      "xyxy": [
+        347,
+        284,
+        388,
+        434
+      ],
+      "yolo_label": "suitcase",
+      "yolo_conf": 0.2911927103996277,
+      "mapped_tax": "People/Pedestrians/standing",
+      "mapping_score": 0.2314453125
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Prep dataset (80/20 move)",
+			"type": "shell",
+			"command": "python3 scripts/prepare_dataset.py --root . --val-ratio 0.2",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

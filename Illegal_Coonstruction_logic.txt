@@ -1,0 +1,91 @@
+Your scenario is Ujjain Mahakumbh → huge crowds, temporary + permanent structures, ghats, city roads. Input is drone + CCTV video, requiring real-time detection (low latency, high fps). Context like Google Street View / GIS can be used later to check legality.
+
+Here’s a revised, focused suggestion for your project:
+
+🔑 Key Requirements
+
+Real-time video inference → high FPS, low latency.
+
+Crowded scenes → many small objects, temporary stalls, pandals, tents.
+
+Mixed input (drone top-down + CCTV side view) → need robustness to angle changes.
+
+Legality classification requires vision + metadata overlay (cannot be solved by vision alone).
+
+🚀 Recommended Model Stack
+1. Primary Detector (Real-Time Backbone)
+
+Use YOLOv12-S or YOLOv12-M (2025 latest YOLO variant).
+
+Optimized for speed + accuracy.
+
+Pretrained weights available on COCO, fine-tune on your festival/ghat dataset.
+
+Deployment-friendly (ONNX, TensorRT, OpenVINO for edge inference).
+
+Handles object detection: stalls, pandals, permanent shops, barricades, crowds, vehicles, boats, etc.
+
+👉 Why not YOLOv12-L/X? They’re too heavy for real-time drone/CCTV pipelines.
+
+2. Segmentation Layer (Optional, for fine control)
+
+Add a fast segmentation model to refine boundaries:
+
+YOLOv12-seg variant (if available) → same backbone, segmentation heads.
+
+Or Lightweight DeepLabV3+ with MobileNet/Swin backbone → balances accuracy & speed.
+
+Useful for delineating: pandal boundaries, road blocking, riverbed encroachment.
+
+3. Context/Legality Decision Layer
+
+Detection alone won’t decide legal vs illegal. You need post-processing logic:
+
+Overlay detection results with GIS layers:
+
+River buffer zones (e.g. 50m–100m from ghats).
+
+Road carriageway & footpath layouts.
+
+Authorized vendor zones / festival-permitted areas (from admin data).
+
+If detection falls inside restricted zone → mark as Illegal.
+
+If detection falls inside permitted zone / barricaded area → mark as Legal.
+
+👉 This layer is lightweight, can run in parallel with detection. You can use geofencing logic.
+
+4. Supporting Models (Optional Enhancers)
+
+Segment Anything Model (SAM2 or FastSAM) → interactive segmentation for labeling dataset quickly.
+
+GroundingDINO → zero-shot object detection; can help expand dataset (e.g., “detect tents/pandals”).
+
+Crowd Counting (CSRNet or YOLOv8-count) → for estimating density at ghats/roads during Kumbh.
+
+⚡ Deployment Recommendations
+
+Pipeline:
+Drone/CCTV feed → YOLOv12 (TensorRT) → Legality overlay layer → Alert dashboard.
+
+Inference Hardware:
+
+NVIDIA Jetson Orin NX / AGX for edge (on-site, drones, control rooms).
+
+Or GPU servers (A100/H100/RTX 4090) if centralised processing is possible.
+
+Throughput:
+
+YOLOv12-S/M → ~60–120 FPS on RTX 4090.
+
+On Jetson Orin NX → ~30 FPS (sufficient for CCTV real-time).
+
+🎯 Suggested Model Choice for You
+
+YOLOv12-M (detector, real-time backbone).
+
+Add YOLOv12-Seg or Light DeepLabV3+ if you need pixel-level encroachment mapping.
+
+Build GIS legality logic (Python/Geopandas) to overlay detected structures with restricted zones.
+
+⚠️ Key insight: Your ML model should only detect objects (stalls, tents, buildings, barricades, boats). The “legal vs illegal” classification should be decided by GIS + rules overlay. This keeps the AI explainable and avoids misclassification errors.

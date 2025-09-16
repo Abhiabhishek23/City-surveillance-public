@@ -1,0 +1,23 @@
+path: .
+train: images/train
+val: images/val
+names:
+- car
+- person
+- barricade
+- tent_pandal
+- garbage_pile
+- hawker
+- truck
+- bus
+- open_fire
+- bicycle
+- excavator
+- loudspeaker
+- motorbike
+- sand_pile
+- idol_statue
+- boat
+- banner_hoarding
+- tractor
+nc: 18

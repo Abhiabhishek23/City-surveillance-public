@@ -1,0 +1,27 @@
+{
+  "image": "000045.png",
+  "scenes": [
+    {
+      "scene": "sand mining site",
+      "score": 0.84423828125
+    },
+    {
+      "scene": "arti",
+      "score": 0.0611572265625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        5,
+        38,
+        243,
+        210
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.7129833698272705,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

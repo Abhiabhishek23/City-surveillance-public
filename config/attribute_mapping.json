@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "notes": "Map base detection classes to legal/illegal/conditional tags. Extend per municipal rules.",
+  "mapping": {
+    "Structures_Roads_encroached": "illegal",
+    "Structures_Footpaths_encroached": "illegal",
+    "Structures_Roadside_stalls": "conditional",
+    "Commerce_Hawkers_*": "conditional",
+    "People_Informal_presence_hawkers": "conditional",
+    "Structures_Slums": "conditional",
+    "Urban_Festivals_*": "conditional",
+    "Environment_Waste_*": "illegal",
+    "Vehicles_Trucks_overloaded": "illegal",
+    "Vehicles_Two_wheelers_family_overload": "illegal",
+    "default": "unknown"
+  }
+}

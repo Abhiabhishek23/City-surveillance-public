@@ -1,0 +1,187 @@
+{
+  "image": "000015.png",
+  "scenes": [
+    {
+      "scene": "election rally",
+      "score": 0.311279296875
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.1978759765625
+    },
+    {
+      "scene": "protest",
+      "score": 0.171875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        547,
+        212,
+        1199,
+        609
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.9276899695396423,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        93,
+        123,
+        614,
+        415
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8942019939422607,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        930,
+        311,
+        1199,
+        667
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8889049887657166,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        307,
+        164,
+        842,
+        516
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8860982656478882,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        1,
+        383,
+        418,
+        664
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8683918714523315,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        868,
+        45,
+        1200,
+        238
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.862242579460144,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        0,
+        113,
+        360,
+        373
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8583217859268188,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        467,
+        18,
+        794,
+        167
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8134979009628296,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        209,
+        528,
+        912,
+        665
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.7778090238571167,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        653,
+        34,
+        1017,
+        211
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.6409509181976318,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        1104,
+        118,
+        1199,
+        282
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.5851017236709595,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        0,
+        90,
+        196,
+        204
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.3084050714969635,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        2,
+        1,
+        265,
+        85
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.2821464538574219,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        216,
+        9,
+        608,
+        135
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.2776271104812622,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    }
+  ]
+}

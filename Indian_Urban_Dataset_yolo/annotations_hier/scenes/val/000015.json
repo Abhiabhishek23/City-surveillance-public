@@ -1,0 +1,18 @@
+{
+  "image": "000015.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.445556640625
+    },
+    {
+      "scene": "worship ceremony",
+      "score": 0.1358642578125
+    },
+    {
+      "scene": "night bazaar",
+      "score": 0.1058349609375
+    }
+  ],
+  "detections": []
+}

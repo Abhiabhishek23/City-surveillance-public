@@ -1,0 +1,31 @@
+{
+  "image": "000013.png",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.2437744140625
+    },
+    {
+      "scene": "aarti",
+      "score": 0.20849609375
+    },
+    {
+      "scene": "arti",
+      "score": 0.14111328125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        26,
+        173,
+        975,
+        532
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.8394854068756104,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

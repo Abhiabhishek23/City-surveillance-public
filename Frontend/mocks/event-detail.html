@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Detail – Mock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%230ea5e9'/%3E%3Cstop offset='100%25' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' ry='12' fill='url(%23g)'/%3E%3Cpath d='M8 32c6-10 16-16 24-16s18 6 24 16c-6 10-16 16-24 16S14 42 8 32z' fill='rgba(255,255,255,0.9)'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%230b0f14'/%3E%3Ccircle cx='32' cy='30' r='2' fill='%23fff'/%3E%3C/svg%3E">
+  </head>
+<body class="bg-[#0B0F14] text-slate-100 min-h-screen">
+  <header class="sticky top-0 z-10 backdrop-blur bg-black/30 border-b border-white/10">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/client_ui/mocks/client-feed.html" class="text-sm text-slate-300">← Back</a>
+      <div class="font-semibold">Incident details</div>
+      <div class="flex items-center gap-2">
+        <a href="/admin" class="underline text-xs text-slate-300" data-role="admin">Admin</a>
+        <select id="roleSelect" class="px-2 py-1 rounded bg-white/10 border border-white/10 text-slate-200 text-xs">
+          <option value="client">Client</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <div class="bg-black/30 border-y border-white/10">
+    <div class="max-w-4xl mx-auto px-4 py-2 text-xs text-slate-300 flex items-center gap-3">
+      <span>Quick nav:</span>
+      <a href="/client_ui/mocks/notifications.html" class="underline">Notifications</a>
+      <a href="/client_ui/mocks/camera-map.html" class="underline">Map</a>
+      <a href="/admin" class="underline" data-role="admin">Admin</a>
+    </div>
+  </div>
+  <main class="max-w-4xl mx-auto px-4 py-6">
+    <div class="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+  <img id="snapshot" class="w-full aspect-video object-cover" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1200&auto=format&fit=crop" alt="snapshot"/>
+      <div class="p-4">
+        <div class="flex items-start gap-3">
+          <span class="inline-flex px-2 py-1 rounded text-xs bg-rose-400/20 text-rose-300 border border-rose-400/30">High</span>
+          <div class="flex-1">
+            <div class="font-semibold">Illegal construction near Green Park</div>
+            <div class="text-xs text-slate-400 mt-1">CAM-03 • 8 min ago • 28.6139°N, 77.2090°E</div>
+          </div>
+        </div>
+  <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm">
+          <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+            <div class="text-slate-400">Confidence</div>
+            <div class="font-semibold">0.91</div>
+          </div>
+          <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+            <div class="text-slate-400">Cooldown</div>
+            <div class="font-semibold">Active (5m)</div>
+          </div>
+          
+        </div>
+        <div class="mt-6 flex gap-3">
+          <button id="ackBtn" class="px-4 py-2 rounded-xl bg-white text-black font-semibold">Acknowledge</button>
+          <a id="dlBtn" download="snapshot.jpg" class="px-4 py-2 rounded-xl bg-white/10 border border-white/15">Download</a>
+          <button id="shareBtn" class="px-4 py-2 rounded-xl bg-white/10 border border-white/15">Share</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-white text-black shadow hidden">Acknowledged</div>
+  <script>
+    const toast = document.getElementById('toast');
+    const ack = document.getElementById('ackBtn');
+    const img = document.getElementById('snapshot');
+    const dl = document.getElementById('dlBtn');
+    const share = document.getElementById('shareBtn');
+    // set download href to current image
+    dl.href = img.src;
+    ack.addEventListener('click', ()=>{
+      toast.classList.remove('hidden');
+      setTimeout(()=> toast.classList.add('hidden'), 1600);
+    });
+    share.addEventListener('click', async ()=>{
+      const data = {title:'City Incident', text:'Incident details', url: location.href};
+      if(navigator.share){ try{ await navigator.share(data);}catch(e){} }
+      else { try{ await navigator.clipboard.writeText(location.href); share.textContent='Copied'; setTimeout(()=> share.textContent='Share', 1200);}catch(e){} }
+    });
+  </script>
+  <script>
+    (function(){
+      const role = localStorage.getItem('uiMockRole') || 'client';
+      document.querySelectorAll('[data-role="admin"]').forEach(el=>{ el.style.display = (role==='admin')? '' : 'none'; });
+      const sel = document.getElementById('roleSelect'); if(sel){ sel.value = role; sel.addEventListener('change', ()=>{ localStorage.setItem('uiMockRole', sel.value); location.reload(); }); }
+    })();
+  </script>
+</body>
+</html>

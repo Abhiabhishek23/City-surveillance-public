@@ -1,0 +1,31 @@
+{
+  "image": "000008.png",
+  "scenes": [
+    {
+      "scene": "protest",
+      "score": 0.57666015625
+    },
+    {
+      "scene": "election rally",
+      "score": 0.11907958984375
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.08441162109375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        51,
+        350,
+        128,
+        502
+      ],
+      "yolo_label": "skis",
+      "yolo_conf": 0.2662905752658844,
+      "mapped_tax": "People/Crowds/procession",
+      "mapping_score": 0.13720703125
+    }
+  ]
+}

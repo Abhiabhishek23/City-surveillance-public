@@ -1,0 +1,27 @@
+{
+  "image": "000048.jpg",
+  "scenes": [
+    {
+      "scene": "sand mining site",
+      "score": 0.59716796875
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.329833984375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        69,
+        148,
+        637,
+        548
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.7791286110877991,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

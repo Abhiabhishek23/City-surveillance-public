@@ -1,0 +1,22 @@
+path: /Users/abhishekx/Desktop/City-surveillance 2/Indian_Urban_Dataset_yolo
+train: images/train
+val: images/val
+names:
+  0: car
+  1: person
+  2: barricade
+  3: tent_pandal
+  4: garbage_pile
+  5: hawker
+  6: truck
+  7: bus
+  8: open_fire
+  9: bicycle
+  10: excavator
+  11: loudspeaker
+  12: motorbike
+  13: sand_pile
+  14: idol_statue
+  15: boat
+  16: banner_hoarding
+  17: tractor

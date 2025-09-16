@@ -1,0 +1,31 @@
+{
+  "image": "000041.png",
+  "scenes": [
+    {
+      "scene": "arti",
+      "score": 0.167236328125
+    },
+    {
+      "scene": "night bazaar",
+      "score": 0.167236328125
+    },
+    {
+      "scene": "garbage dump",
+      "score": 0.1646728515625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        1459,
+        381,
+        1567,
+        474
+      ],
+      "yolo_label": "clock",
+      "yolo_conf": 0.6008836030960083,
+      "mapped_tax": "People/Informal_presence/hawkers",
+      "mapping_score": 0.17138671875
+    }
+  ]
+}

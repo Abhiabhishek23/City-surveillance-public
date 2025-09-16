@@ -1,0 +1,23 @@
+{
+  "image": "000007.png",
+  "scenes": [
+    {
+      "scene": "garbage dump",
+      "score": 0.90771484375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        244,
+        65,
+        1471,
+        846
+      ],
+      "yolo_label": "bus",
+      "yolo_conf": 0.6843292117118835,
+      "mapped_tax": "Transport/Vehicles/bus",
+      "mapping_score": 0.99
+    }
+  ]
+}

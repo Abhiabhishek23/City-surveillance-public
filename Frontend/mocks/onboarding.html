@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onboarding / Sign-in – Mock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%230ea5e9'/%3E%3Cstop offset='100%25' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' ry='12' fill='url(%23g)'/%3E%3Cpath d='M8 32c6-10 16-16 24-16s18 6 24 16c-6 10-16 16-24 16S14 42 8 32z' fill='rgba(255,255,255,0.9)'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%230b0f14'/%3E%3Ccircle cx='32' cy='30' r='2' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    .bg-hero{background: radial-gradient(1200px 500px at 50% -20%, rgba(34,211,238,.18), transparent), radial-gradient(800px 400px at 80% 20%, rgba(139,92,246,.18), transparent), #0D1117;}
+    .title{background-image: linear-gradient(90deg, #67e8f9, #f0abfc); -webkit-background-clip: text; background-clip: text; color: transparent;}
+  </style>
+  </head>
+<body class="bg-hero text-slate-100 min-h-screen flex items-center justify-center p-6">
+  <div class="fixed top-0 inset-x-0 bg-black/30 backdrop-blur border-b border-white/10">
+    <div class="max-w-5xl mx-auto px-6 py-2 text-xs text-slate-300 flex items-center gap-3">
+      <span>Quick nav:</span>
+      <a href="/client_ui/mocks/notifications.html" class="underline">Notifications</a>
+      <a href="/client_ui/mocks/client-feed.html" class="underline">Feed</a>
+      <a href="/client_ui/mocks/camera-map.html" class="underline">Map</a>
+      <a href="/client_ui/mocks/admin-live.html" class="underline" data-role="admin">Admin live</a>
+      <select id="roleSelect" class="ml-auto px-2 py-1 rounded bg-white/10 border border-white/10 text-slate-200">
+        <option value="client">Client</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+  </div>
+  <div class="w-[420px] bg-black/30 backdrop-blur rounded-2xl border border-white/10 p-6 shadow-2xl">
+  <h1 class="text-3xl font-extrabold text-center title">City Intelligence</h1>
+  <p class="text-center text-slate-300 mt-2">Dynamic, responsive, and alive.</p>
+    <div class="mt-8 space-y-3">
+      <a href="/client_ui/mocks/notifications.html" class="w-full h-12 rounded-xl bg-white/10 border border-white/15 text-slate-100 flex items-center justify-center gap-3 hover:bg-white/15">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 533.5 544.3" aria-hidden="true">
+          <path fill="#4285F4" d="M533.5 278.4c0-18.6-1.7-37-5.1-54.8H272v103.8h146.9c-6.3 34-25 62.7-53.4 81.9v67h86.5c50.7-46.7 80.5-115.5 80.5-197.9z"/>
+          <path fill="#34A853" d="M272 544.3c72.7 0 133.8-24.1 178.4-65.1l-86.5-67c-24 16.1-54.7 25.6-91.9 25.6-70.6 0-130.5-47.6-152-111.6H31.9v69.9C76.2 487.7 168.2 544.3 272 544.3z"/>
+          <path fill="#FBBC05" d="M120 326.2c-5.6-16.9-8.8-35.1-8.8-53.7s3.2-36.8 8.8-53.7v-69.9H31.9C11.5 172.9 0 214.4 0 272.5s11.5 99.6 31.9 123.6l88.1-69.9z"/>
+          <path fill="#EA4335" d="M272 107.7c39.5 0 75 13.6 102.9 40.3l77.1-77.1C405.7 26.2 344.6 0 272 0 168.2 0 76.2 56.6 31.9 148.9l88.1 69.9c21.6-64 81.5-111.1 152-111.1z"/>
+        </svg>
+        <span>Sign in with Google</span>
+      </a>
+      <a href="/client_ui/mocks/client-feed.html" class="w-full h-12 grid place-items-center rounded-xl bg-cyan-500 text-black font-semibold shadow-[0_6px_30px_rgba(34,211,238,.35)] hover:shadow-[0_8px_40px_rgba(34,211,238,.5)]">Sign in with Phone</a>
+    </div>
+    <p class="text-xs text-slate-400 mt-4 text-center">By continuing, you agree to our <a class="underline" href="#">Terms of Service</a> and <a class="underline" href="#">Privacy Policy</a>.</p>
+    <div class="mt-6 p-4 rounded-xl border border-white/10 bg-white/5">
+      <div class="flex items-center justify-between">
+        <div>
+          <div class="font-semibold">Enable Notifications</div>
+          <div class="text-sm text-slate-400">Get real-time city alerts.</div>
+        </div>
+        <button class="px-4 py-2 rounded-xl bg-fuchsia-500 text-white font-semibold">Enable</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      const role = localStorage.getItem('uiMockRole') || 'client';
+      document.querySelectorAll('[data-role="admin"]').forEach(el=>{ el.style.display = (role==='admin')? '' : 'none'; });
+      const sel = document.getElementById('roleSelect'); if(sel){ sel.value = role; sel.addEventListener('change', ()=>{ localStorage.setItem('uiMockRole', sel.value); location.reload(); }); }
+    })();
+  </script>
+</body>
+</html>

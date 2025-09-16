@@ -1,0 +1,119 @@
+{
+  "image": "000014.png",
+  "scenes": [
+    {
+      "scene": "market",
+      "score": 0.8828125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        322,
+        260,
+        365,
+        282
+      ],
+      "yolo_label": "bowl",
+      "yolo_conf": 0.733838677406311,
+      "mapped_tax": "Transport/Vehicles/auto",
+      "mapping_score": 0.251220703125
+    },
+    {
+      "xyxy": [
+        275,
+        289,
+        374,
+        349
+      ],
+      "yolo_label": "backpack",
+      "yolo_conf": 0.5935547947883606,
+      "mapped_tax": "People/Informal_presence/beggars",
+      "mapping_score": 0.476318359375
+    },
+    {
+      "xyxy": [
+        150,
+        123,
+        295,
+        350
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.8428259491920471,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        319,
+        107,
+        412,
+        258
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.809785783290863,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        568,
+        60,
+        610,
+        177
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.8043501377105713,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        379,
+        139,
+        485,
+        326
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.7264116406440735,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        125,
+        57,
+        186,
+        232
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.5878944993019104,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        450,
+        81,
+        489,
+        186
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.5668710470199585,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        0,
+        162,
+        93,
+        225
+      ],
+      "yolo_label": "bench",
+      "yolo_conf": 0.47636768221855164,
+      "mapped_tax": "People/Pedestrians/sitting",
+      "mapping_score": 0.315185546875
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "image": "000033.png",
+  "scenes": [
+    {
+      "scene": "night bazaar",
+      "score": 0.203857421875
+    },
+    {
+      "scene": "market",
+      "score": 0.137939453125
+    },
+    {
+      "scene": "worship ceremony",
+      "score": 0.1357421875
+    }
+  ],
+  "detections": []
+}

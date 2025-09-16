@@ -1,0 +1,31 @@
+{
+  "image": "000017.jpg",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.227783203125
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.1402587890625
+    },
+    {
+      "scene": "aarti",
+      "score": 0.1339111328125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        138,
+        96,
+        709,
+        415
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.885147750377655,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    }
+  ]
+}

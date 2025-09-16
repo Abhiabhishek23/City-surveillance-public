@@ -1,0 +1,31 @@
+{
+  "image": "000038.png",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.78173828125
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.053192138671875
+    },
+    {
+      "scene": "aarti",
+      "score": 0.0523681640625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        133,
+        6,
+        1176,
+        660
+      ],
+      "yolo_label": "umbrella",
+      "yolo_conf": 0.2536429762840271,
+      "mapped_tax": "Urban/Festivals/Durga_Puja",
+      "mapping_score": 0.630859375
+    }
+  ]
+}

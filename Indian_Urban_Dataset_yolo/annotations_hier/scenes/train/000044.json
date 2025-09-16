@@ -1,0 +1,18 @@
+{
+  "image": "000044.png",
+  "scenes": [
+    {
+      "scene": "garbage dump",
+      "score": 0.58251953125
+    },
+    {
+      "scene": "arti",
+      "score": 0.1427001953125
+    },
+    {
+      "scene": "visarjan",
+      "score": 0.0684814453125
+    }
+  ],
+  "detections": []
+}

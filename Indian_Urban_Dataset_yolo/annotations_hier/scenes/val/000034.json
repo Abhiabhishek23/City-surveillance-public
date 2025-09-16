@@ -1,0 +1,55 @@
+{
+  "image": "000034.png",
+  "scenes": [
+    {
+      "scene": "aarti",
+      "score": 0.2218017578125
+    },
+    {
+      "scene": "visarjan",
+      "score": 0.2218017578125
+    },
+    {
+      "scene": "protest",
+      "score": 0.2083740234375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        298,
+        194,
+        720,
+        393
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.5891356468200684,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        75,
+        310,
+        207,
+        502
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.4243175685405731,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        490,
+        246,
+        721,
+        382
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.32072582840919495,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    }
+  ]
+}

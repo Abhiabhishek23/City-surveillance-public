@@ -1,0 +1,43 @@
+{
+  "image": "000040.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.59521484375
+    },
+    {
+      "scene": "religious procession",
+      "score": 0.1307373046875
+    },
+    {
+      "scene": "wedding procession",
+      "score": 0.1307373046875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        258,
+        132,
+        573,
+        342
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.8901509642601013,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        121,
+        111,
+        339,
+        209
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.4201148450374603,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "image": "000020.png",
+  "scenes": [
+    {
+      "scene": "garbage dump",
+      "score": 0.7998046875
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.06365966796875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        51,
+        5,
+        2178,
+        1250
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.9160035848617554,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        0,
+        638,
+        84,
+        769
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.3051007390022278,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

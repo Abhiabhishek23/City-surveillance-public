@@ -1,0 +1,130 @@
+{
+  "crowd": {
+    "event": "overcrowding",
+    "threshold_default": 25,
+    "per_camera_overrides": {}
+  },
+  "min_confidence": {
+    "default": 0.35,
+    "per_class": {
+      "person": 0.30,
+      "garbage_pile": 0.35,
+      "open_fire": 0.30,
+      "hawker": 0.40,
+      "tent_pandal": 0.40,
+      "banner_hoarding": 0.35,
+      "loudspeaker": 0.35,
+      "sand_pile": 0.35,
+      "excavator": 0.35
+    }
+  },
+  "cooldown_seconds": {
+    "default": 60,
+    "per_event": {
+      "overcrowding": 90,
+      "open_fire": 30,
+      "garbage_pile": 300,
+      "encroachment": 300,
+      "unauthorized_vehicle": 180,
+      "hawker_encroachment": 300,
+      "pandal_violation": 300,
+      "unauthorized_loudspeaker": 180,
+      "construction_activity": 300,
+      "unauthorized_boat": 180
+    }
+  },
+  "per_class": {
+    "person": { "status": "legal" },
+    "car": {
+      "status": "conditional",
+      "event": "unauthorized_vehicle",
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "legal" },
+      "time_windows": {
+        "allowed": [ { "levels": ["orange", "yellow"], "start": "23:00", "end": "05:00" } ]
+      }
+    },
+    "bus": {
+      "status": "conditional",
+      "event": "unauthorized_vehicle",
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "legal" },
+      "time_windows": {
+        "allowed": [ { "levels": ["orange", "yellow"], "start": "23:00", "end": "05:00" } ]
+      }
+    },
+    "truck": {
+      "status": "conditional",
+      "event": "unauthorized_vehicle",
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "legal" },
+      "time_windows": {
+        "allowed": [ { "levels": ["orange", "yellow"], "start": "23:00", "end": "05:00" } ]
+      }
+    },
+    "motorbike": {
+      "status": "conditional",
+      "event": "unauthorized_vehicle",
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "legal" }
+    },
+    "bicycle": { "status": "legal" },
+    "tractor": {
+      "status": "conditional",
+      "event": "unauthorized_vehicle",
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "legal" },
+      "time_windows": {
+        "allowed": [ { "levels": ["orange", "yellow"], "start": "23:00", "end": "05:00" } ]
+      }
+    },
+    "boat": {
+      "status": "conditional",
+      "event": "unauthorized_boat",
+      "zone_level": { "red": "conditional", "orange": "conditional", "yellow": "legal", "green": "legal" }
+    },
+    "excavator": {
+      "status": "conditional",
+      "event": "construction_activity",
+      "zones": { "no_construction_zone": "illegal", "approved_construction_zone": "legal" },
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "conditional" },
+      "time_windows": {
+        "allowed": [ { "levels": ["orange", "yellow", "green"], "start": "23:00", "end": "05:00" } ]
+      }
+    },
+    "barricade": { "status": "legal" },
+    "traffic_cone": { "status": "legal" },
+    "hawker": {
+      "status": "conditional",
+      "event": "hawker_encroachment",
+      "zones": { "no_hawker_zone": "illegal", "vending_zone": "legal" },
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "legal" },
+      "time_windows": {
+        "allowed": [ { "levels": ["yellow", "green"], "start": "06:00", "end": "22:00" } ]
+      }
+    },
+    "tent_pandal": {
+      "status": "conditional",
+      "event": "pandal_violation",
+      "zones": { "no_pandal_zone": "illegal", "permitted_pandal_zone": "legal" },
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "conditional" },
+      "time_windows": {
+        "allowed": [ { "levels": ["orange", "yellow", "green"], "start": "06:00", "end": "22:00" } ]
+      }
+    },
+    "idol_statue": { "status": "conditional" },
+    "banner_hoarding": { "status": "illegal", "event": "unauthorized_banner" },
+    "loudspeaker": {
+      "status": "conditional",
+      "event": "unauthorized_loudspeaker",
+      "zones": { "silence_zone": "illegal" },
+      "zone_level": { "red": "illegal", "orange": "conditional", "yellow": "conditional", "green": "conditional" },
+      "time_windows": {
+        "allowed": [ { "levels": ["orange", "yellow", "green"], "start": "06:00", "end": "22:00" } ]
+      }
+    },
+    "garbage_pile": { "status": "illegal", "event": "garbage_dumping" },
+    "open_fire": { "status": "illegal", "event": "fire_hazard" },
+    "smoke": { "status": "conditional" },
+    "sand_pile": { "status": "illegal", "event": "illegal_sand_mining" },
+    "rebar_pillar": { "status": "conditional" },
+    "brick_stack": { "status": "conditional" },
+    "concrete_mixer": { "status": "conditional" },
+    "cement_bag": { "status": "conditional" }
+  }
+}

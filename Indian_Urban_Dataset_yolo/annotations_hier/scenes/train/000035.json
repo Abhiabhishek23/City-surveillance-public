@@ -1,0 +1,43 @@
+{
+  "image": "000035.png",
+  "scenes": [
+    {
+      "scene": "aarti",
+      "score": 0.325439453125
+    },
+    {
+      "scene": "market",
+      "score": 0.29638671875
+    },
+    {
+      "scene": "worship ceremony",
+      "score": 0.10400390625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        0,
+        552,
+        159,
+        672
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.554053544998169,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        4,
+        556,
+        159,
+        675
+      ],
+      "yolo_label": "bicycle",
+      "yolo_conf": 0.36775410175323486,
+      "mapped_tax": "Transport/Vehicles/cycle",
+      "mapping_score": 0.99
+    }
+  ]
+}

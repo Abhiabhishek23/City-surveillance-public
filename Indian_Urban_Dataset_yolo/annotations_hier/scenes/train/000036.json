@@ -1,0 +1,31 @@
+{
+  "image": "000036.png",
+  "scenes": [
+    {
+      "scene": "arti",
+      "score": 0.41796875
+    },
+    {
+      "scene": "aarti",
+      "score": 0.341064453125
+    },
+    {
+      "scene": "election rally",
+      "score": 0.100830078125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        253,
+        182,
+        1053,
+        748
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.6936376690864563,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

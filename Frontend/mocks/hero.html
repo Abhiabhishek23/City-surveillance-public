@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Splash – Mock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%230ea5e9'/%3E%3Cstop offset='100%25' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' ry='12' fill='url(%23g)'/%3E%3Cpath d='M8 32c6-10 16-16 24-16s18 6 24 16c-6 10-16 16-24 16S14 42 8 32z' fill='rgba(255,255,255,0.9)'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%230b0f14'/%3E%3Ccircle cx='32' cy='30' r='2' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    .glow{box-shadow: 0 0 120px rgba(34,211,238,.25), 0 0 60px rgba(139,92,246,.25) inset;}
+    .bg-grid{background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px); background-size: 24px 24px; background-position: -1px -1px;}
+  </style>
+  </head>
+<body class="min-h-screen bg-[#0A0F14] text-slate-100">
+  <header class="py-6">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div class="text-xl font-bold">City Intelligence</div>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#" class="hover:text-white">Platform</a>
+        <a href="#" class="hover:text-white">Use cases</a>
+        <a href="#" class="hover:text-white">Docs</a>
+  <a href="/client_ui/mocks/index.html" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">Mocks</a>
+        <a href="/client_ui/mocks/onboarding.html" class="px-4 py-2 rounded-xl bg-cyan-500 text-black font-semibold">Sign in</a>
+        <select id="roleSelect" class="px-2 py-1 rounded bg-white/10 border border-white/10 text-slate-200">
+          <option value="client">Client</option>
+          <option value="admin">Admin</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+  <div class="bg-black/30 border-y border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-2 text-xs text-slate-300 flex items-center gap-3">
+      <span>Quick nav:</span>
+      <a href="/client_ui/mocks/notifications.html" class="underline">Notifications</a>
+      <a href="/client_ui/mocks/client-feed.html" class="underline">Feed</a>
+      <a href="/client_ui/mocks/camera-map.html" class="underline">Map</a>
+      <a href="/client_ui/mocks/event-detail.html" class="underline" data-role="admin">Event detail</a>
+      <a href="/client_ui/mocks/admin-live.html" class="underline" data-role="admin">Admin live</a>
+    </div>
+  </div>
+
+  <main class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid opacity-30 pointer-events-none"></div>
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">City surveillance that’s
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-fuchsia-400 to-violet-400">dynamic</span>,
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-rose-400">responsive</span>, and <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-400">alive</span>.</h1>
+      <p class="text-slate-300 mt-6 max-w-2xl">Deploy computer vision at the edge with actionable alerts, trusted privacy, and a delightful operator experience.</p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="/client_ui/mocks/notifications.html" class="px-6 py-3 rounded-xl bg-white text-black font-semibold">View Notifications</a>
+        <a href="/admin" class="px-6 py-3 rounded-xl bg-white/10 text-white border border-white/15">Open Admin</a>
+      </div>
+
+      <div class="mt-16 grid md:grid-cols-2 gap-6">
+        <div class="p-4 rounded-2xl border border-white/10 bg-white/5 glow">
+          <div class="text-sm text-slate-400 mb-2">Live camera feed</div>
+          <div class="aspect-video rounded-xl bg-black/60 grid place-items-center text-slate-400">Stream Placeholder</div>
+        </div>
+        <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+          <div class="text-sm text-slate-400 mb-2">Recent violations</div>
+          <div class="space-y-3">
+            <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
+              <div>
+                <div class="font-semibold">Overcrowding at Sector 12</div>
+                <div class="text-xs text-slate-400">2 min ago • CAM-07</div>
+              </div>
+              <span class="px-2 py-1 text-xs rounded-lg bg-amber-400/20 text-amber-300 border border-amber-400/30">Medium</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
+              <div>
+                <div class="font-semibold">Illegal construction</div>
+                <div class="text-xs text-slate-400">8 min ago • CAM-03</div>
+              </div>
+              <span class="px-2 py-1 text-xs rounded-lg bg-rose-400/20 text-rose-300 border border-rose-400/30">High</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
+              <div>
+                <div class="font-semibold">Accident risk detected</div>
+                <div class="text-xs text-slate-400">14 min ago • CAM-15</div>
+              </div>
+              <span class="px-2 py-1 text-xs rounded-lg bg-cyan-400/20 text-cyan-300 border border-cyan-400/30">Info</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-10 text-center text-slate-400 text-sm">© 2025 City Intelligence. All rights reserved.</footer>
+  <script>
+    (function(){
+      const role = localStorage.getItem('uiMockRole') || 'client';
+      document.querySelectorAll('[data-role="admin"]').forEach(el=>{ el.style.display = (role==='admin')? '' : 'none'; });
+      const sel = document.getElementById('roleSelect'); if(sel){ sel.value = role; sel.addEventListener('change', ()=>{ localStorage.setItem('uiMockRole', sel.value); location.reload(); }); }
+    })();
+  </script>
+</body>
+</html>

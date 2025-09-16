@@ -1,0 +1,14 @@
+{
+  "image": "000017.png",
+  "scenes": [
+    {
+      "scene": "sand mining site",
+      "score": 0.77392578125
+    },
+    {
+      "scene": "arti",
+      "score": 0.0999755859375
+    }
+  ],
+  "detections": []
+}

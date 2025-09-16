@@ -1,0 +1,102 @@
+# City Surveillance - YOLOv8 Training on Google Colab
+# Save this as train_on_colab.ipynb in your project root
+
+# [1] Install Required Packages
+!pip install ultralytics roboflow albumentations
+
+# [2] Mount Google Drive
+from google.colab import drive
+drive.mount('/content/drive')
+
+# [3] Set up paths
+import os
+import shutil
+
+# Define your dataset path in Google Drive
+drive_dataset_path = "/content/drive/MyDrive/City-surveillance/Data/combined_dataset"
+local_dataset_path = "/content/combined_dataset"
+
+# Copy dataset from Drive to Colab workspace
+if os.path.exists(drive_dataset_path):
+    shutil.copytree(drive_dataset_path, local_dataset_path)
+    print("✅ Dataset copied successfully from Google Drive!")
+else:
+    print(f"❌ Dataset not found at {drive_dataset_path}")
+    print("Please upload your dataset to Google Drive first")
+    print("1. Zip your combined_dataset folder")
+    print("2. Upload to Google Drive in the City-surveillance/Data/ folder")
+    print("3. Unzip it there")
+
+# [4] Verify dataset structure
+print("\n📁 Dataset structure:")
+!find /content/combined_dataset -type f | head -20
+
+# [5] Check YAML file
+print("\n📄 YAML file content:")
+!cat /content/combined_dataset/combined.yaml
+
+# [6] Train the model
+print("\n🚀 Starting training...")
+!yolo detect train data=/content/combined_dataset/combined.yaml \
+model=yolov8n.pt \
+epochs=100 \
+imgsz=640 \
+batch=16 \
+device=0 \
+project=/content/training_results \
+name=combined_model
+
+# [7] Evaluate the model
+print("\n📊 Evaluating model...")
+!yolo detect val model=/content/training_results/combined_model/weights/best.pt \
+data=/content/combined_dataset/combined.yaml
+
+# [8] Export model to Google Drive
+import shutil
+
+best_model_path = "/content/training_results/combined_model/weights/best.pt"
+drive_model_dir = "/content/drive/MyDrive/City-surveillance/models"
+drive_model_path = f"{drive_model_dir}/best_combined.pt"
+
+# Create models directory if it doesn't exist
+os.makedirs(drive_model_dir, exist_ok=True)
+
+if os.path.exists(best_model_path):
+    shutil.copy(best_model_path, drive_model_path)
+    print(f"✅ Model saved to Google Drive: {drive_model_path}")
+else:
+    print("❌ Model training failed or best.pt not found")
+
+# [9] Test with sample images (optional)
+print("\n🧪 Testing with sample image...")
+# Find a sample image
+sample_images = []
+for root, dirs, files in os.walk(local_dataset_path):
+    for file in files:
+        if file.lower().endswith(('.jpg', '.jpeg', '.png')):
+            sample_images.append(os.path.join(root, file))
+            if len(sample_images) >= 1:
+                break
+    if sample_images:
+        break
+
+if sample_images:
+    test_image_path = sample_images[0]
+    !yolo detect predict model={best_model_path} source={test_image_path} save=True conf=0.5
+    print("✅ Prediction completed. Check the output in runs/detect/predict/")
+    
+    # Display the result
+    from IPython.display import Image, display
+    result_path = "/content/runs/detect/predict/" + os.path.basename(test_image_path)
+    if os.path.exists(result_path):
+        display(Image(filename=result_path))
+    else:
+        print("Result image not found")
+else:
+    print("❌ No sample images found for testing")
+
+print("\n🎉 Training completed successfully!")
+print("\nNext steps:")
+print("1. Download the model from Google Drive")
+print("2. Place it in your local models/ folder")
+print("3. Run: python edge/combined_detector.py")

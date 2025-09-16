@@ -1,0 +1,18 @@
+{
+  "image": "000004.png",
+  "scenes": [
+    {
+      "scene": "Holi festival",
+      "score": 0.25341796875
+    },
+    {
+      "scene": "arti",
+      "score": 0.10400390625
+    },
+    {
+      "scene": "night bazaar",
+      "score": 0.09619140625
+    }
+  ],
+  "detections": []
+}

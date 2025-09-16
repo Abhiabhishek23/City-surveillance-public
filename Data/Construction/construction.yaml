@@ -1,0 +1,6 @@
+# construction.yaml
+path: /Users/abhishekx/Desktop/City-surveillance/Data/Construction
+train: images/train
+val: images/val
+nc: 2
+names: ['legal', 'illegal']

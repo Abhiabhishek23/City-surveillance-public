@@ -1,0 +1,23 @@
+{
+  "image": "000049.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.7265625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        52,
+        77,
+        536,
+        241
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.9102142453193665,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "image": "000024.png",
+  "scenes": [
+    {
+      "scene": "sand mining site",
+      "score": 0.41455078125
+    },
+    {
+      "scene": "visarjan",
+      "score": 0.13671875
+    },
+    {
+      "scene": "election rally",
+      "score": 0.08038330078125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        446,
+        62,
+        874,
+        284
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.7998026013374329,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

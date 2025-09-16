@@ -1,0 +1,31 @@
+{
+  "image": "000019.jpg",
+  "scenes": [
+    {
+      "scene": "market",
+      "score": 0.671875
+    },
+    {
+      "scene": "night bazaar",
+      "score": 0.12237548828125
+    },
+    {
+      "scene": "Holi festival",
+      "score": 0.053466796875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        498,
+        80,
+        518,
+        114
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.42906928062438965,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    }
+  ]
+}

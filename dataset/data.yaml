@@ -1,0 +1,44 @@
+# Top-class (5-class) dataset config for optional training# YOLO dataset configuration
+
+# If you generate top-class labels via tools/ontology_mapper.py, you can train with this too.# NOTE: This is the older 5-class legality taxonomy.
+
+# For the objects-first 30-class training, use: dataset/dataset_mahakumbh.yaml
+
+train: dataset/images/train# Paths are relative to this file when used locally; Kaggle notebook can rewrite them.
+
+val: dataset/images/val
+
+path: ../dataset  # root dataset directory
+
+names:train: images/train
+
+  0: Permanent_Legalval: images/val
+
+  1: Permanent_Illegal
+
+  2: Temporary_Legaltest:  # optional
+
+  3: Temporary_Illegal
+
+  4: Natural_Area# Number of classes
+
+nc: 5
+
+# Class names (index order matters)
+names:
+  0: Permanent_Legal
+  1: Permanent_Illegal
+  2: Temporary_Legal
+  3: Temporary_Illegal
+  4: Natural_Area
+
+# Recommended image size for first pass
+imgsz: 640
+
+# Optional augmentation hints (not parsed by YOLO code directly; for reference)
+augmentation:
+  mosaic: true
+  hsv: true
+  flipud: 0.0
+  fliplr: 0.5
+  copy_paste: true

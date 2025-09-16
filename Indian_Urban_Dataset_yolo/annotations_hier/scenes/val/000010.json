@@ -1,0 +1,18 @@
+{
+  "image": "000010.png",
+  "scenes": [
+    {
+      "scene": "market",
+      "score": 0.480712890625
+    },
+    {
+      "scene": "protest",
+      "score": 0.25341796875
+    },
+    {
+      "scene": "Holi festival",
+      "score": 0.067138671875
+    }
+  ],
+  "detections": []
+}

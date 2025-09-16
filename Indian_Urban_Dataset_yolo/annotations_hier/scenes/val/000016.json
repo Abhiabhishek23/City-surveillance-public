@@ -1,0 +1,18 @@
+{
+  "image": "000016.png",
+  "scenes": [
+    {
+      "scene": "aarti",
+      "score": 0.439453125
+    },
+    {
+      "scene": "worship ceremony",
+      "score": 0.18603515625
+    },
+    {
+      "scene": "visarjan",
+      "score": 0.1043701171875
+    }
+  ],
+  "detections": []
+}

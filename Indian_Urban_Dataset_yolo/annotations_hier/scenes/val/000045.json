@@ -1,0 +1,107 @@
+{
+  "image": "000045.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.87353515625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        511,
+        438,
+        774,
+        575
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.871138870716095,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        252,
+        423,
+        511,
+        557
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8240554928779602,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        485,
+        336,
+        671,
+        463
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.7799260020256042,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        629,
+        194,
+        917,
+        393
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.6542328596115112,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        15,
+        436,
+        52,
+        528
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.745026707649231,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        980,
+        340,
+        1005,
+        421
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.6954423785209656,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        251,
+        422,
+        275,
+        502
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.535814106464386,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        1279,
+        193,
+        1293,
+        232
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.3272605836391449,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    }
+  ]
+}

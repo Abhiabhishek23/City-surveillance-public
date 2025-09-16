@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-multipart
+python-dotenv
+requests
+redis
+aiofiles
+Pillow
+boto3
+python-jose
+cryptography
+firebase-admin

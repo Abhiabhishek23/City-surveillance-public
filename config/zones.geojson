@@ -1,0 +1,309 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_level": "red",
+        "zone_type": "ghat_area",
+        "name": "Ram Ghat",
+        "category": "Ghats",
+        "feature_type": "Polygon",
+        "notes": "Primary Shahi Snan location. Highest pilgrim density. Strictly 24/7 pedestrian-only. Zero tolerance for hawking/vending. High-resolution PTZ camera surveillance is mandatory."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.76412276952638,
+              23.183601688825007
+            ],
+            [
+              75.76607723047363,
+              23.183601688825007
+            ],
+            [
+              75.76607723047363,
+              23.185398311174993
+            ],
+            [
+              75.76412276952638,
+              23.185398311174993
+            ],
+            [
+              75.76412276952638,
+              23.183601688825007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_level": "red",
+        "zone_type": "ghat_area",
+        "name": "Dutta Akhara Ghat",
+        "category": "Ghats",
+        "feature_type": "Polygon",
+        "notes": "Reserved for major Akharas during Shahi Snan. High-security perimeter. Access is strictly controlled and restricted."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.75952271107573,
+              23.191601688825006
+            ],
+            [
+              75.76147728892425,
+              23.191601688825006
+            ],
+            [
+              75.76147728892425,
+              23.19339831117499
+            ],
+            [
+              75.75952271107573,
+              23.19339831117499
+            ],
+            [
+              75.75952271107573,
+              23.191601688825006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_level": "red",
+        "zone_type": "temple_precinct",
+        "name": "Mahakaleshwar Temple Corridor",
+        "category": "Temples",
+        "feature_type": "Polygon",
+        "notes": "Core Security Zone. A multi-layered security cordon. Access is controlled via a long, barricaded queuing system originating in the Orange Zone."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.7653227819438,
+              23.181901688825008
+            ],
+            [
+              75.76727721805621,
+              23.181901688825008
+            ],
+            [
+              75.76727721805621,
+              23.183698311174993
+            ],
+            [
+              75.7653227819438,
+              23.183698311174993
+            ],
+            [
+              75.7653227819438,
+              23.181901688825008
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_level": "red",
+        "zone_type": "temple_precinct",
+        "name": "Harsiddhi Mata Temple",
+        "category": "Temples",
+        "feature_type": "Point",
+        "notes": "High footfall needs to be managed in sync with ghat and Mahakal temple crowds."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.76382278924758,
+              23.180901688825006
+            ],
+            [
+              75.7657772107524,
+              23.180901688825006
+            ],
+            [
+              75.7657772107524,
+              23.182698311174992
+            ],
+            [
+              75.76382278924758,
+              23.182698311174992
+            ],
+            [
+              75.76382278924758,
+              23.180901688825006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_level": "red",
+        "zone_type": "corridor",
+        "name": "Pontoon Bridges & Ram Ghat Bridge",
+        "category": "Routes",
+        "feature_type": "Polyline",
+        "notes": "Critical Choke Points. Monitored 24/7 for structural integrity and stampede risk. May be designated one-way during peak hours. No stopping/loitering allowed."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.7633341433322,
+              23.184152533237516
+            ],
+            [
+              75.76626585666779,
+              23.184152533237516
+            ],
+            [
+              75.76626585666779,
+              23.186847466762487
+            ],
+            [
+              75.7633341433322,
+              23.186847466762487
+            ],
+            [
+              75.7633341433322,
+              23.184152533237516
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_level": "orange",
+        "zone_type": null,
+        "name": "Pravachan/Satsang Pandals",
+        "category": "Religious Activities",
+        "feature_type": "Polygon",
+        "notes": "Area for religious organizations' discourses. Requires permits for structures and time-based permits for loudspeakers."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.77402261969446,
+              23.204101688825006
+            ],
+            [
+              75.77597738030555,
+              23.204101688825006
+            ],
+            [
+              75.77597738030555,
+              23.20589831117499
+            ],
+            [
+              75.77402261969446,
+              23.20589831117499
+            ],
+            [
+              75.77402261969446,
+              23.204101688825006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_level": "yellow",
+        "zone_type": "satellite_parking",
+        "name": "Satellite Parking (All Major Highways)",
+        "category": "Transport",
+        "feature_type": "Polygon",
+        "notes": "Park-and-Ride facilities. All private/tourist vehicles must park here. This is the outer limit for non-official vehicles."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.80902309418298,
+              23.139101688825008
+            ],
+            [
+              75.81097690581703,
+              23.139101688825008
+            ],
+            [
+              75.81097690581703,
+              23.140898311174993
+            ],
+            [
+              75.80902309418298,
+              23.140898311174993
+            ],
+            [
+              75.80902309418298,
+              23.139101688825008
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_level": "yellow",
+        "zone_type": null,
+        "name": "Railway Stations & Main Bus Stands",
+        "category": "Transport",
+        "feature_type": "Point",
+        "notes": "Major pilgrim arrival hubs. Function as controlled points for directing pilgrims to shuttle services, not for private vehicle pickup/drop-off."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.77732281480772,
+              23.177401688825007
+            ],
+            [
+              75.77927718519229,
+              23.177401688825007
+            ],
+            [
+              75.77927718519229,
+              23.179198311174993
+            ],
+            [
+              75.77732281480772,
+              23.179198311174993
+            ],
+            [
+              75.77732281480772,
+              23.177401688825007
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

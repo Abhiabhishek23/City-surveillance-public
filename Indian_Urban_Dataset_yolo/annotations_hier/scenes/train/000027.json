@@ -1,0 +1,18 @@
+{
+  "image": "000027.png",
+  "scenes": [
+    {
+      "scene": "protest",
+      "score": 0.184326171875
+    },
+    {
+      "scene": "religious procession",
+      "score": 0.150390625
+    },
+    {
+      "scene": "wedding procession",
+      "score": 0.13916015625
+    }
+  ],
+  "detections": []
+}

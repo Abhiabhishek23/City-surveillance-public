@@ -1,0 +1,43 @@
+{
+  "image": "000022.png",
+  "scenes": [
+    {
+      "scene": "worship ceremony",
+      "score": 0.343505859375
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.25146484375
+    },
+    {
+      "scene": "market",
+      "score": 0.108154296875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        800,
+        496,
+        973,
+        837
+      ],
+      "yolo_label": "chair",
+      "yolo_conf": 0.5535394549369812,
+      "mapped_tax": "People/Pedestrians/sitting",
+      "mapping_score": 0.2459716796875
+    },
+    {
+      "xyxy": [
+        285,
+        469,
+        542,
+        853
+      ],
+      "yolo_label": "chair",
+      "yolo_conf": 0.3088623583316803,
+      "mapped_tax": "People/Pedestrians/sitting",
+      "mapping_score": 0.307373046875
+    }
+  ]
+}

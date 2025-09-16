@@ -1,0 +1,31 @@
+{
+  "image": "000016.png",
+  "scenes": [
+    {
+      "scene": "visarjan",
+      "score": 0.325439453125
+    },
+    {
+      "scene": "Holi festival",
+      "score": 0.257568359375
+    },
+    {
+      "scene": "protest",
+      "score": 0.1636962890625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        605,
+        372,
+        766,
+        504
+      ],
+      "yolo_label": "banana",
+      "yolo_conf": 0.44033005833625793,
+      "mapped_tax": "People/Informal_presence/street_children",
+      "mapping_score": 0.170166015625
+    }
+  ]
+}

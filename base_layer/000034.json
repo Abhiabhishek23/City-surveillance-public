@@ -1,0 +1,29 @@
+{
+  "image": "Indian_Urban_Dataset_yolo/images/val/000034.jpg",
+  "detections": [
+    {
+      "object": "person",
+      "class": "person",
+      "bbox_xyxy": [
+        274.585205078125,
+        369.88055419921875,
+        401.6671447753906,
+        702.711181640625
+      ],
+      "confidence": 0.9375499486923218,
+      "timestamp": "2025-09-14T17:22:05Z"
+    },
+    {
+      "object": "person",
+      "class": "person",
+      "bbox_xyxy": [
+        79.77162170410156,
+        359.3456115722656,
+        232.02908325195312,
+        728.3493041992188
+      ],
+      "confidence": 0.9238628149032593,
+      "timestamp": "2025-09-14T17:22:05Z"
+    }
+  ]
+}

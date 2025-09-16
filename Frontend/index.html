@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Monitoring – Client</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .fade-in { opacity: 0; transition: opacity .25s ease-in; }
+            .fade-in.loaded { opacity: 1; }
+            #map { height: 280px; }
+        </style>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%230ea5e9'/%3E%3Cstop offset='100%25' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' ry='12' fill='url(%23g)'/%3E%3Cpath d='M8 32c6-10 16-16 24-16s18 6 24 16c-6 10-16 16-24 16S14 42 8 32z' fill='rgba(255,255,255,0.9)'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%230b0f14'/%3E%3Ccircle cx='32' cy='30' r='2' fill='%23fff'/%3E%3C/svg%3E">
+</head>
+<body class="min-h-screen bg-[#0B0F14] text-slate-100">
+    <div class="max-w-4xl mx-auto p-6">
+            <div class="flex items-center justify-between">
+        <h1 class="text-lg font-extrabold">City Intelligence • Client</h1>
+        <div class="flex items-center">
+            <button id="googleSignIn" class="bg-white/10 border border-white/15 text-white px-3 py-2 rounded inline-flex items-center gap-2 hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 533.5 544.3" aria-hidden="true">
+                    <path fill="#4285F4" d="M533.5 278.4c0-18.6-1.7-37-5.1-54.8H272v103.8h146.9c-6.3 34-25 62.7-53.4 81.9v67h86.5c50.7-46.7 80.5-115.5 80.5-197.9z"/>
+                    <path fill="#34A853" d="M272 544.3c72.7 0 133.8-24.1 178.4-65.1l-86.5-67c-24 16.1-54.7 25.6-91.9 25.6-70.6 0-130.5-47.6-152-111.6H31.9v69.9C76.2 487.7 168.2 544.3 272 544.3z"/>
+                    <path fill="#FBBC05" d="M120 326.2c-5.6-16.9-8.8-35.1-8.8-53.7s3.2-36.8 8.8-53.7v-69.9H31.9C11.5 172.9 0 214.4 0 272.5s11.5 99.6 31.9 123.6l88.1-69.9z"/>
+                    <path fill="#EA4335" d="M272 107.7c39.5 0 75 13.6 102.9 40.3l77.1-77.1C405.7 26.2 344.6 0 272 0 168.2 0 76.2 56.6 31.9 148.9l88.1 69.9c21.6-64 81.5-111.1 152-111.1z"/>
+                </svg>
+                <span>Sign in with Google</span>
+            </button>
+            <button id="signOut" class="ml-2 bg-white/10 border border-white/15 px-3 py-2 rounded hidden">Sign out</button>
+            <a href="/client_ui/mocks/index.html" class="ml-3 text-sm text-slate-300 hover:text-white underline">UI mocks</a>
+                </div>
+            </div>
+        <p class="text-sm text-slate-300 mt-2">Get image snippets with location and time; enable push notifications.</p>
+
+            <div id="statusMessage" class="mt-3 p-3 rounded hidden"></div>
+
+            <div id="pushRow" class="mt-4 flex items-center gap-2 hidden">
+                <button id="enablePush" class="bg-cyan-500 text-black font-semibold px-3 py-2 rounded">Enable Push</button>
+                <span id="pushState" class="text-sm text-slate-300"></span>
+            </div>
+
+            <div class="mt-6">
+                <div class="mb-6 rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <h2 class="text-lg font-semibold mb-3">Run a local video and stream alerts</h2>
+                    <div class="grid gap-3 md:grid-cols-3">
+                        <div class="md:col-span-2 flex items-center gap-3">
+                            <input id="videoFile" type="file" accept="video/*" class="text-sm text-slate-200" />
+                            <input id="cameraIdInput" type="text" placeholder="Camera ID (optional)" class="bg-transparent border border-white/15 rounded px-2 py-1 text-sm w-48" />
+                            <input id="fpsInput" type="number" min="1" max="30" value="4" title="Frames per second to sample" class="bg-transparent border border-white/15 rounded px-2 py-1 text-sm w-20" />
+                            <button id="startVideoBtn" type="button" onclick="window.__startVideo && window.__startVideo()" class="bg-emerald-500 text-black font-semibold px-3 py-2 rounded">Start</button>
+                        </div>
+                        <div class="text-right text-sm text-slate-300">
+                            <span>Filtering camera:</span>
+                            <code id="currentCamera" class="ml-1 text-slate-100">None</code>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <video id="videoPlayer" class="w-full aspect-video rounded-lg border border-white/10 bg-black" controls playsinline></video>
+                        <div class="mt-2 flex items-center gap-2 text-xs text-slate-300">
+                            <div class="flex-1 h-2 bg-white/10 rounded overflow-hidden">
+                                <div id="jobProgBar" class="h-full bg-emerald-500" style="width:0%"></div>
+                            </div>
+                            <span id="jobProgText">Idle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mb-2">
+                    <h2 class="text-xl font-semibold">Recent Violations</h2>
+                    <span id="connStatus" class="text-xs px-2 py-1 rounded-full bg-white/10 border border-white/15">Connecting…</span>
+                </div>
+                <div id="cards" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+
+                <div class="mt-10 rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-lg font-semibold">Admin Controls</h2>
+                        <span class="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/15 text-slate-300">Requires sign-in</span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <!-- Thresholds Card -->
+                        <article class="rounded-xl border border-white/10 bg-white/0 p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <h3 class="font-semibold">Violation Thresholds</h3>
+                                    <span class="text-[10px] uppercase tracking-wider text-slate-400 border border-white/10 rounded px-1.5 py-0.5">JSON</span>
+                                </div>
+                                <div class="space-x-2">
+                                    <button id="loadCfgBtn" class="text-xs px-2 py-1 rounded bg-white/10 border border-white/15">Load</button>
+                                    <button id="saveCfgBtn" class="text-xs px-2 py-1 rounded bg-emerald-500 text-black font-semibold">Save</button>
+                                </div>
+                            </div>
+                            <textarea id="cfgText" rows="14" class="w-full text-xs bg-transparent border border-white/15 rounded-lg p-2 font-mono" placeholder="{\n  &quot;illegal_construction&quot;: {&quot;thr&quot;: 0.15, &quot;cooldown&quot;: 60}\n}"></textarea>
+                            <p class="mt-2 text-[11px] text-slate-400">Edit threshold and cooldown per type. Click Save to apply.</p>
+                        </article>
+
+                        <!-- Location Card -->
+                        <article class="rounded-xl border border-white/10 bg-white/0 p-4">
+                            <h3 class="font-semibold mb-3">Set Camera Location</h3>
+                            <div class="grid grid-cols-12 gap-2 mb-2">
+                                <div class="col-span-12 md:col-span-4">
+                                    <label class="text-[11px] text-slate-400 mb-1 block">Camera ID</label>
+                                    <input id="locCamId" type="text" placeholder="Camera ID" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm" />
+                                </div>
+                                <div class="col-span-12 md:col-span-8">
+                                    <label class="text-[11px] text-slate-400 mb-1 block">Location description</label>
+                                    <input id="locText" type="text" placeholder="e.g., Riverbank Gate 2" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm" />
+                                </div>
+                                <div class="col-span-6 md:col-span-3">
+                                    <label class="text-[11px] text-slate-400 mb-1 block">Lat</label>
+                                    <input id="locLat" type="number" step="0.000001" placeholder="Lat" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm" />
+                                </div>
+                                <div class="col-span-6 md:col-span-3">
+                                    <label class="text-[11px] text-slate-400 mb-1 block">Lng</label>
+                                    <input id="locLng" type="number" step="0.000001" placeholder="Lng" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm" />
+                                </div>
+                                <div class="col-span-12 md:col-span-6 flex items-end justify-end">
+                                    <button id="setLocBtn" class="text-sm px-3 py-2 rounded bg-white/10 border border-white/15">Set</button>
+                                </div>
+                            </div>
+                            <div id="map" class="rounded-lg border border-white/10 overflow-hidden"></div>
+                            <p class="mt-2 text-[11px] text-slate-400">Tip: use the current camera ID shown above to tag this video source.</p>
+                        </article>
+
+                        <!-- Start a Feed Card -->
+                        <article class="md:col-span-2 rounded-xl border border-white/10 bg-white/0 p-4">
+                            <h3 class="font-semibold mb-3">Start a Feed</h3>
+                            <div class="grid md:grid-cols-3 gap-3">
+                                <section class="p-3 rounded-lg border border-white/10 bg-white/0">
+                                    <header class="text-sm mb-2 font-medium">Local files</header>
+                                    <div class="space-y-2">
+                                        <div>
+                                            <label class="text-[11px] text-slate-400 mb-1 block">Source</label>
+                                            <select id="localFiles" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm"></select>
+                                        </div>
+                                        <div>
+                                            <label class="text-[11px] text-slate-400 mb-1 block">Camera ID</label>
+                                            <input id="localCam" placeholder="Camera ID" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm" />
+                                        </div>
+                                        <button id="startLocalBtn" type="button" class="w-full text-sm px-3 py-2 rounded bg-emerald-500 text-black font-semibold">Start</button>
+                                    </div>
+                                </section>
+                                <section class="p-3 rounded-lg border border-white/10 bg-white/0">
+                                    <header class="text-sm mb-2 font-medium">CCTV Feeds</header>
+                                    <div class="space-y-2">
+                                        <div>
+                                            <label class="text-[11px] text-slate-400 mb-1 block">Source</label>
+                                            <select id="cctvFeeds" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm"></select>
+                                        </div>
+                                        <div>
+                                            <label class="text-[11px] text-slate-400 mb-1 block">Camera ID</label>
+                                            <input id="cctvCam" placeholder="Camera ID" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm" />
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <button id="startCctvBtn" type="button" class="flex-1 text-sm px-3 py-2 rounded bg-white/10 border border-white/15">Start</button>
+                                            <button id="stopCctvBtn" type="button" class="flex-1 text-sm px-3 py-2 rounded bg-white/10 border border-white/15">Stop</button>
+                                        </div>
+                                        <span id="cctvJobId" class="text-[11px] text-slate-400"></span>
+                                        <p class="text-[11px] text-slate-400">Provide test RTSP/HTTP URLs in code for now.</p>
+                                    </div>
+                                </section>
+                                <section class="p-3 rounded-lg border border-white/10 bg-white/0">
+                                    <header class="text-sm mb-2 font-medium">Drone Feeds</header>
+                                    <div class="space-y-2">
+                                        <div>
+                                            <label class="text-[11px] text-slate-400 mb-1 block">Source</label>
+                                            <select id="droneFeeds" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm"></select>
+                                        </div>
+                                        <div>
+                                            <label class="text-[11px] text-slate-400 mb-1 block">Camera ID</label>
+                                            <input id="droneCam" placeholder="Camera ID" class="w-full bg-transparent border border-white/15 rounded px-2 py-1 text-sm" />
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <button id="startDroneBtn" type="button" class="flex-1 text-sm px-3 py-2 rounded bg-white/10 border border-white/15">Start</button>
+                                            <button id="stopDroneBtn" type="button" class="flex-1 text-sm px-3 py-2 rounded bg-white/10 border border-white/15">Stop</button>
+                                        </div>
+                                        <span id="droneJobId" class="text-[11px] text-slate-400"></span>
+                                    </div>
+                                </section>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <script>
+        // Firebase setup (guarded)
+        let messaging = { getToken: async()=>null };
+        let auth = { currentUser: null, onAuthStateChanged: (cb)=>cb(null), signInWithPopup: async()=>({user:null}), signOut: async()=>{} };
+        console.log('[ClientUI] script loaded');
+        (function initFirebase(){
+            try{
+                // Your Firebase project configuration
+                const firebaseConfig = {
+                    apiKey: "AIzaSyCdJOVkxrThmkOxgSvTUsa3z5Hu7lEDCx8",
+                    authDomain: "ujjain-50cb1.firebaseapp.com",
+                    projectId: "ujjain-50cb1",
+                    storageBucket: "ujjain-50cb1.firebasestorage.app",
+                    messagingSenderId: "317612615610",
+                    appId: "1:317612615610:web:356c42a095855976b31f83"
+                };
+                if(window.firebase){
+                    const app = firebase.initializeApp(firebaseConfig);
+                    messaging = firebase.messaging();
+                    auth = firebase.auth();
+                }
+            }catch(e){
+                console.warn('[Firebase] init skipped:', e);
+            }
+        })();
+
+                // Backend origin resolution
+                // Priority: URL ?backend=... -> localStorage.backendOrigin -> if served from backend, use location.origin -> fallback to localhost:8000
+                const urlParams = new URLSearchParams(location.search);
+                let backendOrigin = urlParams.get('backend') || localStorage.getItem('backendOrigin') || '';
+                if(backendOrigin){
+                    try { backendOrigin = new URL(backendOrigin).origin; } catch { backendOrigin = '' }
+                }
+                if(!backendOrigin){
+                    const sameOrigin = location.origin && /^http/.test(location.origin) && /:(\d+)$/.test(location.origin) && location.pathname.startsWith('/client_ui');
+                    backendOrigin = sameOrigin ? location.origin : 'http://127.0.0.1:8000';
+                }
+                // Persist override if provided
+                if(urlParams.get('backend')){
+                    localStorage.setItem('backendOrigin', backendOrigin);
+                }
+                const api = (p)=> backendOrigin.replace(/\/$/, '') + p;
+                const wsOrigin = backendOrigin.replace(/^http/,'ws');
+                const statusMessageEl = document.getElementById('statusMessage');
+                const pushBtn = document.getElementById('enablePush');
+                const pushRow = document.getElementById('pushRow');
+                const pushState = document.getElementById('pushState');
+                const cards = document.getElementById('cards');
+                const connStatus = document.getElementById('connStatus');
+                const signInBtn = document.getElementById('googleSignIn');
+                const signOutBtn = document.getElementById('signOut');
+                const videoInput = document.getElementById('videoFile');
+                const cameraIdInput = document.getElementById('cameraIdInput');
+                const startVideoBtn = document.getElementById('startVideoBtn');
+                const fpsInput = document.getElementById('fpsInput');
+                const jobProgBar = document.getElementById('jobProgBar');
+                const jobProgText = document.getElementById('jobProgText');
+                const videoPlayer = document.getElementById('videoPlayer');
+                const currentCameraEl = document.getElementById('currentCamera');
+                const cfgText = document.getElementById('cfgText');
+                const loadCfgBtn = document.getElementById('loadCfgBtn');
+                const saveCfgBtn = document.getElementById('saveCfgBtn');
+                const locCamId = document.getElementById('locCamId');
+                const locText = document.getElementById('locText');
+                const locLat = document.getElementById('locLat');
+                const locLng = document.getElementById('locLng');
+                const setLocBtn = document.getElementById('setLocBtn');
+                const localFiles = document.getElementById('localFiles');
+                const localCam = document.getElementById('localCam');
+                const startLocalBtn = document.getElementById('startLocalBtn');
+                const cctvFeeds = document.getElementById('cctvFeeds');
+                const cctvCam = document.getElementById('cctvCam');
+                const startCctvBtn = document.getElementById('startCctvBtn');
+                const stopCctvBtn = document.getElementById('stopCctvBtn');
+                const cctvJobId = document.getElementById('cctvJobId');
+                const droneFeeds = document.getElementById('droneFeeds');
+                const droneCam = document.getElementById('droneCam');
+                const startDroneBtn = document.getElementById('startDroneBtn');
+                const stopDroneBtn = document.getElementById('stopDroneBtn');
+                const droneJobId = document.getElementById('droneJobId');
+                let map, marker;
+
+                let idToken = '';
+                let selectedCameraId = '';
+                const alertNodes = new Map(); // id -> {root, timeEl, locEl, imgEl, lastImgUrl}
+                let ws;
+                let jobId = '';
+
+                function showStatus(msg, kind='info'){
+                    statusMessageEl.textContent = msg;
+                    statusMessageEl.classList.remove('hidden');
+                    statusMessageEl.className = 'mt-3 p-3 rounded ' + (kind==='error'?'bg-red-50 text-red-800':(kind==='success'?'bg-green-50 text-green-800':'bg-blue-50 text-blue-800'));
+                    try { statusMessageEl.scrollIntoView({behavior:'smooth', block:'center'}); } catch {}
+                }
+
+                async function getVapid(){
+                    try{ const r = await fetch(api('/fcm_vapid_public_key')); const j = await r.json(); return j && j.vapidKey; }catch{ return undefined; }
+                }
+
+                async function enablePush(){
+                    try{
+                        const perm = await Notification.requestPermission();
+                        if(perm!== 'granted'){ showStatus('Notifications denied', 'error'); return; }
+                        // Service worker must be same-origin; ensure you open this UI via backend mount at /client_ui
+                        const reg = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+                        const vapidKey = await getVapid();
+                        const token = await messaging.getToken({ vapidKey, serviceWorkerRegistration: reg });
+                        if(!token){ showStatus('No FCM token', 'error'); return; }
+                        // Ensure we have a fresh ID token
+                        if(auth.currentUser){ idToken = await auth.currentUser.getIdToken(true); }
+                        const fd = new FormData(); fd.append('token', token); if(idToken) fd.append('id_token', idToken);
+                        const resp = await fetch(api('/register_fcm_token'), { method:'POST', body: fd });
+                        const txt = await resp.text();
+                        if(resp.ok){ showStatus('Push enabled and token registered','success'); pushState.textContent='Notifications ON'; }
+                        else { showStatus('Register failed: '+txt, 'error'); }
+                    }catch(e){ showStatus('Push error: '+e, 'error'); }
+                }
+
+                function createCard(a){
+                    const root = document.createElement('div');
+                    root.className = 'rounded-2xl border border-white/10 bg-white/5 overflow-hidden';
+                    const imgEl = document.createElement('img');
+                    imgEl.className = 'w-full aspect-video object-cover fade-in';
+                    imgEl.alt = 'snapshot';
+                    imgEl.loading = 'lazy';
+                    imgEl.decoding = 'async';
+                    imgEl.fetchPriority = 'low';
+                    const meta = document.createElement('div');
+                    meta.className = 'p-3 flex items-center justify-between';
+                    const locEl = document.createElement('div');
+                    locEl.className = 'text-sm text-slate-300';
+                    const typeEl = document.createElement('div');
+                    typeEl.className = 'text-xs text-red-300 font-semibold ml-2';
+                    const timeEl = document.createElement('div');
+                    timeEl.className = 'text-xs text-slate-400';
+                    const leftWrap = document.createElement('div');
+                    leftWrap.className = 'flex items-center gap-2';
+                    leftWrap.appendChild(locEl);
+                    leftWrap.appendChild(typeEl);
+                    meta.appendChild(leftWrap);
+                    meta.appendChild(timeEl);
+                    root.appendChild(imgEl);
+                    root.appendChild(meta);
+                    return {root, timeEl, locEl, typeEl, imgEl, lastImgUrl: ''};
+                }
+
+                function upsertCard(a){
+                    let node = alertNodes.get(a.id);
+                    if(!node){
+                        node = createCard(a);
+                        alertNodes.set(a.id, node);
+                        // Insert in order (append; caller ensures order)
+                        cards.appendChild(node.root);
+                    }
+                    // Update fields only if changed
+                    const timeTxt = a.timestamp? new Date(a.timestamp).toLocaleString():'';
+                    if(node.timeEl.textContent !== timeTxt) node.timeEl.textContent = timeTxt;
+                    const locTxt = `${a.location||a.camera_id||''}`;
+                    if(node.locEl.textContent !== locTxt) node.locEl.textContent = locTxt;
+                    const t = (a.type||a.event||'').replaceAll('_',' ');
+                    if(node.typeEl && node.typeEl.textContent !== t){ node.typeEl.textContent = t; }
+                    // Handle image with diffing and smooth fade-in
+                    const url = a.snapshot_url || '';
+                    if(url && node.lastImgUrl !== url){
+                        node.imgEl.classList.remove('loaded');
+                        node.imgEl.onload = ()=> node.imgEl.classList.add('loaded');
+                        node.imgEl.onerror = ()=> {
+                            if(!node.imgEl.dataset.retried){
+                                node.imgEl.dataset.retried = '1';
+                                try{ const u = new URL(url); u.searchParams.set('_', Date.now()); node.imgEl.src = u.toString(); }
+                                catch{ node.imgEl.classList.add('loaded'); }
+                            } else { node.imgEl.classList.add('loaded'); }
+                        };
+                        node.imgEl.src = url;
+                        // If the image is cached and already complete, ensure it's shown
+                        if (node.imgEl.complete) {
+                            // Try decode for smoothness; fall back to immediate show
+                            if (node.imgEl.decode) {
+                                node.imgEl.decode().then(()=> node.imgEl.classList.add('loaded')).catch(()=> node.imgEl.classList.add('loaded'));
+                            } else {
+                                node.imgEl.classList.add('loaded');
+                            }
+                        }
+                        node.lastImgUrl = url;
+                    }
+                    if(!url){
+                        node.imgEl.removeAttribute('src');
+                        node.imgEl.classList.remove('loaded');
+                        node.lastImgUrl = '';
+                    }
+                }
+
+                function renderAlerts(list){
+                    const seen = new Set();
+                    list.forEach((a)=>{
+                        seen.add(a.id);
+                        upsertCard(a);
+                    });
+                    // Remove cards not present anymore
+                    for(const [id, node] of Array.from(alertNodes.entries())){
+                        if(!seen.has(id)){
+                            node.root.remove();
+                            alertNodes.delete(id);
+                        }
+                    }
+                    // Ensure order in DOM matches list order
+                    let prev = null;
+                    list.forEach((a)=>{
+                        const n = alertNodes.get(a.id);
+                        if(!n) return;
+                        if(prev){
+                            // insert after prev if not already after
+                            if(prev.nextSibling !== n.root){
+                                cards.insertBefore(n.root, prev.nextSibling);
+                            }
+                        } else {
+                            if(cards.firstChild !== n.root){
+                                cards.insertBefore(n.root, cards.firstChild);
+                            }
+                        }
+                        prev = n.root;
+                    });
+                }
+
+    async function pollAlerts(){
+                    try{
+            const qp = new URLSearchParams({ since_hours: '24', limit: '200' });
+            if(selectedCameraId){ qp.set('camera_id', selectedCameraId); }
+            const r = await fetch(api('/client_alerts?'+qp.toString()), { headers: idToken? {Authorization: `Bearer ${idToken}`} : {} });
+                        if(!r.ok){ connStatus.textContent='Auth required'; return; }
+                        const j = await r.json();
+            // sort newest first by timestamp if present
+            let arr = Array.isArray(j)? j: [];
+            arr.sort((a,b)=> new Date(b.timestamp||0) - new Date(a.timestamp||0));
+            renderAlerts(arr);
+                        connStatus.textContent='Connected';
+                    }catch(e){ connStatus.textContent='Disconnected'; }
+                }
+
+                function setAuthUI(signedIn){
+                    signInBtn.classList.toggle('hidden', signedIn);
+                    signOutBtn.classList.toggle('hidden', !signedIn);
+                    pushRow.classList.toggle('hidden', !signedIn);
+                }
+
+                signInBtn.onclick = async()=>{
+                    try{
+                        if(!window.firebase || !firebase.auth){ throw new Error('Auth not available'); }
+                        const provider = new firebase.auth.GoogleAuthProvider();
+                        const cred = await auth.signInWithPopup(provider);
+                        if(cred && cred.user){ idToken = await cred.user.getIdToken(); }
+                        showStatus('Signed in','success');
+                        pollAlerts();
+                        setAuthUI(true);
+                    }catch(e){ showStatus('Sign-in error: '+e, 'error'); }
+                };
+                signOutBtn.onclick = async()=>{ await auth.signOut(); idToken=''; showStatus('Signed out'); renderAlerts([]); setAuthUI(false); };
+                pushBtn.onclick = enablePush;
+
+                auth.onAuthStateChanged(async(user)=>{
+                    const signedIn = !!user;
+                    if(signedIn){ idToken = await user.getIdToken(); setAuthUI(true); } else { idToken=''; setAuthUI(false); }
+                });
+                setInterval(pollAlerts, 5000);
+                pollAlerts();
+
+                function openWebSocket(){
+                    try{
+                        if(ws){ ws.close(); }
+                        const url = new URL('/ws/alerts', wsOrigin);
+                        if(selectedCameraId){ url.searchParams.set('camera_id', selectedCameraId); }
+                        ws = new WebSocket(url);
+                        ws.onopen = ()=> { connStatus.textContent = 'Live'; };
+                        ws.onclose = ()=> { if(connStatus) connStatus.textContent = 'Polling'; };
+                        ws.onerror = ()=> { connStatus.textContent = 'WS error'; };
+                        ws.onmessage = (ev)=>{
+                            try{
+                                const msg = JSON.parse(ev.data);
+                                if(msg && msg.type==='alert' && msg.data){
+                                    const a = msg.data;
+                                    // Only insert if no filter or matches current camera filter
+                                    if(!selectedCameraId || String(a.camera_id)===String(selectedCameraId)){
+                                        upsertCard(a);
+                                    }
+                                }
+                            }catch{}
+                        };
+                    }catch{}
+                }
+
+                async function pollJob(){
+                    if(!jobId) return;
+                    try{
+                        const r = await fetch(api(`/job_status/${jobId}`));
+                        if(!r.ok) return;
+                        const j = await r.json();
+                        const total = j.total || 0; const processed = j.processed || 0; const status = j.status || 'running';
+                        const pct = total>0? Math.min(100, Math.round(100*processed/total)) : (status==='done'?100:0);
+                        jobProgBar.style.width = pct + '%';
+                        jobProgText.textContent = `${status} • ${processed}${total? '/'+total:''}`;
+                        if(status!=='done') setTimeout(pollJob, 1000);
+                    }catch{}
+                }
+
+                // Expose start handler globally and bind defensively
+                window.__startVideo = async()=>{
+                    try{
+                        const file = videoInput.files && videoInput.files[0];
+                        if(!file){ showStatus('Choose a video file first','error'); return; }
+                        console.log('[Start] backendOrigin =', backendOrigin);
+                        console.log('[Start] file =', file && (file.name+ ' '+ (file.type||'')));
+                        const cam = (cameraIdInput.value || file.name.replace(/\.[^/.]+$/, '')).replace(/\s+/g,'_');
+                        const fd = new FormData();
+                        fd.append('video', file);
+                        fd.append('camera_id', cam);
+                        const fps = Math.max(1, Math.min(30, parseInt(fpsInput.value||'4',10)||4));
+                        fd.append('fps_target', String(fps));
+                        const prevLabel = startVideoBtn.textContent; startVideoBtn.disabled = true; startVideoBtn.textContent = 'Starting…';
+                        const resp = await fetch(api('/process_video'), { method:'POST', body: fd });
+                        if(!resp.ok){ const t = await resp.text(); throw new Error(t); }
+                        const j = await resp.json();
+                        if(j && j.video_url){
+                            selectedCameraId = j.camera_id || cam;
+                            currentCameraEl.textContent = selectedCameraId;
+                            videoPlayer.src = j.video_url;
+                            videoPlayer.play();
+                            jobId = j.processing_id || '';
+                            jobProgBar.style.width = '0%';
+                            jobProgText.textContent = 'queued';
+                            pollJob();
+                            openWebSocket();
+                            showStatus('Processing started. Streaming alerts…','success');
+                            pollAlerts();
+                        } else {
+                            throw new Error('No video_url in response');
+                        }
+                        startVideoBtn.disabled = false; startVideoBtn.textContent = prevLabel;
+                    }catch(e){ showStatus('Start error: '+e, 'error'); }
+                };
+                // Helper to (re-)wire the Start button
+                function wireStartButton(){
+                    try{
+                        if(!startVideoBtn) return;
+                        startVideoBtn.onclick = window.__startVideo;
+                        try{ startVideoBtn.addEventListener('click', window.__startVideo, { once: false }); }catch{}
+                        startVideoBtn.dataset.wired = '1';
+                        console.log('[Start] handler wired');
+                    }catch(e){ console.warn('[Start] wire error', e); }
+                }
+                wireStartButton();
+                // Auto-start when a file is chosen
+                try{ videoInput.addEventListener('change', ()=>{ if(videoInput.files && videoInput.files[0]) { window.__startVideo(); } }); }catch{}
+                // Pressing Enter in FPS starts
+                try{ fpsInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter'){ e.preventDefault(); window.__startVideo(); } }); }catch{}
+                // Global delegated fallback (capture phase) in case direct binding is bypassed
+                document.addEventListener('click', (ev)=>{
+                    const t = ev.target;
+                    if(!t) return;
+                    if(t.id === 'startVideoBtn' || (t.closest && t.closest('#startVideoBtn'))){
+                        try { window.__startVideo(); } catch(e){ console.warn('[Start] delegate error', e); }
+                    }
+                }, true);
+
+                // --- Map setup for camera location ---
+                function initMap(){
+                    if(map) return;
+                    map = L.map('map');
+                    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '&copy; OpenStreetMap'
+                    }).addTo(map);
+                    const fallback = [20.5937, 78.9629]; // India centroid as fallback
+                    function center(latlng){ map.setView(latlng, 12); }
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition((pos)=>{
+                            center([pos.coords.latitude, pos.coords.longitude]);
+                        }, ()=> center(fallback), {timeout: 3000});
+                    } else { center(fallback); }
+                    map.on('click', (e)=>{
+                        const {lat, lng} = e.latlng;
+                        if(marker){ marker.setLatLng(e.latlng); } else { marker = L.marker(e.latlng).addTo(map); }
+                        const existing = locText.value.trim();
+                        const coordTxt = `${lat.toFixed(6)}, ${lng.toFixed(6)}`;
+                        locText.value = existing? `${coordTxt} | ${existing}` : coordTxt;
+                        // Also populate explicit fields
+                        if(locLat) locLat.value = lat.toFixed(6);
+                        if(locLng) locLng.value = lng.toFixed(6);
+                    });
+                }
+                // Initialize map when admin section comes into view
+                const mapEl = document.getElementById('map');
+                const intObs = new IntersectionObserver((entries)=>{
+                    entries.forEach((en)=>{ if(en.isIntersecting) { initMap(); intObs.disconnect(); }});
+                });
+                intObs.observe(mapEl);
+
+                async function autoloadAdmin(){
+                    try{
+                        if(!idToken) return;
+                        // No-op prefetch to check access
+                        const r = await fetch(api('/config/violation_thresholds'), { headers: { Authorization: `Bearer ${idToken}` }});
+                        if(r.ok){ cfgText.value = JSON.stringify(await r.json(), null, 2); }
+                    }catch{}
+                }
+                loadCfgBtn.onclick = async()=>{
+                    if(!idToken){ showStatus('Sign in first to load config','error'); return; }
+                    try{
+                        const r = await fetch(api('/config/violation_thresholds'), { headers: { Authorization: `Bearer ${idToken}` }});
+                        if(!r.ok){ const t = await r.text(); throw new Error(t); }
+                        cfgText.value = JSON.stringify(await r.json(), null, 2);
+                        showStatus('Config loaded','success');
+                    }catch(e){ showStatus('Load config error: '+e, 'error'); }
+                };
+                saveCfgBtn.onclick = async()=>{
+                    if(!idToken){ showStatus('Sign in first to save config','error'); return; }
+                    try{
+                        const body = cfgText.value.trim();
+                        const r = await fetch(api('/config/violation_thresholds'), {
+                            method: 'PUT',
+                            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+                            body
+                        });
+                        const t = await r.text();
+                        if(!r.ok) throw new Error(t);
+                        showStatus('Config saved','success');
+                    }catch(e){ showStatus('Save config error: '+e, 'error'); }
+                };
+                setLocBtn.onclick = async()=>{
+                    if(!idToken){ showStatus('Sign in first to set location','error'); return; }
+                    const cam = (locCamId.value || selectedCameraId || '').trim();
+                    if(!cam){ showStatus('Camera ID required','error'); return; }
+                    const loc = (locText.value || '').trim();
+                    if(!loc){ showStatus('Location text required','error'); return; }
+                    try{
+                        const latNum = locLat && locLat.value? parseFloat(locLat.value) : undefined;
+                        const lngNum = locLng && locLng.value? parseFloat(locLng.value) : undefined;
+                        const payload = { location: loc };
+                        if(Number.isFinite(latNum)) payload.latitude = latNum;
+                        if(Number.isFinite(lngNum)) payload.longitude = lngNum;
+                        const r = await fetch(api(`/camera/${encodeURIComponent(cam)}/location`), {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+                            body: JSON.stringify(payload)
+                        });
+                        const t = await r.text();
+                        if(!r.ok) throw new Error(t);
+                        showStatus('Location saved','success');
+                        // Update marker if coords present
+                        if(Number.isFinite(latNum) && Number.isFinite(lngNum)){
+                            const ll = {lat: latNum, lng: lngNum};
+                            if(!map) initMap();
+                            if(marker){ marker.setLatLng(ll); } else { marker = L.marker(ll).addTo(map); }
+                            map.setView(ll, 14);
+                        }
+                        pollAlerts();
+                    }catch(e){ showStatus('Set location error: '+e, 'error'); }
+                };
+                autoloadAdmin();
+
+                // --- Feed presets ---
+                function fillSelect(sel, items){ sel.innerHTML = items.map(x=>`<option value="${x}">${x}</option>`).join(''); }
+                async function loadFeeds(){
+                    try{
+                        const r = await fetch(api('/feeds'));
+                        const j = await r.json();
+                        const toAbs = (p)=> /^https?:/i.test(p)? p : api(p);
+                        fillSelect(localFiles, (j.local||[]).map(toAbs));
+                        fillSelect(cctvFeeds, (j.cctv||[]).map(toAbs));
+                        fillSelect(droneFeeds, (j.drone||[]).map(toAbs));
+                    }catch{ /* ignore */ }
+                }
+                loadFeeds();
+
+                async function uploadAndStart(path, cam){
+                    try{
+                        // Fetch the file via same-origin; for local filesystem paths this won’t work, so the preset should point to a served path under the repo.
+                        const r = await fetch(path);
+                        if(!r.ok) throw new Error('Fetch failed: '+path);
+                        const blob = await r.blob();
+                        const fd = new FormData();
+                        fd.append('video', new File([blob], path.split('/').pop()||'video.mp4', {type: blob.type||'video/mp4'}));
+                        fd.append('camera_id', cam);
+                        fd.append('fps_target', String(Math.max(1, Math.min(30, parseInt(fpsInput.value||'4',10)||4))));
+                        const resp = await fetch(api('/process_video'), { method:'POST', body: fd });
+                        if(!resp.ok){ const t = await resp.text(); throw new Error(t); }
+                        const j = await resp.json();
+                        if(j && j.video_url){
+                            selectedCameraId = j.camera_id || cam;
+                            currentCameraEl.textContent = selectedCameraId;
+                            videoPlayer.src = j.video_url; videoPlayer.play();
+                            jobId = j.processing_id || '';
+                            jobProgBar.style.width = '0%'; jobProgText.textContent = 'queued';
+                            pollJob(); openWebSocket(); showStatus('Feed started','success');
+                            pollAlerts();
+                        } else { throw new Error('No video_url'); }
+                    }catch(e){ showStatus('Start feed error: '+e, 'error'); }
+                }
+                startLocalBtn.onclick = ()=>{
+                    const val = localFiles.value; const cam = (localCam.value||'CAM_LOCAL').trim(); if(!val) return; uploadAndStart(val, cam);
+                };
+                startCctvBtn.onclick = ()=>{
+                    const val = cctvFeeds.value; const cam = (cctvCam.value||'CAM_CCTV').trim(); if(!val){ showStatus('Define CCTV URLs in code','error'); return; } uploadAndStart(val, cam);
+                };
+                startDroneBtn.onclick = ()=>{
+                    const val = droneFeeds.value; const cam = (droneCam.value||'CAM_DRONE').trim(); if(!val){ showStatus('Define drone URLs in code','error'); return; } uploadAndStart(val, cam);
+                };
+                // Start/Stop ingestion using backend endpoints (admin only)
+                async function startIngest(url, cam){
+                    if(!idToken){ showStatus('Sign in first to start ingestion','error'); return; }
+                    try{
+                        const r = await fetch(api('/ingest/start'), {
+                            method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+                            body: JSON.stringify({ source_url: url, camera_id: cam, fps_target: Math.max(1, Math.min(30, parseInt(fpsInput.value||'4',10)||4)) })
+                        });
+                        const j = await r.json();
+                        if(!r.ok){ throw new Error(j.detail||JSON.stringify(j)); }
+                        showStatus('Ingestion started','success');
+                        selectedCameraId = j.camera_id; currentCameraEl.textContent = selectedCameraId; openWebSocket(); pollAlerts();
+                        return j.job_id;
+                    }catch(e){ showStatus('Start ingest error: '+e, 'error'); return null; }
+                }
+                async function stopIngest(jobId, cam){
+                    if(!idToken){ showStatus('Sign in first to stop ingestion','error'); return; }
+                    try{
+                        const r = await fetch(api('/ingest/stop'), {
+                            method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+                            body: JSON.stringify(jobId? { job_id: jobId } : { camera_id: cam })
+                        });
+                        const j = await r.json();
+                        if(!r.ok){ throw new Error(j.detail||JSON.stringify(j)); }
+                        showStatus('Stopped: '+(j.stopped||[]).join(','),'success');
+                    }catch(e){ showStatus('Stop ingest error: '+e, 'error'); }
+                }
+                startCctvBtn.addEventListener('contextmenu', (ev)=>{ ev.preventDefault(); });
+                startDroneBtn.addEventListener('contextmenu', (ev)=>{ ev.preventDefault(); });
+                startCctvBtn.onclick = async()=>{
+                    const val = cctvFeeds.value; const cam = (cctvCam.value||'CAM_CCTV').trim(); if(!val){ showStatus('Define CCTV URLs in code','error'); return; }
+                    const jid = await startIngest(val, cam); if(jid) cctvJobId.textContent = jid;
+                };
+                stopCctvBtn.onclick = async()=>{
+                    const cam = (cctvCam.value||selectedCameraId||'').trim(); await stopIngest(cctvJobId.textContent||'', cam); cctvJobId.textContent='';
+                };
+                startDroneBtn.onclick = async()=>{
+                    const val = droneFeeds.value; const cam = (droneCam.value||'CAM_DRONE').trim(); if(!val){ showStatus('Define drone URLs in code','error'); return; }
+                    const jid = await startIngest(val, cam); if(jid) droneJobId.textContent = jid;
+                };
+                stopDroneBtn.onclick = async()=>{
+                    const cam = (droneCam.value||selectedCameraId||'').trim(); await stopIngest(droneJobId.textContent||'', cam); droneJobId.textContent='';
+                };
+    </script>
+</body>
+</html>

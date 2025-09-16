@@ -1,0 +1,31 @@
+{
+  "image": "000050.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.406982421875
+    },
+    {
+      "scene": "arti",
+      "score": 0.1669921875
+    },
+    {
+      "scene": "election rally",
+      "score": 0.08868408203125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        235,
+        158,
+        560,
+        398
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.8791724443435669,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    }
+  ]
+}

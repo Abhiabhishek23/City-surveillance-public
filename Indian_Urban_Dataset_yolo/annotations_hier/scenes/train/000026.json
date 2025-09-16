@@ -1,0 +1,67 @@
+{
+  "image": "000026.png",
+  "scenes": [
+    {
+      "scene": "Holi festival",
+      "score": 0.4638671875
+    },
+    {
+      "scene": "worship ceremony",
+      "score": 0.17333984375
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.0858154296875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        696,
+        627,
+        789,
+        819
+      ],
+      "yolo_label": "wine glass",
+      "yolo_conf": 0.6953070163726807,
+      "mapped_tax": "Urban/Festivals/Christmas",
+      "mapping_score": 0.136962890625
+    },
+    {
+      "xyxy": [
+        446,
+        471,
+        516,
+        633
+      ],
+      "yolo_label": "wine glass",
+      "yolo_conf": 0.3982408046722412,
+      "mapped_tax": "Urban/Festivals/Christmas",
+      "mapping_score": 0.0670166015625
+    },
+    {
+      "xyxy": [
+        1182,
+        753,
+        1289,
+        838
+      ],
+      "yolo_label": "chair",
+      "yolo_conf": 0.32269421219825745,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.28369140625
+    },
+    {
+      "xyxy": [
+        783,
+        610,
+        890,
+        830
+      ],
+      "yolo_label": "wine glass",
+      "yolo_conf": 0.25674980878829956,
+      "mapped_tax": "People/Pedestrians/sitting",
+      "mapping_score": 0.09967041015625
+    }
+  ]
+}

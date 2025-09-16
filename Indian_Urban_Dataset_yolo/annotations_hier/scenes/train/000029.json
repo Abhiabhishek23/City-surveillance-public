@@ -1,0 +1,31 @@
+{
+  "image": "000029.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.265869140625
+    },
+    {
+      "scene": "aarti",
+      "score": 0.1689453125
+    },
+    {
+      "scene": "election rally",
+      "score": 0.15869140625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        136,
+        224,
+        1846,
+        1101
+      ],
+      "yolo_label": "bus",
+      "yolo_conf": 0.9256163239479065,
+      "mapped_tax": "Transport/Vehicles/bus",
+      "mapping_score": 0.99
+    }
+  ]
+}

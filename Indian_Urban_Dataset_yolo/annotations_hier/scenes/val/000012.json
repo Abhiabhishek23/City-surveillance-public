@@ -1,0 +1,18 @@
+{
+  "image": "000012.png",
+  "scenes": [
+    {
+      "scene": "protest",
+      "score": 0.474609375
+    },
+    {
+      "scene": "garbage dump",
+      "score": 0.1337890625
+    },
+    {
+      "scene": "worship ceremony",
+      "score": 0.0877685546875
+    }
+  ],
+  "detections": []
+}

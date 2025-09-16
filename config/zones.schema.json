@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Zones GeoJSON Schema",
+  "type": "object",
+  "properties": {
+    "type": { "const": "FeatureCollection" },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "const": "Feature" },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "zone_type": { "type": ["string", "null"] },
+              "zone_level": { "type": "string", "enum": ["red", "orange", "yellow", "green"] },
+              "camera_id": { "type": ["string", "null"] },
+              "name": { "type": ["string", "null"] },
+              "category": { "type": ["string", "null"] },
+              "feature_type": { "type": ["string", "null"] },
+              "notes": { "type": ["string", "null"] }
+            },
+            "required": []
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "type": { "enum": ["Polygon", "MultiPolygon"] },
+              "coordinates": { "type": "array" }
+            },
+            "required": ["type", "coordinates"]
+          }
+        },
+        "required": ["type", "properties", "geometry"]
+      }
+    }
+  },
+  "required": ["type", "features"]
+}

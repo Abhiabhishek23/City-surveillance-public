@@ -1,0 +1,31 @@
+{
+  "image": "000027.jpg",
+  "scenes": [
+    {
+      "scene": "protest",
+      "score": 0.417724609375
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.26123046875
+    },
+    {
+      "scene": "market",
+      "score": 0.1314697265625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        156,
+        395,
+        206,
+        451
+      ],
+      "yolo_label": "bird",
+      "yolo_conf": 0.278850257396698,
+      "mapped_tax": "Waste/Garbage_bins/overflowing",
+      "mapping_score": 0.1407470703125
+    }
+  ]
+}

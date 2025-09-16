@@ -1,0 +1,31 @@
+{
+  "image": "000028.png",
+  "scenes": [
+    {
+      "scene": "idol immersion",
+      "score": 0.20458984375
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.138427734375
+    },
+    {
+      "scene": "arti",
+      "score": 0.118408203125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        67,
+        92,
+        908,
+        583
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.8464378714561462,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    }
+  ]
+}

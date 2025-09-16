@@ -1,0 +1,18 @@
+{
+  "image": "000047.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.220703125
+    },
+    {
+      "scene": "night bazaar",
+      "score": 0.158935546875
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.11810302734375
+    }
+  ],
+  "detections": []
+}

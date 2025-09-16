@@ -1,0 +1,31 @@
+{
+  "image": "000019.png",
+  "scenes": [
+    {
+      "scene": "sand mining site",
+      "score": 0.61669921875
+    },
+    {
+      "scene": "arti",
+      "score": 0.1419677734375
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.053070068359375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        73,
+        1,
+        996,
+        496
+      ],
+      "yolo_label": "boat",
+      "yolo_conf": 0.8158929347991943,
+      "mapped_tax": "River/Activities/boating",
+      "mapping_score": 0.99
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "image": "000030.png",
+  "scenes": [
+    {
+      "scene": "garbage dump",
+      "score": 0.284423828125
+    },
+    {
+      "scene": "arti",
+      "score": 0.2181396484375
+    },
+    {
+      "scene": "sand mining site",
+      "score": 0.1697998046875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        35,
+        81,
+        472,
+        326
+      ],
+      "yolo_label": "traffic light",
+      "yolo_conf": 0.26712965965270996,
+      "mapped_tax": "Transport/Vehicles/cart",
+      "mapping_score": 0.1964111328125
+    }
+  ]
+}

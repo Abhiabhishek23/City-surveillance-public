@@ -1,0 +1,67 @@
+{
+  "image": "000044.png",
+  "scenes": [
+    {
+      "scene": "aarti",
+      "score": 0.51416015625
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.2044677734375
+    },
+    {
+      "scene": "arti",
+      "score": 0.06744384765625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        708,
+        20,
+        1186,
+        310
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.9303454756736755,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        60,
+        18,
+        575,
+        341
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.9302411675453186,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        720,
+        359,
+        1255,
+        680
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.9063627123832703,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        50,
+        406,
+        585,
+        703
+      ],
+      "yolo_label": "motorcycle",
+      "yolo_conf": 0.8956927061080933,
+      "mapped_tax": "Transport/Vehicles/two_wheeler",
+      "mapping_score": 0.99
+    }
+  ]
+}

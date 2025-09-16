@@ -1,0 +1,44 @@
+# Project root ignores
+.env
+*.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+backend/backend_uploads/
+edge_uploads/
+runs/
+logs/
+.DS_Store
+node_modules/
+
+# Python venvs
+.venv/
+venv/
+
+# Frontend
+/dashboard/build/
+
+# Secrets and credentials (do NOT commit to public repos)
+*firebase-adminsdk*.json
+*service-account*.json
+backend/.env
+.env.development
+.env.production
+
+# Local generated media and large binaries
+video_uploads/
+Assets/*.mp4
+Assets/*.mov
+Assets/*.avi
+*.mp4
+*.mov
+*.avi
+*.zip
+*.onnx
+*.pt
+*.pth
+
+# Allow sample videos in Test samples/ to be committed
+!Test samples/*.mp4

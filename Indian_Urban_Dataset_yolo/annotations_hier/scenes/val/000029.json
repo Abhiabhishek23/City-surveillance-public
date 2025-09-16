@@ -1,0 +1,31 @@
+{
+  "image": "000029.jpg",
+  "scenes": [
+    {
+      "scene": "worship ceremony",
+      "score": 0.2744140625
+    },
+    {
+      "scene": "protest",
+      "score": 0.163818359375
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.137939453125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        297,
+        204,
+        1015,
+        568
+      ],
+      "yolo_label": "bench",
+      "yolo_conf": 0.4307156205177307,
+      "mapped_tax": "People/Pedestrians/sitting",
+      "mapping_score": 0.43212890625
+    }
+  ]
+}

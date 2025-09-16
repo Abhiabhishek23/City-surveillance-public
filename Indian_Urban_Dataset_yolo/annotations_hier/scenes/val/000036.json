@@ -1,0 +1,43 @@
+{
+  "image": "000036.png",
+  "scenes": [
+    {
+      "scene": "protest",
+      "score": 0.334228515625
+    },
+    {
+      "scene": "garbage dump",
+      "score": 0.25634765625
+    },
+    {
+      "scene": "market",
+      "score": 0.1845703125
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        2,
+        4,
+        162,
+        250
+      ],
+      "yolo_label": "bus",
+      "yolo_conf": 0.4390121102333069,
+      "mapped_tax": "Transport/Vehicles/bus",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        453,
+        283,
+        597,
+        417
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.33243536949157715,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

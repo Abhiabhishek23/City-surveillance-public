@@ -1,0 +1,39 @@
+{
+  "image": "000025.png",
+  "scenes": [
+    {
+      "scene": "worship ceremony",
+      "score": 0.6689453125
+    },
+    {
+      "scene": "wedding procession",
+      "score": 0.2347412109375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        176,
+        424,
+        317,
+        566
+      ],
+      "yolo_label": "chair",
+      "yolo_conf": 0.6676892042160034,
+      "mapped_tax": "Waste/Garbage_bins/overflowing",
+      "mapping_score": 0.09197998046875
+    },
+    {
+      "xyxy": [
+        400,
+        508,
+        576,
+        566
+      ],
+      "yolo_label": "chair",
+      "yolo_conf": 0.6434279680252075,
+      "mapped_tax": "Urban/Festivals/Diwali",
+      "mapping_score": 0.152587890625
+    }
+  ]
+}

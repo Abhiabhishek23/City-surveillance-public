@@ -1,0 +1,18 @@
+{
+  "image": "000040.png",
+  "scenes": [
+    {
+      "scene": "sand mining site",
+      "score": 0.5
+    },
+    {
+      "scene": "protest",
+      "score": 0.12445068359375
+    },
+    {
+      "scene": "funeral procession",
+      "score": 0.1151123046875
+    }
+  ],
+  "detections": []
+}

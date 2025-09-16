@@ -1,0 +1,14 @@
+{
+  "image": "000032.png",
+  "scenes": [
+    {
+      "scene": "Diwali festival",
+      "score": 0.65380859375
+    },
+    {
+      "scene": "Holi festival",
+      "score": 0.252197265625
+    }
+  ],
+  "detections": []
+}

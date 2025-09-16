@@ -1,0 +1,31 @@
+{
+  "image": "000048.png",
+  "scenes": [
+    {
+      "scene": "arti",
+      "score": 0.5654296875
+    },
+    {
+      "scene": "idol immersion",
+      "score": 0.218017578125
+    },
+    {
+      "scene": "garbage dump",
+      "score": 0.1522216796875
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        301,
+        181,
+        467,
+        472
+      ],
+      "yolo_label": "tie",
+      "yolo_conf": 0.32557424902915955,
+      "mapped_tax": "Waste/Open_dumping",
+      "mapping_score": 0.1827392578125
+    }
+  ]
+}

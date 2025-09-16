@@ -1,0 +1,56 @@
+name: CI - Smoke Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install minimal deps for backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ci-requirements.txt
+
+      - name: Run backend health smoke test
+        env:
+          PYTHONPATH: backend
+        run: |
+          python - <<'PY'
+          import multiprocessing as mp, time, sys, os
+          os.chdir('backend')
+          from uvicorn import Server, Config
+          import main as appmod
+          config = Config('main:app', host='127.0.0.1', port=8000, log_level='info')
+          srv = Server(config)
+          p = mp.Process(target=srv.run)
+          p.start()
+          try:
+              # wait for startup
+              import requests
+              ok = False
+              for _ in range(50):
+                  try:
+                      time.sleep(0.2)
+                      r = requests.get('http://127.0.0.1:8000/')
+                      if r.status_code == 200 and r.json().get('status') == 'ok':
+                          ok = True
+                          break
+                  except Exception:
+                      pass
+              print('health:', ok)
+              if not ok:
+                  sys.exit(1)
+          finally:
+              p.terminate(); p.join(timeout=5)
+          PY

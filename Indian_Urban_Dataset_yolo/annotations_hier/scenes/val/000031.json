@@ -1,0 +1,31 @@
+{
+  "image": "000031.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.8056640625
+    },
+    {
+      "scene": "wedding procession",
+      "score": 0.11248779296875
+    },
+    {
+      "scene": "religious procession",
+      "score": 0.05072021484375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        527,
+        226,
+        814,
+        466
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.3691505491733551,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    }
+  ]
+}

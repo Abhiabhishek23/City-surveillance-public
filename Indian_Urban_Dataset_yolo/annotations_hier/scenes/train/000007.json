@@ -1,0 +1,43 @@
+{
+  "image": "000007.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.556640625
+    },
+    {
+      "scene": "arti",
+      "score": 0.26708984375
+    },
+    {
+      "scene": "sand mining site",
+      "score": 0.0894775390625
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        112,
+        53,
+        1157,
+        575
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.43914204835891724,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        1142,
+        392,
+        1175,
+        423
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.28027790784835815,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    }
+  ]
+}

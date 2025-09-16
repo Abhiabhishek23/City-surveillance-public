@@ -1,0 +1,42 @@
+{
+  "illegal_construction": {
+    "thr": 0.15,
+    "cooldown": 60
+  },
+  "vehicle_encroachment": {
+    "thr": 0.18,
+    "cooldown": 45
+  },
+  "unauthorized_pandal": {
+    "thr": 0.2,
+    "cooldown": 120
+  },
+  "idol_immersion": {
+    "thr": 0.17,
+    "cooldown": 90
+  },
+  "unauthorized_protest": {
+    "thr": 0.15,
+    "cooldown": 60
+  },
+  "waste_mismanagement": {
+    "thr": 0.13,
+    "cooldown": 90
+  },
+  "open_fire_hazard": {
+    "thr": 0.14,
+    "cooldown": 75
+  },
+  "fireworks_violation": {
+    "thr": 0.16,
+    "cooldown": 60
+  },
+  "open_defecation": {
+    "thr": 0.15,
+    "cooldown": 120
+  },
+  "disaster_encroachment": {
+    "thr": 0.14,
+    "cooldown": 120
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "image": "000018.png",
+  "scenes": [
+    {
+      "scene": "garbage dump",
+      "score": 0.82568359375
+    },
+    {
+      "scene": "arti",
+      "score": 0.120849609375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        84,
+        41,
+        449,
+        492
+      ],
+      "yolo_label": "vase",
+      "yolo_conf": 0.7281339168548584,
+      "mapped_tax": "Waste/Garbage_bins/normal",
+      "mapping_score": 0.4375
+    }
+  ]
+}

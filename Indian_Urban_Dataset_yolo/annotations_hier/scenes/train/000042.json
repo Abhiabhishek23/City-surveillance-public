@@ -1,0 +1,95 @@
+{
+  "image": "000042.png",
+  "scenes": [
+    {
+      "scene": "funeral procession",
+      "score": 0.8974609375
+    }
+  ],
+  "detections": [
+    {
+      "xyxy": [
+        0,
+        98,
+        121,
+        278
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.7924357652664185,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        214,
+        145,
+        309,
+        251
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.7715394496917725,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        108,
+        133,
+        221,
+        266
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.6429452896118164,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        300,
+        162,
+        373,
+        248
+      ],
+      "yolo_label": "car",
+      "yolo_conf": 0.6368283629417419,
+      "mapped_tax": "Transport/Vehicles/car",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        109,
+        134,
+        221,
+        266
+      ],
+      "yolo_label": "truck",
+      "yolo_conf": 0.43225300312042236,
+      "mapped_tax": "Transport/Vehicles/truck",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        432,
+        33,
+        649,
+        345
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.8893893957138062,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    },
+    {
+      "xyxy": [
+        494,
+        266,
+        649,
+        346
+      ],
+      "yolo_label": "person",
+      "yolo_conf": 0.2922343909740448,
+      "mapped_tax": "People/Pedestrians/walking",
+      "mapping_score": 0.99
+    }
+  ]
+}
