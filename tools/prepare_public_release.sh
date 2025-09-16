@@ -61,6 +61,19 @@ if [[ -f "$SRC_DIR/README_PUBLIC.md" ]]; then
   cp "$SRC_DIR/README_PUBLIC.md" "$DEST_DIR/README.md"
 fi
 
+# Ensure ease-of-use files are present
+mkdir -p "$DEST_DIR/.vscode"
+if [[ -f "$SRC_DIR/.vscode/tasks.json" ]]; then
+  cp "$SRC_DIR/.vscode/tasks.json" "$DEST_DIR/.vscode/tasks.json"
+fi
+if [[ -f "$SRC_DIR/.vscode/launch.json" ]]; then
+  cp "$SRC_DIR/.vscode/launch.json" "$DEST_DIR/.vscode/launch.json"
+fi
+if [[ -f "$SRC_DIR/run.sh" ]]; then
+  cp "$SRC_DIR/run.sh" "$DEST_DIR/run.sh"
+  chmod +x "$DEST_DIR/run.sh"
+fi
+
 # Explicitly include Test samples (videos) if present, overriding global *.mp4 excludes
 if [[ -d "$SRC_DIR/Test samples" ]]; then
   echo "[public] Including Test samples (may be large)..."
@@ -84,4 +97,10 @@ Next steps:
 
 Remember to store your Firebase credentials outside the repo and instruct users to
 copy backend/.env.example to backend/.env and fill their own keys.
+
+If your public repo should include example media or weights, initialize Git LFS first:
+  git lfs install
+  git lfs track "*.mp4" "*.mov" "*.avi" "*.zip" "*.pt" "*.onnx"
+  git add .gitattributes
+  git commit -m "chore(lfs): track large binaries"
 EOF

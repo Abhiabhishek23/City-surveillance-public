@@ -2,9 +2,34 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Run MVP Orchestrator",
+			"label": "Setup (run.sh)",
 			"type": "shell",
-			"command": "python3 urban_monitoring_deployment.py --project-root \"${workspaceFolder}\"",
+			"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh setup'",
+			"group": "build"
+		},
+		{
+			"label": "Start (run.sh)",
+			"type": "shell",
+			"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh start'",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "Open UIs (run.sh)",
+			"type": "shell",
+			"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh open'",
+			"group": "build"
+		},
+		{
+			"label": "Stop (run.sh)",
+			"type": "shell",
+			"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh stop'",
+			"group": "build"
+		},
+		{
+			"label": "Logs (run.sh)",
+			"type": "shell",
+			"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh logs'",
 			"group": "build"
 		},
 		{
@@ -14,43 +39,31 @@
 			"isBackground": true,
 			"group": "build"
 		},
-			{
-				"label": "Setup (run.sh)",
-				"type": "shell",
-				"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh setup'",
-				"group": "build"
-			},
-			{
-				"label": "Start (run.sh)",
-				"type": "shell",
-				"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh start'",
-				"isBackground": true,
-				"group": "build"
-			},
-			{
-				"label": "Open UIs (run.sh)",
-				"type": "shell",
-				"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh open'",
-				"group": "build"
-			},
-			{
-				"label": "Stop (run.sh)",
-				"type": "shell",
-				"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh stop'",
-				"group": "build"
-			},
-			{
-				"label": "Logs (run.sh)",
-				"type": "shell",
-				"command": "${env:SHELL} -lc 'cd \"${workspaceFolder}\" && ./run.sh logs'",
-				"group": "build"
-			},
-			{
-				"label": "Run Annotation UI (Streamlit)",
-				"type": "shell",
-				"command": "${env:SHELL} -lc 'source ${workspaceFolder}/.venv/bin/activate && streamlit run ${workspaceFolder}/annotation_ui/app.py'",
-				"isBackground": true,
-				"group": "build"
-			}
+		{
+			"label": "Open Welcome",
+			"type": "shell",
+			"command": "python - <<PY\nimport webbrowser\nwebbrowser.open('http://127.0.0.1:8000/welcome')\nPY",
+			"group": "build"
+		},
+		{
+			"label": "Start Dashboard (React)",
+			"type": "shell",
+			"command": "cd dashboard && npm install && npm start",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "Run Annotation UI (Streamlit)",
+			"type": "shell",
+			"command": "${env:SHELL} -lc 'source ${workspaceFolder}/.venv/bin/activate && streamlit run ${workspaceFolder}/annotation_ui/app.py'",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "Run MVP Orchestrator",
+			"type": "shell",
+			"command": "python3 urban_monitoring_deployment.py --project-root \"${workspaceFolder}\"",
+			"group": "build"
+		}
 	]
 }

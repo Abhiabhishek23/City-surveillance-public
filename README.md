@@ -41,10 +41,12 @@ FCM_SERVER_KEY=your-legacy-http-key
 ## VS Code tasks (optional)
 - Command Palette → Run Task →
   - "Setup (run.sh)" → venv + install
-  - "Start (run.sh)" → start backend
-  - "Open UIs (run.sh)" → open Client/Admin
-  - "Stop (run.sh)", "Logs (run.sh)"
-- Debug: "FastAPI: backend/main.py (reload)"
+  - "Start Backend (Uvicorn)" → start backend server
+  - "Start Dashboard (React)" → run dashboard dev server (optional)
+  - "Open Welcome" → open landing page
+  - "Stop (run.sh)", "Logs (run.sh)" (via terminal)
+  
+Debug tip: use the Python debugger to run `backend/main.py` if you need breakpoints.
 
 ## Processing a video
 ```bash
@@ -66,6 +68,13 @@ You’ll need to add your own Firebase keys locally to test push notifications a
 - Port busy? `./run.sh stop` then start again, or change PORT in `backend/.env`.
 - Missing deps? Re-run `./run.sh setup` (Python 3.10+).
 - Admin auth in dev: set `ADMIN_BYPASS_SECRET` and use `Authorization: Bypass <secret>` in the Admin UI.
+
+## Deploy Dashboard to Firebase (manual)
+- This repo includes an Actions workflow for Firebase Hosting but it’s manual-only by default.
+- To enable deploys:
+  1. Add repo secrets `FIREBASE_TOKEN` and `FIREBASE_PROJECT_ID`.
+  2. Go to GitHub → Actions → "Build and Deploy Dashboard to Firebase Hosting" → Run workflow.
+  3. If you prefer auto-deploy on push, we can re-enable it with a guarded condition checking secrets.
 
 ## License
 For demo/research use. Ensure you have rights to any datasets/models you add.

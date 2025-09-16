@@ -36,3 +36,19 @@ jobs:
           assert body.get('status') == 'ok', body
           print('Smoke OK:', body)
           PY
+
+      - name: Optionally build dashboard (if present)
+        if: ${{ hashFiles('dashboard/package.json') != '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dashboard deps
+        if: ${{ hashFiles('dashboard/package.json') != '' }}
+        working-directory: ./dashboard
+        run: npm ci
+
+      - name: Build dashboard
+        if: ${{ hashFiles('dashboard/package.json') != '' }}
+        working-directory: ./dashboard
+        run: npm run build --if-present
