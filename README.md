@@ -4,6 +4,15 @@ This repository provides a FastAPI backend, a Client UI, and an Admin UI to expl
 
 This public version ships without secrets or large files. Follow the steps below to run locally.
 
+> Secrets Checklist (to unlock full features)
+- Copy env: `cp backend/.env.example backend/.env`
+- Set `SECRET_KEY` to any long random string
+- Choose one push method:
+  - Admin SDK: Create a Firebase service account JSON and set `FIREBASE_CREDENTIALS_PATH=/abs/path.json`
+  - OR Legacy: Get Firebase `FCM_SERVER_KEY` and set it
+- Optional: Generate VAPID keys and set `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`
+- Optional: Run Redis or stay on in-memory fallback
+
 ## Quickstart (macOS/Linux)
 ```bash
 ./run.sh setup
