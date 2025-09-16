@@ -1,19 +1,17 @@
 name: Build and Deploy Dashboard to Firebase Hosting
 
+# Disabled on push to avoid failures without secrets; trigger manually when ready.
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
